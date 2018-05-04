@@ -1,14 +1,16 @@
 # Overview
 
-# Naming Specification
+  document management
 
-    > year
+# Directory Naming
+
+    **year**
     
-        exp: 2018
+        *exp: 2018*
         
-    > domain
+    **domain**
     
-        lower case,no blank，no abbreviation
+        *lower case,no blank，no abbreviation*
         
         - business (finance,erp)
         - thoery ( acid,transaction)
