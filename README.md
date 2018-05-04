@@ -1,17 +1,18 @@
-# 大纲
+# Overview
 
-##　命名规则
-　　年份.领域
-    年份 ： 比如 2018,2019
-    领域 ： 不使用空格，单词小写，不使用缩写
-        business
-        thoery
-        methodology
-        architect (network file database cache)
-        tool
-        design (algorithms,domain,data sturture)
-        code
-        test
-        devops
+##　Naming Specification
+    > year
+        exp: 2018
+    > domain
+        lower case,no blank，no abbreviation
+        - business (finance,erp)
+        - thoery ( acid,transaction)
+        - methodology (object-oriented,serverless,microservice,soa)
+        - architect (network,storage,database,cache)
+        - tool (git,maven,intelliJ Idea,)
+        - design (algorithms,domain model,data sturture)
+        - code (java,python)
+        - test 
+        - devops
     
     
