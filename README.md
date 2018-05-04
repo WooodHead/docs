@@ -14,8 +14,8 @@
         
         - business (finance,erp)
         - thoery ( acid,transaction)
-        - methodology (object-oriented,serverless,microservice,soa)
-        - architect (network,storage,database,cache)
+        - methodology (object-oriented)
+        - architect (network,storage,database,cache,microservice,soa,serverless)
         - tool (git,maven,intelliJ Idea,)
         - design (algorithms,domain model,data sturture)
         - code (java,python)
