@@ -4,13 +4,13 @@
 
 # Directory Naming
 
-    **year**
+    ## year
     
-        *exp: 2018*
+        exp: 2018
         
-    **domain**
+    ## domain
     
-        *lower case,no blank，no abbreviation*
+        lower case,no blank，no abbreviation
         
         - business (finance,erp)
         - thoery ( acid,transaction)
