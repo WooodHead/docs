@@ -14,6 +14,7 @@
         
         - business (finance,erp)
         - thoery ( acid,transaction)
+        - specification (openAPI)
         - methodology (object-oriented)
         - architect (network,storage,database,cache,microservice,soa,serverless)
         - tool (git,maven,intelliJ Idea,)
