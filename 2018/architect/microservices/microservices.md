@@ -1,0 +1,2 @@
+# Reference
+  - [Notes from YOW! 2014: Scott Shaw on ‘Avoiding Speedbumps on the Road to Microservices’](http://www.grahamlea.com/2015/03/notes-from-yow-2014-scott-shaw-on-avoiding-speedbumps-on-the-road-to-microservices/)
