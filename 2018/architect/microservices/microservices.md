@@ -5,3 +5,4 @@
   - [Netflix Security Experience](https://medium.com/netflix-techblog)
   - [Defense in Depth](https://www.us-cert.gov/bsi/articles/knowledge/principles/defense-in-depth)
   - [Microservices architecture for Electronic Single Window System](https://sumoonp.wordpress.com/)
+  - [SpringCloud Practices Git](https://gitee.com/ylimhhmily/SpringCloudTutorial)
