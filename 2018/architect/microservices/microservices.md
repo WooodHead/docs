@@ -11,3 +11,4 @@
   - [Microservices architecture for Electronic Single Window System](https://sumoonp.wordpress.com/)
   - [SpringCloud Practices Git](https://gitee.com/ylimhhmily/SpringCloudTutorial)
   - [SpringCloud Zipkin](https://blog.csdn.net/z8414/article/details/78600646)
+  - [spring-cloud-security-oauth2-jwt](https://github.com/jiangchao123/spring-cloud-security-oauth2-jwt)
