@@ -22,5 +22,9 @@
         - code (java,python)
         - test 
         - devops
+		- solution(uuid,)
+		- management(scrum,agile)
+		- operation
+		- maintain
     
     
