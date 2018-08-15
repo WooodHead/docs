@@ -22,4 +22,3 @@
 		[Netflix Security Experience](https://medium.com/netflix-techblog)
 		[Defense in Depth](https://www.us-cert.gov/bsi/articles/knowledge/principles/defense-in-depth)
 		[Web Security](https://www.troyhunt.com/)
-  
