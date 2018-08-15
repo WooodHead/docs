@@ -20,11 +20,12 @@
         - tool (git,maven,intelliJ Idea,)
         - design (algorithms,domain model,data sturture)
         - code (java,python)
-        - test 
-        - devops
-		- solution(uuid,)
-		- management(scrum,agile)
-		- operation
-		- maintain
+        - test (Unit Test, Integration Test , System Test, User Acceptance Test)
+        - devops(Continuous Delivery, Continous Integratoin)
+		- solution (uuid,)
+		- management (scrum,agile)
+		- operation (operation experiences)
+		- maintain (operation experiences)
+		- framework (spring,springboot,springcloud,spring webflux,spring 5,hibernate,struts)
     
     
