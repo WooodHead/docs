@@ -10,4 +10,7 @@
    
 ## OA
 
-   - [信呼](http://www.rockoa.com/)
+   - [信呼-official website](http://www.rockoa.com/)
+   - [信呼-source code](https://github.com/rainrocka/xinhu)
+   - [JFinalOA-office website](https://www.oschina.net/p/jfinaloa)
+   - [JFinalOA-source code](https://gitee.com/glorylion/JFinalOA)
