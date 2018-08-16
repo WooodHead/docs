@@ -14,3 +14,7 @@
    - [信呼-source code](https://github.com/rainrocka/xinhu)
    - [JFinalOA-office website](https://www.oschina.net/p/jfinaloa)
    - [JFinalOA-source code](https://gitee.com/glorylion/JFinalOA)
+   
+## Enterprise Information Platform
+
+   - [jeeplatform](https://github.com/u014427391/jeeplatform)
