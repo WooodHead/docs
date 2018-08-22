@@ -22,4 +22,8 @@
 # Code Generator
 
   -[JHipster](https://www.jhipster.tech/)
+  
+# Security
+
+  - [Vulnerability Checker](https://www.whitesourcesoftware.com/vulnerability_checker/)
    
