@@ -22,3 +22,6 @@
 		[Netflix Security Experience](https://medium.com/netflix-techblog)
 		[Defense in Depth](https://www.us-cert.gov/bsi/articles/knowledge/principles/defense-in-depth)
 		[Web Security](https://www.troyhunt.com/)
+        
+  - Microservices Trend
+       [2018 Microservices Trend](https://medium.com/memory-leak/5-microservices-trends-to-watch-in-2018-aed135f70e51)
