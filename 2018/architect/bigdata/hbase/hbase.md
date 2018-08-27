@@ -19,7 +19,7 @@
 					regionserver.server.Get_99th_percentile
 					regionserver.server.ScanTime_99th_percentile
 	HBase region  : region size ,size, blockcache hit radio
-	JVM GC        : jvm.JvmMetrics.GcTimeMillis , jvm.JvmMetrics.GcCount
+	JVM GC        : jvm.JvmMetrics.GcTimeMillis, jvm.JvmMetrics.GcCount, GC log
 	
   - Tool
   
