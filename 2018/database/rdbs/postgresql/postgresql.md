@@ -4,10 +4,13 @@
   - [Postgres streaming replication cluster for any docker environment](https://github.com/paunin/PostDock)
   - [how to promote master, after failover on postgresql with docker](https://stackoverflow.com/questions/37710868/how-to-promote-master-after-failover-on-postgresql-with-docker)
   - [PostgreSQL Kubernetes: How to Run HA Postgres on Kubernetes ](https://dzone.com/articles/postgresql-kubernetes-how-to-run-ha-postgres-on-ku)
+  - [PostgreSQL Kubernetes: How to run HA Postgres on Kubernetes](https://portworx.com/ha-postgresql-kubernetes/)
+  - [portworx - HA PostgreSQL on Kubernetes with Portworx](https://www.katacoda.com/portworx/scenarios/px-k8s-postgres-all-in-one)
   
-# PostgreSQL bakcup
+# PostgreSQL bakcup and restore
   - [pgbarman](http://docs.pgbarman.org/release/2.2/index.html)
-  
+  - [Backup, restore postgres in docker container](https://gist.github.com/gilyes/525cc0f471aafae18c3857c27519fc4b)
+  - [Introducing STORK: Intelligent Storage Orchestration for Kubernetes](https://portworx.com/stork-storage-orchestration-kubernetes/)
   
 # Pgpool
 
