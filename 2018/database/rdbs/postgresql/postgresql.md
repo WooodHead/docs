@@ -3,6 +3,7 @@
   - [PostgreSQL in Docker](https://www.jianshu.com/p/343c3c8047f0)
   - [Postgres streaming replication cluster for any docker environment](https://github.com/paunin/PostDock)
   - [how to promote master, after failover on postgresql with docker](https://stackoverflow.com/questions/37710868/how-to-promote-master-after-failover-on-postgresql-with-docker)
+  - [PostgreSQL Kubernetes: How to Run HA Postgres on Kubernetes ](https://dzone.com/articles/postgresql-kubernetes-how-to-run-ha-postgres-on-ku)
   
 # PostgreSQL bakcup
   - [pgbarman](http://docs.pgbarman.org/release/2.2/index.html)
@@ -26,3 +27,6 @@
 # Postgres Best Practices
 
  - [Alibaba PostgreSQL 数据库开发规范](https://yq.aliyun.com/articles/60899?spm=5176.10695662.1996646101.searchclickresult.69cb6effwRp5zz)
+ 
+# PostgreSQL JDBC
+ - [JDBC for PostgreSQL](https://jdbc.postgresql.org/documentation/head/connect.html)
