@@ -5,8 +5,6 @@
 # Naming Directory
 
 ## Naming year
-
-   2018
     
    - [2018](2018/2018.md)
         
