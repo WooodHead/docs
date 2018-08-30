@@ -1,18 +1,20 @@
 # Overview
 
-  document management
+  document management rules
 
-# Directory Naming
+# Naming Directory
 
-## year
+## Naming year
     
    exp: 2018
         
-## domain
+## Naming Dsomain
     
    lower case,no blank，no abbreviation
         
    - [architect](architect/architect.md)
+   - [artificial-intelligence](artificial-intelligence/artificial-intelligence.md)
+     exp: finance,erp
    - business (finance,erp)
    - thoery ( acid,transaction)
    - specification (openAPI)
