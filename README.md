@@ -8,7 +8,7 @@
     
    - [2018](2018/2018.md)
         
-## Naming Dsomain
+## Naming Domain
     
    lower case,no blank,no abbreviation
     
@@ -19,7 +19,7 @@
    - code (java,python)
    - database(rdbs,nosql)
    - design (object-oriented,domain-driven)
-   - devops(Continuous Delivery, Continous Integratoin)
+   - devops(continuous delivery,continous integratoin)
    - framework (spring,springboot,springcloud,spring webflux,spring 5,hibernate,struts)
    - management (scrum,agile)
    - meeting(cyber security summit,aws summit,qcon summit)
@@ -30,7 +30,7 @@
    - resume (my resume)
    - solution (uuid,datasource-monitor,organization,password-encryption,scaleout-storage,switch-datasource)
    - specification (api,coding,code review)
-   - test (unit test, integration test , system test, user acceptance test)
+   - test (unit test,integration test,system test,user acceptance test)
    - thoery (acid,transaction)
    - tool (git,maven,intelliJ Idea,eclipse)
 
