@@ -10,7 +10,7 @@
         
 ## Naming Dsomain
     
-   lower case,no blank，no abbreviation
+   lower case,no blank,no abbreviation
         
    - [architect](architect/architect.md)
    - [artificial-intelligence](artificial-intelligence/artificial-intelligence.md) (finance,erp)
