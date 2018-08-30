@@ -28,6 +28,7 @@
    - operation(operation and maintance experiences)
    - project(project experience summary)
    - resume (my resume)
+   - security
    - solution (uuid,datasource-monitor,organization,password-encryption,scaleout-storage,switch-datasource)
    - specification (api,coding,code review)
    - test (unit test,integration test,system test,user acceptance test)
