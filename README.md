@@ -5,9 +5,10 @@
 # Naming Directory
 
 ## Naming year
+
+   2018
     
-   exp: 2018
-   [2018](2018/2018.md)
+   - [2018](2018/2018.md)
         
 ## Naming Dsomain
     
