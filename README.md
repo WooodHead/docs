@@ -7,13 +7,14 @@
 ## Naming year
     
    exp: 2018
+   [2018](2018/2018.md)
         
 ## Naming Dsomain
     
    lower case,no blank,no abbreviation
         
-   - [architect](architect/architect.md)
-   - [artificial-intelligence](artificial-intelligence/artificial-intelligence.md) (finance,erp)
+   - [architect](api,bigdata,blockchain,cache,cloud,distributed-transaction,microservices,network,operation-system,security,severless,storage,test)
+   - [artificial-intelligence](finance,erp)
    - business (finance,erp)
    - thoery ( acid,transaction)
    - specification (openAPI)
