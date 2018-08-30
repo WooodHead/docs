@@ -13,7 +13,7 @@
    lower case,no blank，no abbreviation
         
    - [architect](architect/architect.md)
-   - [artificial-intelligence](artificial-intelligence/artificial-intelligence.md)(exp: finance,erp)
+   - [artificial-intelligence](artificial-intelligence/artificial-intelligence.md) (finance,erp)
    - business (finance,erp)
    - thoery ( acid,transaction)
    - specification (openAPI)
