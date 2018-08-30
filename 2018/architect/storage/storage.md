@@ -1,7 +1,3 @@
 # Storage
-
-  - [Cohesity]
-  - [Elastifile]
-  - [Igneous Systems]
-  - [Komprise]
-  - [Portworx]  
+ 
+  - [scaleout-storage](../solution/scaleout-storage/scaleout-storage.md)
