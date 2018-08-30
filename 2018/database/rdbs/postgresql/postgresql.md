@@ -1,3 +1,10 @@
+# PostgreSQL HA cluster on Kubernetes
+
+  - [How to deploy HA PostgreSQL cluster on Kubernetes](https://medium.com/@SergeyNuzhdin/how-to-deploy-ha-postgresql-cluster-on-kubernetes-3bf9ed60c64f)
+  - [Patroni](https://github.com/zalando/patroni)
+  - [Crunchy](https://github.com/CrunchyData/crunchy-containers)
+  - [Stolon](https://github.com/sorintlab/stolon)
+  
 # PostgreSQL in Docker
  
   - [PostgreSQL in Docker](https://www.jianshu.com/p/343c3c8047f0)
