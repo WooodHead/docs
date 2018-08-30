@@ -9,3 +9,17 @@
 # Container Management
 
   - [Kubernetes](https://kubernetes.io/)
+  
+# Continuous Integration/ Continuous Development
+
+  - Jira
+  - Confluence
+  - BitBucket
+  - git
+  - Jenkinss
+  - Artifactory
+  - Terraform
+  - Packer
+  - Rundeck
+  - Ansible
+  - AppDynamics
