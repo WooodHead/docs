@@ -1,0 +1,3 @@
+# methodology overview
+
+  - swot
