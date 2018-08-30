@@ -11,23 +11,28 @@
 ## Naming Dsomain
     
    lower case,no blank,no abbreviation
-        
-   - [architect](api,bigdata,blockchain,cache,cloud,distributed-transaction,microservices,network,operation-system,security,severless,storage,test)
-   - [artificial-intelligence](finance,erp)
+    
+   - algorithms and data structure    
+   - architect (bigdata,blockchain,cache,cloud,distributed-transaction,microservices,network,operation-system,security,severless,storage,test)
+   - artificial-intelligence (finance,erp)
    - business (finance,erp)
-   - thoery ( acid,transaction)
-   - specification (openAPI)
-   - methodology (object-oriented)
-   - architect (network,storage,database,cache,microservice,soa,serverless)
-   - tool (git,maven,intelliJ Idea,)
-   - design (algorithms,domain model,data sturture)
    - code (java,python)
-   - test (unit test, integration test , system test, user acceptance test)
+   - database(rdbs,nosql)
+   - design (object-oriented,domain-driven)
    - devops(Continuous Delivery, Continous Integratoin)
-   - solution (uuid,)
-   - management (scrum,agile)
-   - operation (operation experiences)
-   - maintain (operation experiences)
    - framework (spring,springboot,springcloud,spring webflux,spring 5,hibernate,struts)
+   - management (scrum,agile)
+   - meeting(cyber security summit,aws summit,qcon summit)
+   - methodology(swot)
+   - network(communication protocol)
+   - operation(operation and maintance experiences)
+   - project(project experience summary)
+   - resume (my resume)
+   - solution (uuid,datasource-monitor,organization,password-encryption,scaleout-storage,switch-datasource)
+   - specification (api,coding,code review)
+   - test (unit test, integration test , system test, user acceptance test)
+   - thoery (acid,transaction)
+   - tool (git,maven,intelliJ Idea,eclipse)
+
     
     
