@@ -6,25 +6,27 @@
   - [vRealise Automation]
   
   
-# Cloud Storage
-  
-  - [AWS Elastic Block Store]
-  - [GCE Persistent Disk]
-  - [Protworxs]
-  - [Cinder OpenStack block storage]
-  - [glusterfs]
-  - [rbd]
+# scaleout storage
+ 
+  - [AWS Elastic Block Store] 
   - [Azure Disk]
   - [Azure File]
-  - [Fiber Channel]
-  - [Flocker]
-  - [NFS]
-  - [iSCSI]
   - [Ceph Block Device]
   - [CephFS]
-  - [VsphereVolume]
-  - [Quobyte Volumes]
+  - [Cinder OpenStack block storage]
+  - [Fiber Channel]
+  - [Flocker]
   - [HostPath]
-  - [Portworx Volumes]
+  - [iSCSI]
+  - [GCE Persistent Disk]
+  - [glusterfs]
+  - [NFS]
+  - [Protworxs]
+  - [Quobyte Volumes]
+  - [rbd]
   - [ScaleIO Volumes]
   - [StorageOS]
+  - [VsphereVolume]
+
+
+
