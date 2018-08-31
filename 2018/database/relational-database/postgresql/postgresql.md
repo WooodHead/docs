@@ -2,7 +2,7 @@
 
   - [How to deploy HA PostgreSQL cluster on Kubernetes](https://medium.com/@SergeyNuzhdin/how-to-deploy-ha-postgresql-cluster-on-kubernetes-3bf9ed60c64f)
   - [Patroni](https://github.com/zalando/patroni)
-  - [Crunchy](../../tool/crunchy/crunchy.md)
+  - [Crunchy](../../../tool/crunchy/crunchy.md)
   - [Stolon](https://github.com/sorintlab/stolon)
   
 # PostgreSQL in Docker
