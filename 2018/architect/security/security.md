@@ -1,8 +1,11 @@
-# security knowledge
+# security overview
 
-  - [CORS - cross origin resource sharing](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing)
-  - [CSRF - Cross-Site Request Forgery](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF) )
+  - [Open Web Application Security Project](https://www.owasp.org/index.php/About_The_Open_Web_Application_Security_Project)
+  - [code quality](../quality/quality.md)
+  
+# common security issue and prevention
 
+ - [common security issues and prevention](../security/security.mds)
 
 # issues
 
