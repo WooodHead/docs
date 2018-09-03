@@ -1,11 +1,15 @@
-# PostgreSQL HA cluster on Kubernetes
+# awesome-postgres
 
-  - [How to deploy HA PostgreSQL cluster on Kubernetes](https://medium.com/@SergeyNuzhdin/how-to-deploy-ha-postgresql-cluster-on-kubernetes-3bf9ed60c64f)
-  - [Patroni](../../../tool/patroni/patroni.md)
-  - [Crunchy](../../../tool/crunchy/crunchy.md)
-  - [Stolon](https://github.com/sorintlab/stolon)
+  - [awesome-postgres](https://github.com/dhamaniasad/awesome-postgres/blob/master/README.md)
+
+# postgreSQL HA cluster on Kubernetes
+
+  - [how to deploy ha postgresql cluster on kubernetes](https://medium.com/@SergeyNuzhdin/how-to-deploy-ha-postgresql-cluster-on-kubernetes-3bf9ed60c64f)
+  - [patroni](../../../tool/patroni/patroni.md)
+  - [crunchy](../../../tool/crunchy/crunchy.md)
+  - [Stolon](../../../toool/stolon/stolon.md)
   
-# PostgreSQL in Docker
+# postgreSQL in docker
  
   - [PostgreSQL in Docker](https://www.jianshu.com/p/343c3c8047f0)
   - [PostDock-Postgres streaming replication cluster for any docker environment](https://github.com/paunin/PostDock)
