@@ -5,7 +5,7 @@
   
 # common security issue and prevention
 
- - [common security issues and prevention](../security/security.mds)
+ - [common security issues and prevention](../security/security.md)
 
 # issues
 
