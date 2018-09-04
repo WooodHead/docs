@@ -21,7 +21,7 @@
 	Performance wise it require high memory machines
 	Costing and maintenance wise it is also higher
 	
-#Advantage of HBase:
+## Advantage of HBase:
 
 	Can store large data sets on top of HDFS file storage and will aggregate and analyze billions of rows present in the HBase tables
 	In HBase, the database can be shared
