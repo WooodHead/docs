@@ -27,6 +27,7 @@
 
   - [Pgpool](http://www.pgpool.net)
   - [PGPool-II+PG流复制实现HA主备切换](https://www.jianshu.com/p/ef183d0a9213)
+  - [pgpool watchdog_master_slave](http://www.pgpool.net/pgpool-web/contrib_docs/watchdog_master_slave/en.html)
   
 # Postgres-xl
 
