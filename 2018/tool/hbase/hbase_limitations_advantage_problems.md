@@ -36,6 +36,14 @@
 	HBase is CPU and Memory intensive with large sequential input or output access while as Map Reduce jobs are primarily input or output bound with fixed memory. HBase integrated with Map-reduce jobs will result in unpredictable latencies
 	HBase integrated with pig and Hive jobs results in some time memory issues on cluster
 	In a shared cluster environment, the set up requires fewer task slots per node to allocate for HBase CPU requirements
+	
+## Limitations with HBase:
+
+	We cannot expect completely to use HBase as a replacement for traditional models. Some of the traditional models features cannot support by HBase
+	HBase cannot perform functions like SQL. It doesn't support SQL structure, so it does not contain any query optimizer
+	HBase is CPU and Memory intensive with large sequential input or output access while as Map Reduce jobs are primarily input or output bound with fixed memory. HBase integrated with Map-reduce jobs will result in unpredictable latencies
+	HBase integrated with pig and Hive jobs results in some time memory issues on cluster
+	In a shared cluster environment, the set up requires fewer task slots per node to allocate for HBase CPU requirements
 
 # Reference
 
