@@ -25,3 +25,7 @@
   
     [Ganglia]()
     [Zabbix]()
+	
+# hbase limitations advantage and problems
+
+  - [HBase: Limitations, Advantage & Problems](hbase_limitations_advantage_problems.md)
