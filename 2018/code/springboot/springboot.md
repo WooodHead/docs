@@ -1,3 +1,8 @@
+# springboot features
+
+  - [Externalized Configuration](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#boot-features-external-config)
+  - [Spring Boot 环境变量读取 和 属性对象的绑定](https://blog.csdn.net/catoop/article/details/50548009)
+
 # springboot issue 
  
 ## CSRF issue
