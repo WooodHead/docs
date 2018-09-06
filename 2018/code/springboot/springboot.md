@@ -1,11 +1,24 @@
-# springboot features
+# features
+
+## configuration
 
   - [Externalized Configuration](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#boot-features-external-config)
   - [Spring Boot 环境变量读取 和 属性对象的绑定](https://blog.csdn.net/catoop/article/details/50548009)
+  
+## jpa 
 
-# springboot issue 
+   - [many2many](https://github.com/hellokoding/jpa-manytomany-springboot-maven-mysql)
+   - [one2many](https://github.com/hellokoding/jpa-onetomany-springboot-maven-mysql)
+  
+# security
+
+## jwt
+
+   - [jwt sso](https://github.com/hellokoding/hello-sso-jwt)
+
+# issues 
  
-## CSRF issue
+## CSRF 
 
    - [Spring Boot Security - Enabling CSRF Protection](http://www.javainuse.com/spring/boot_security_csrf)
    - [Securing Spring Boot with JWTs](https://auth0.com/blog/securing-spring-boot-with-jwts/)
