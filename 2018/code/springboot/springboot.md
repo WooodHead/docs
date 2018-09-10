@@ -2,15 +2,19 @@
 
 ## configuration
 
-  - [Externalized Configuration](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#boot-features-external-config)
-  - [Spring Boot 环境变量读取 和 属性对象的绑定](https://blog.csdn.net/catoop/article/details/50548009)
+   - [Externalized Configuration](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#boot-features-external-config)
+   - [Spring Boot 环境变量读取 和 属性对象的绑定](https://blog.csdn.net/catoop/article/details/50548009)
   
+## logging
+
+   - [logging](https://www.mkyong.com/spring-boot/spring-boot-slf4j-logging-example/)
+   
 ## jpa 
 
    - [many2many](https://github.com/hellokoding/jpa-manytomany-springboot-maven-mysql)
    - [one2many](https://github.com/hellokoding/jpa-onetomany-springboot-maven-mysql)
   
-# security
+## security
 
 ## jwt
 
