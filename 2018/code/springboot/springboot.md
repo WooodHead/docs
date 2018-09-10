@@ -8,6 +8,8 @@
 ## logging
 
    - [logging](https://www.mkyong.com/spring-boot/spring-boot-slf4j-logging-example/)
+   - [LOGBACK CONFIGURATION: USING XML](https://springframework.guru/logback-configuration-using-xml/)
+   - [Spring Boot - Profile-specific Logback configuration selection in logback-spring.xml file](https://www.logicbig.com/tutorials/spring-framework/spring-boot/profile-logback-logging-config.html)
    
 ## jpa 
 
