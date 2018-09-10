@@ -1,3 +1,14 @@
+# java installatoin
+
+  ```
+  oracle setup JAVA_HOME
+  oralce jdk installation dir /usr/java
+  
+  echo 'export JAVA_HOME=/usr/java/jdk1.8.0_181-amd64' | sudo tee -a /etc/profile
+  echo 'export JRE_HOME=/usr/java/jdk1.8.0_181-amd64/jre' | sudo tee -a /etc/profile
+  source /etc/profile
+  ```
+
 # Java issue
 
   - [how to know pid when runing java process](https://stackoverflow.com/questions/35842/how-can-a-java-program-get-its-own-process-id)

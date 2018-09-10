@@ -2,6 +2,14 @@
 
 # scala install
 
+  ```
+  cd ~
+  wget http://downloads.lightbend.com/scala/2.11.8/scala-2.11.8.rpm
+  sudo yum install scala-2.11.12.rpm
+  ```
+  
+  - [scala installation in centos7](https://www.vultr.com/docs/how-to-install-scala-on-centos-7)
+
 # scala operation
 
 # scala package
