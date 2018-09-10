@@ -8,7 +8,8 @@
     sudo vi /opt/hadoop-2.7.5/etc/hadoop/hadoop-env.sh
     export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:bin/java::")
     
-    echo "export PATH=/opt/hadoop-2.7.5/bin:$PATH" | sudo tee -a /etc/profile
+    echo 'export HADOOP_HOME=/opt/hadoop-2.7.5' | sudo tee -a /etc/profile
+    echo 'export PATH=$HADOOP_HOME/bin:$PATH' | sudo tee -a /etc/profile
     source /etc/profile
     
     mkdir ~/source
