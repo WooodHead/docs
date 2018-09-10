@@ -8,7 +8,23 @@
    
 # spark innstallation
 
+   ```
+    sudo tar -zxvf spark-2.3.1-bin-hadoop2.7.tgz -C /opt
+    
+    echo 'export SPARK_HOME=/opt/spark-2.3.1-bin-hadoop2.7' | sudo tee -a /etc/profile
+    echo 'export PATH=$SPARK_HOME/bin:$PATH' | sudo tee -a /etc/profile
+    source /etc/profile
+    
+    vim $SPARK_HOME/conf/spark-env.sh 
+    export  SPARK_MASTER_HOST=spark114
+    export  SPARK_LOCAL_IP=spark114
+    
+    ./sbin/start-all.sh
+
+    ```
+
   - [spark scala compatible](https://spark.apache.org/docs/latest/)   
+  
 # spark integration
 
 ## spark streaming / kafka integration 

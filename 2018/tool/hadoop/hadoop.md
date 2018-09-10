@@ -12,10 +12,10 @@
     echo 'export PATH=$HADOOP_HOME/bin:$PATH' | sudo tee -a /etc/profile
     source /etc/profile
     
-    mkdir ~/source
-    cp /opt/hadoop-2.7.5/etc/hadoop/*.xml ~/source
+    mkdir -p ~/datas/hadoop
+    cp /opt/hadoop-2.7.5/etc/hadoop/*.xml ~/datas/hadoop
     
-    hadoop jar /opt/hadoop-2.7.5/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.3.jar grep ~/source ~/output 'principal[.]*'
+    hadoop jar /opt/hadoop-2.7.5/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.5.jar grep ~/datas/hadoop ~/output 'principal[.]*'
     ```
 
   - [hadoop installatoin](https://www.vultr.com/docs/how-to-install-hadoop-in-stand-alone-mode-on-centos-7)
