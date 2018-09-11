@@ -25,14 +25,27 @@
 
   - [spark scala compatible](https://spark.apache.org/docs/latest/)   
   
+# execute spark script
+
+  ```
+    spark-submit --class com.bamboo.demo.catalog.spark.StreamingKafkaDemo --master spark://spark114:7077 --jars /home/centos/datas/spark/catalog/target/scala-2.11/spark-kafka-project_2.11-1.0.jar,/home/centos/.ivy2/cache/org.apache.spark/spark-streaming-kafka-0-10_2.11/jars/spark-streaming-kafka-0-10_2.11-2.3.1.jar 1000
+
+  ```
+  
 # spark integration
 
 ## spark streaming / kafka integration 
 
+   /root/app/spark-2.1.0-bin-hadoop2.6/bin/spark-submit  --class hdfs.KafkaToHbase --master spark://192.168.1.233:7077 --jars spark.jar,metrics-core-2.2.0.jar,spark-streaming-kafka-0-8_2.11-2.1.0.jar,spark-streaming_2.11-2.1.0.jar,kafka_2.11-1.1.0.jar 1000
+
    - [Spark Streaming + Kafka Integration Guide](http://spark.apache.org/docs/latest/streaming-kafka-integration.html)
    - [Sparking Stream from Kafka to calculate real time top url click stream from an http weblog using Spark Streaming](https://github.com/vhoang55/kafka-spark-streaming-weblog)
    - [Apache Kafka - Integration With Spark](https://www.tutorialspoint.com/apache_kafka/apache_kafka_integration_spark.htm)
+   - [spark-streaming-example-from-slack](https://www.supergloo.com/fieldnotes/spark-streaming-example-from-slack/)
+   - [spark streaming examples](https://github.com/mapr/spark/tree/2.0.1-mapr-1611/examples/src/main/scala/org/apache/spark/examples/streaming)
+   - [精讲Spark Streaming集成读取kafka0.10及以上版本](https://blog.csdn.net/daerzei/article/details/80085121)
 
 # Reference
   - [Spark入门 | RDD原理与基本操作](https://mp.weixin.qq.com/s?__biz=MzU0MzQ5MDA0Mw==&mid=2247484107&idx=1&sn=44b2e63a1a276f01dc28adaf8933332a&chksm=fb0be85fcc7c61493ae431a090049ff7af1a61eb6eeefd9076c4ad216122e7320c1df1aa89df&scene=21#wechat_redirect)
-  - [practical real-time data processing and analytics-distributed computing and event processing using apacke spark, storm and kafka-packt publishing]
+  - practical real-time data processing and analytics-distributed computing and event processing using apacke spark, storm and kafka-packt publishing
+  
