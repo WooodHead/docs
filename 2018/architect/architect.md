@@ -23,4 +23,5 @@
   - [架构师进阶:2fr9](https://pan.baidu.com/s/15sAbuCBTeLFI-FvfdT26Ig)
   - [Geekbang TeamStuQ Skill-Map](https://github.com/TeamStuQ/skill-map)
   - [architecture.of.internet-product](https://github.com/davideuler/architecture.of.internet-product)
+  - [互联网公司架构: 微信技术架构， 腾讯技术架构](https://github.com/davideuler/architecture.wechat-tencent)
 
