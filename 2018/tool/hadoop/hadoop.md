@@ -12,6 +12,10 @@
     echo 'export PATH=$HADOOP_HOME/bin:$PATH' | sudo tee -a /etc/profile
     source /etc/profile
     
+    $HADOOP/etc/hadoop-env.sh
+    export HADOOP_COMMON_LIB_NATIVE_DIR="${HADOOP_HOME}/hadoop/lib/"
+    export HADOOP_OPTS="$HADOOP_OPTS -Djava.library.path=${HADOOP_HOME}/hadoop/lib/"
+    
     mkdir -p ~/datas/hadoop
     cp /opt/hadoop-2.7.5/etc/hadoop/*.xml ~/datas/hadoop
     

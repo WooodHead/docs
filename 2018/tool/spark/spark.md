@@ -5,6 +5,8 @@
     容错: 血统机制,在结构更新和丢失后可随时根据血统进行数据模型的重建
     分布式： 可以分布在多台机器上进行并行计算
     数据集：一组只读的、可分区的分布式数据集合，集合内包含了多个分区。分区依照特定规则将具有相同属性的数据记录放在一起，每个分区相当于一个数据集片段
+    
+  - [checkpoint](http://spark.apache.org/docs/latest/streaming-programming-guide.html#checkpointing)
    
 # spark innstallation
 
@@ -28,11 +30,21 @@
 # execute spark script
 
   ```
-    spark-submit --class com.bamboo.demo.catalog.spark.StreamingKafkaDemo --master spark://spark114:7077 --jars /home/centos/datas/spark/catalog/target/scala-2.11/spark-kafka-project_2.11-1.0.jar,/home/centos/.ivy2/cache/org.apache.spark/spark-streaming-kafka-0-10_2.11/jars/spark-streaming-kafka-0-10_2.11-2.3.1.jar 1000
+    spark-submit --class "com.bamboo.demo.catalog.spark.StreamingKafkaDemo" --jars '/home/centos/.ivy2/cache/org.apache.spark/spark-core_2.11/jars/spark-core_2.11-2.3.1.jar' --master spark://spark114:7077 /home/centos/datas/spark/catalog/target/scala-2.11/spark-kafka-project_2.11-1.0.jar
+    
+    spark-submit --class "com.bamboo.scala.demo.catalog.spark.DemoReadCSVFile" --jars '/home/centos/.ivy2/cache/org.apache.spark/spark-core_2.11/jars/spark-core_2.11-2.3.1.jar' --master spark://spark114:7077 /home/centos/datas/spark/csvfile/target/scala-2.11/com-bamboo-scala-demo-catalog-spark_2.11-0.1.jar
 
+    
+    spark-shell --packages com.databricks:spark-csv_2.11:1.5.0
   ```
   
 # spark integration
+
+## spark csv
+
+   - [spark csv](https://github.com/databricks/spark-csv)
+   - [Read CSV file in Spark Scala](http://bigdataprogrammers.com/read-csv-file-spark-scala/)
+   - [Analysing CSV data in Spark : Introduction to Spark Data Source API](http://blog.madhukaraphatak.com/analysing-csv-data-in-spark/)
 
 ## spark streaming / kafka integration 
 
