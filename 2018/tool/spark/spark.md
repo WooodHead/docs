@@ -45,6 +45,7 @@
    - [spark csv](https://github.com/databricks/spark-csv)
    - [Read CSV file in Spark Scala](http://bigdataprogrammers.com/read-csv-file-spark-scala/)
    - [Analysing CSV data in Spark : Introduction to Spark Data Source API](http://blog.madhukaraphatak.com/analysing-csv-data-in-spark/)
+   - [filter null value ](https://medium.com/@mrpowers/dealing-with-null-in-spark-cfdbb12f231e)
 
 ## spark streaming / kafka integration 
 
