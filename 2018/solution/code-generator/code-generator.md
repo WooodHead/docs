@@ -1,7 +1,12 @@
-# code generator open source
+# open source code generator 
+
+## Java
 
   - [nutzwk-code-generator](https://github.com/enilu/nutzwk-code-generator)
   - [NutzCodematic](https://github.com/Wizzercn/NutzCodematic)
   - [NutzWk](https://github.com/Wizzercn/NutzWk)
   - [NutzWeShop](https://github.com/Wizzercn/NutzWeShop)
-  - []( )
+
+## typescript
+  
+  - [graphql code generator](https://github.com/dotansimha/graphql-code-generator )  
