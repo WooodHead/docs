@@ -13,3 +13,8 @@
   - [EastWorld/wechat-app-mall](https://github.com/EastWorld/wechat-app-mall)
   - [bbgshop](https://github.com/yuanbon)
   - [verydows](https://github.com/Verytops/verydows)
+  
+# proprietary
+
+  - [javamall](http://www.javamalls.com )
+  - [javashop](../../tool/javashop/javashop.md )
