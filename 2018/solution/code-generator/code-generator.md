@@ -2,6 +2,13 @@
 
 ## Java
 
+### maven-plugin
+   - [jaxio/celerio](https://github.com/jaxio/celerio )
+   
+### intellij-plugin
+   - [heyuxian/code-generator](https://github.com/heyuxian/code-generator )
+   
+### swing 
    - [nutzwk-code-generator](https://github.com/enilu/nutzwk-code-generator)
    - [NutzCodematic](https://github.com/Wizzercn/NutzCodematic)
    - [NutzWk](https://github.com/Wizzercn/NutzWk)
@@ -12,7 +19,10 @@
    - [mkarneim/pojobuilder](https://github.com/mkarneim/pojobuilder )
    - [hykes/CodeGen](https://github.com/hykes/CodeGen )
    - [biezhi/swing-generate](https://github.com/biezhi/swing-generate )
-   - [Pyknic/CodeGen](https://github.com/Pyknic/CodeGen )   
+   - [Pyknic/CodeGen](https://github.com/Pyknic/CodeGen )
+   - [smartnews/jpa-entity-generator](https://github.com/smartnews/jpa-entity-generator )
+   - [goudai/gd-generator](https://github.com/goudai/gd-generator )
+   
 
 ## typescript
   
