@@ -13,6 +13,8 @@
   - [EastWorld/wechat-app-mall](https://github.com/EastWorld/wechat-app-mall)
   - [bbgshop](https://github.com/yuanbon)
   - [verydows](https://github.com/Verytops/verydows)
+  - [NutzWk](https://github.com/Wizzercn/NutzWk)
+  - [NutzWeShop](https://github.com/Wizzercn/NutzWeShop)
   
 # proprietary
 
