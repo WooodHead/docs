@@ -10,6 +10,7 @@
 ### code running based on database sql
 
     - [shalousun/ApplicationPower](https://github.com/shalousun/ApplicationPower )
+    - [jeeffy/code-generator](https://github.com/jeeffy/code-generator)
     - [Java代码生成器](https://github.com/zhaohaihao/CodeGenerator )
     - [xxl-code-generator](https://github.com/xuxueli/xxl-code-generator )
     - [firebata/Code-Generator](https://github.com/firebata/Code-Generator )
@@ -48,6 +49,7 @@
    - [domaframework/doma-gen](https://github.com/domaframework/doma-gen )
    - [AmirHooshangi/DTO-code-generator](https://github.com/AmirHooshangi/DTO-code-generator )
    - [stateforge/StateBuilder](https://github.com/stateforge/StateBuilder )
+   - [vcodecc/mybatis-generator-utils](https://github.com/vcodecc/mybatis-generator-utils )
    
 ## typescript
   
