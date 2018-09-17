@@ -1,6 +1,10 @@
 # java installatoin
 
   ```
+  sudo rpm -Uvh jdk-8u181-linux-x64.rpm
+  alternatives --config java
+  alternatives --install /usr/bin/java java /usr/java/latest/bin/java 2
+
   oracle setup JAVA_HOME
   oralce jdk installation dir /usr/java
   
