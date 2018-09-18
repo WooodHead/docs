@@ -24,3 +24,19 @@ Evaluate the source code for the following details:
 9) How does the system scale? Is it purely on cloud? Can it run in AWS with auto scaling?
 10) Any performance bottlenecks you can evaluate in the source code or architecture?
 11) Deploy the mobile application and see if it works on both android + iOS.
+
+
+# project dependencies
+
+  finance-cn-identity --> finance-cn-lang
+                    | --> fineract-cn-async
+# issuses
+
+  -  Could not find org.apache.fineract.cn:lang:0.1.0-BUILD-SNAPSHOT 依赖问题
+  -  Task with path 'build' not found in root project
+     ```
+       first run 
+        gradle build
+       then 
+       mvn install:install-file -Dfile=C:\Users\tony\git\github\fineract-cn-lang\build\libs\lang-0.1.0-BUILD-SNAPSHOT.jar -DgroupId=org.apache.fineract.cn -DartifactId=lang -Dversion=0.1.0-BUILD-SNAPSHOT -Dpackaging=jar
+     ```
