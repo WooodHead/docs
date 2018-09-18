@@ -28,8 +28,10 @@ Evaluate the source code for the following details:
 
 # project dependencies
 
-  finance-cn-identity --> finance-cn-lang
-                    | --> fineract-cn-async
+  [fineract-cn-identity](https://github.com/apache/fineract-cn-identity )
+    | --> [fineract-cn-lang](https://github.com/apache/fineract-cn-lang )
+    | --> [fineract-cn-async] (https://github.com/apache/fineract-cn-async )
+          | --> [fineract-cn-api](https://github.com/apache/fineract-cn-api )
 # issuses
 
   -  Could not find org.apache.fineract.cn:lang:0.1.0-BUILD-SNAPSHOT 依赖问题

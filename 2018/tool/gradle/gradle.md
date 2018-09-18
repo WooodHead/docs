@@ -10,4 +10,13 @@
     echo 'export GRADLE_HOME=/opt/gradle/gradle-2.14' | sudo tee -a /etc/profile
     ```
 
+# gradle installation jar into local maven repository
+
+  ```
+    gradlew install
+  ```
+
+
+# reference
+
   - [gradle installation](https://gradle.org/install/ ) 
