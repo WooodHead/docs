@@ -13,14 +13,25 @@
 # view gradle tasks
 
   ```
-    ./gradlew task
+    sgradlew task
   ```
 
 # publish package to maven local
 
   ```
-    ./gradlew publishToMavenLocal
+    gradlew publishToMavenLocal
   ```  
+  
+# build project without test
+
+  ```
+    gradlew build -x test
+  ```
+# test one class
+
+  ```
+    gradle test --tests IdentityApiDocumentation
+  ```
 
 
 # [Gradle store on local file system](https://stackoverflow.com/questions/10834111/gradle-store-on-local-file-system )
@@ -39,3 +50,4 @@
 # issues
 
   - [not found in root project ](https://stackoverflow.com/questions/14093024/trying-gradle-build-task-build-not-found-in-root-project)
+  - [how to test one class](https://stackoverflow.com/questions/22505533/how-to-run-only-one-test-class-on-gradle )
