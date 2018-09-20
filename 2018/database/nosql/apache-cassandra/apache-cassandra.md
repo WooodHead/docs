@@ -22,6 +22,10 @@
         
     create keyspace
         CREATE KEYSPACE seshat WITH replication = {'class':'SimpleStrategy', 'replication_factor' : 3};
+        
+    list keyspaces
+    
+        DESCRIBE keyspaces;
   ```
 
   - [cassandra installation](https://www.linode.com/docs/databases/cassandra/deploy-scalable-cassandra-on-ubuntu-18.04-and-centos-7/)

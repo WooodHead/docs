@@ -59,6 +59,8 @@ Evaluate the source code for the following details:
   [fineract-cn-identity](https://github.com/apache/fineract-cn-identity )
    | --> [fineract-cn-command](https://github.com/apache/fineract-cn-command *)
           | --> [fineract-cn-anubis](https://github.com/apache/fineract-cn-anubis *)
+                 | --> [fineract-cn-test](https://github.com/apache/fineract-cn-test )
+                        | --> [fineract-cn-mariadb](https://github.com/apache/fineract-cn-mariadb )
           | --> [fineract-cn-cassandra](https://github.com/apache/fineract-cn-cassandra *)
                  |--> [cassandra 3.0.1 127.0.0.1:9042,127.0.0.2:9042,127.0.0.3:9042](https://github.com/apache/fineract-cn-cassandra/blob/develop/src/main/java/org/apache/fineract/cn/cassandra/util/CassandraConnectorConstants.java )
    | --> [fineract-cn-crypto](https://github.com/apache/fineract-cn-crypto *)
@@ -110,3 +112,52 @@ Evaluate the source code for the following details:
         }
 
      ```
+     
+  - fineract-cn-test
+  
+    ```
+        mysql -u root -pmysql
+        CREATE DATABASE IF NOT EXISTS system_console;
+        
+        cqlsh
+        CREATE KEYSPACE IF NOT EXISTS system_console
+          WITH REPLICATION = {
+              'class' : 'SimpleStrategy',
+              'replication_factor' : 3
+          };
+          
+        
+        ext.versions = [
+                validation                : '2.0.1.Final', <=== add
+                springcontext             : '4.3.3.RELEASE',
+                springboot                : '1.4.1.RELEASE',
+                gson                      : '2.5',
+                findbugs                  : '3.0.1',
+                frameworklang             : '0.1.0-BUILD-SNAPSHOT',
+                frameworkmariadb          : '0.1.0-BUILD-SNAPSHOT',
+                frameworkcassandra        : '0.1.0-BUILD-SNAPSHOT'
+        ]
+
+
+        dependencies {
+            compile(
+                    [group: 'org.springframework', name: 'spring-context', version: versions.springcontext],
+                    [group: 'com.google.code.findbugs', name: 'jsr305', version: versions.findbugs],
+                    [group: 'org.springframework.boot', name: 'spring-boot-starter', version: versions.springboot],
+                    [group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: versions.springboot],
+                    [group: 'com.google.code.gson', name: 'gson', version: versions.gson],
+                    [group: 'org.apache.fineract.cn', name: 'cassandra', version: versions.frameworkcassandra],
+                    [group: 'org.apache.fineract.cn', name: 'mariadb', version: versions.frameworkmariadb],
+                    [group: 'org.apache.fineract.cn', name: 'lang', version: versions.frameworklang],
+                    [group: 'io.jsonwebtoken', name: 'jjwt', version: '0.6.0'],
+                    [group: 'org.cassandraunit', name: 'cassandra-unit', version: '3.0.0.1'],
+                    [group: 'ch.vorburger.mariaDB4j', name: 'mariaDB4j', version: '2.1.3'],
+                    [group: 'javax.validation', name: 'validation-api', version: versions.validation] <=== add
+
+            )
+            testCompile(
+                    [group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: versions.springboot] <=== add
+            )
+        }
+
+    ```
