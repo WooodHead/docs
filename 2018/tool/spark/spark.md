@@ -8,7 +8,7 @@
     
   - [checkpoint](http://spark.apache.org/docs/latest/streaming-programming-guide.html#checkpointing)
    
-# spark innstallation
+# spark installation
 
    ```
     sudo tar -zxvf spark-2.3.1-bin-hadoop2.7.tgz -C /opt
@@ -34,7 +34,6 @@
     
     spark-submit --class "com.bamboo.scala.demo.catalog.spark.DemoReadCSVFile" --jars '/home/centos/.ivy2/cache/org.apache.spark/spark-core_2.11/jars/spark-core_2.11-2.3.1.jar' --master spark://spark114:7077 /home/centos/datas/spark/csvfile/target/scala-2.11/com-bamboo-scala-demo-catalog-spark_2.11-0.1.jar
 
-    
     spark-shell --packages com.databricks:spark-csv_2.11:1.5.0
   ```
   

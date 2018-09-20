@@ -16,11 +16,12 @@
     ./gradlew task
   ```
 
-# gradle installation jar into local maven repository
+# publish package to maven local
 
   ```
-    gradlew install
-  ```
+    ./gradlew publishToMavenLocal
+  ```  
+
 
 # [Gradle store on local file system](https://stackoverflow.com/questions/10834111/gradle-store-on-local-file-system )
 
@@ -34,3 +35,7 @@
 # reference
 
   - [gradle installation](https://gradle.org/install/ ) 
+  
+# issues
+
+ - [CompilationFailedException]()
