@@ -10,6 +10,22 @@
 
   - [runtime environment](https://cwiki.apache.org/confluence/display/FINERACT/How+To+Build+Apache+Fineract+CN )
   
+# Build Instructions
+  
+  - [Build Instructions](https://cwiki.apache.org/confluence/display/FINERACT/Build+Instructions )
+  
+# Documentation
+
+  - [Getting Started Docs](https://cwiki.apache.org/confluence/display/FINERACT/How+To+Build+Apache+Fineract+CN )
+
+# API
+  
+  - [openmf api](https://demo.openmf.org/api-docs/apiLive.htm ) 
+  
+# Key Design Principles
+
+  - [Key Design Principles](https://cwiki.apache.org/confluence/display/FINERACT/Key+Design+Principles )
+  
 # download
 
   - [1.1.0](https://dist.apache.org/repos/dist/release/fineract/1.1.0/ )
