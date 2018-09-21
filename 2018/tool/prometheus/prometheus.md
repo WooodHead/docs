@@ -1,3 +1,3 @@
 # Reference
 
-  - [prometheus](https://prometheus.io/)
+  - [prometheus](https://prometheus.io/ )
