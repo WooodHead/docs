@@ -11,9 +11,10 @@
   - [AWS Elastic Block Store] 
   - [Azure Disk]
   - [Azure File]
+  - [Azure Blob Storage]
   - [Ceph Block Device]
   - [CephFS]
-  - [Cinder OpenStack block storage]
+  - [Cinder OpenStack block storage-Swift]
   - [Fiber Channel]
   - [Flocker]
   - [HostPath]
@@ -28,6 +29,13 @@
   - [StorageOS]
   - [VsphereVolume]
   - [Tachyon](../../tool/tachyon/tachyon.md)
+  - [Quantcast]
+  
+# references
+
+  - [JetS3t]
+  - [Apache Whirr]
+  
 
 
 
