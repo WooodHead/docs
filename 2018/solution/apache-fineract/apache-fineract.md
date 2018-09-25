@@ -274,12 +274,20 @@ Evaluate the source code for the following details:
     https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=73634331
     
 5) How is data protected? Any database level settings for security?
-   - [+]5.1 Data Driven Authorisation
+   - [+] Data Driven Authorisation
          [Business Event Processor](https://cwiki.apache.org/confluence/display/FINERACT/Business+Event+Processor )
+     [+] Workflow using Datatable Verification
+         [Workflow using Datatable Verification](https://cwiki.apache.org/confluence/display/FINERACT/Workflow+using+Datatable+Verification )
+         
      
 6) Does it integrate with external systems (like SWIFT etc.) or is it easy to build the integrations ourselves?
    It supplies the Share Account Management & Dividends Payment
    https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=66852875
+   [+] Mobile Money Integration Design Document Drafted by Yannick and Daniel - https://goo.gl/JGEXtQ
+   [+] Outbound SMS - https://cwiki.apache.org/confluence/display/FINERACT/Outbound+SMS
+   [+] Ad-Hoc Reporting - https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=73632010
+   [+] excel template-based bulkdata import - https://cwiki.apache.org/confluence/display/FINERACT/Bulkdata+Import 
+   
 7) How well is the source code documented and do they following coding standards etc.?
    No, It's no or seldom documented wthin the source code.
 8) How easy is it for a team in Bamboo to take up this source code and maintain it/ add new functionality/ etc.?
