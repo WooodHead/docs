@@ -171,7 +171,9 @@ Evaluate the source code for the following details:
     The stateless authentication is performed via JWT bearer tokens which need to be regularly refreshed.  The tokens are signed via a tenant-specific private key and long-lived tokens are transmitted as secure cookies, thus limiting the possibilities for interception
     https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=73634331
 5) How is data protected? Any database level settings for security?
-   Not sure until check the code.
+   - 5.1 Data Driven Authorisation
+         [Business Event Processor](https://cwiki.apache.org/confluence/display/FINERACT/Business+Event+Processor )
+     
 6) Does it integrate with external systems (like SWIFT etc.) or is it easy to build the integrations ourselves?
    It supplies the Share Account Management & Dividends Payment
    https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=66852875
@@ -251,4 +253,43 @@ Evaluate the source code for the following details:
        4. That server with 10.1.0.150 in Guozhou , I operate it from Beijing, the network is instable sometimes.        
        
     suggestions:
-       If someone help me to build rumtime , I may have more time to read source code for analysis of data protected  
+       If someone help me to build rumtime , I may have more time to read source code for analysis of data protected 
+
+
+Evaluate the source code for the following details:
+2) Is there an API Gateway like APIGee we can use?
+   No ,there is no api life cycle management like APIGee
+   https://cwiki.apache.org/confluence/display/FINERACT/REST+API+Live+Documentation+Using+Swagger
+   But, fineract[https://github.com/apache/fineract] api is by Apigee
+   https://demo.openmf.org/api-docs/apiLive.htm
+   
+3) Are the APIs well documented and how many APIs are available?
+   It supplies but simple, I'm not sure how many they are, I will report it later.
+   https://cwiki.apache.org/confluence/display/FINERACT/Apache+Fineract+CN+API+Documentation
+4) How is security handled in the system?
+    It uses configuable two-Factor authentication.
+    https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=67641984
+    The stateless authentication is performed via JWT bearer tokens which need to be regularly refreshed.  The tokens are signed via a tenant-specific private key and long-lived tokens are transmitted as secure cookies, thus limiting the possibilities for interception
+    https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=73634331
+5) How is data protected? Any database level settings for security?
+   - 5.1 Data Driven Authorisation
+         [Business Event Processor](https://cwiki.apache.org/confluence/display/FINERACT/Business+Event+Processor )
+     
+6) Does it integrate with external systems (like SWIFT etc.) or is it easy to build the integrations ourselves?
+   It supplies the Share Account Management & Dividends Payment
+   https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=66852875
+7) How well is the source code documented and do they following coding standards etc.?
+   No, It's no or seldom documented wthin the source code.
+8) How easy is it for a team in Bamboo to take up this source code and maintain it/ add new functionality/ etc.?
+   I'm not sure how easy because there are some features or stratgies are in-progress and some are outstanding.
+   https://cwiki.apache.org/confluence/display/FINERACT/In-Progress+Features
+   https://cwiki.apache.org/confluence/display/FINERACT/Outstanding+Features
+9) How does the system scale? Is it purely on cloud? Can it run in AWS with auto scaling?
+   Presently Fineract CN is in the process being deployed on a Virtual Machine. they have the plan to containized it now.
+   https://cwiki.apache.org/confluence/display/FINERACT/Design+architecture+of+Containerized+FineractCN
+10) Any performance bottlenecks you can evaluate in the source code or architecture?
+   Not sure without performane test
+11) Deploy the mobile application and see if it works on both android + iOS.
+    Android is supported but iOS is not mentioned
+    https://cwiki.apache.org/confluence/display/FINERACT/Fineract+CN+Mobile+User+Guide
+    https://github.com/apache/fineract-cn-mobile       
