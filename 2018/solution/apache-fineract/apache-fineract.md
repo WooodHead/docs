@@ -260,19 +260,21 @@ Evaluate the source code for the following details:
 2) Is there an API Gateway like APIGee we can use?
    No ,there is no api life cycle management like APIGee
    https://cwiki.apache.org/confluence/display/FINERACT/REST+API+Live+Documentation+Using+Swagger
-   But, fineract[https://github.com/apache/fineract] api is by Apigee
-   https://demo.openmf.org/api-docs/apiLive.htm
+   [+]But, fineract[https://github.com/apache/fineract] api is by Apigee
+      https://demo.openmf.org/api-docs/apiLive.htm
    
 3) Are the APIs well documented and how many APIs are available?
    It supplies but simple, I'm not sure how many they are, I will report it later.
    https://cwiki.apache.org/confluence/display/FINERACT/Apache+Fineract+CN+API+Documentation
+   
 4) How is security handled in the system?
     It uses configuable two-Factor authentication.
     https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=67641984
     The stateless authentication is performed via JWT bearer tokens which need to be regularly refreshed.  The tokens are signed via a tenant-specific private key and long-lived tokens are transmitted as secure cookies, thus limiting the possibilities for interception
     https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=73634331
+    
 5) How is data protected? Any database level settings for security?
-   - 5.1 Data Driven Authorisation
+   - [+]5.1 Data Driven Authorisation
          [Business Event Processor](https://cwiki.apache.org/confluence/display/FINERACT/Business+Event+Processor )
      
 6) Does it integrate with external systems (like SWIFT etc.) or is it easy to build the integrations ourselves?
@@ -292,4 +294,5 @@ Evaluate the source code for the following details:
 11) Deploy the mobile application and see if it works on both android + iOS.
     Android is supported but iOS is not mentioned
     https://cwiki.apache.org/confluence/display/FINERACT/Fineract+CN+Mobile+User+Guide
-    https://github.com/apache/fineract-cn-mobile       
+    https://github.com/apache/fineract-cn-mobile 
+    [+]https://cwiki.apache.org/confluence/display/FINERACT/Mobile+Field+Operations    
