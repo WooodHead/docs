@@ -18,6 +18,7 @@
 
   - [Getting Started Docs](https://cwiki.apache.org/confluence/display/FINERACT/How+To+Build+Apache+Fineract+CN )
   - [Architecture](https://cwiki.apache.org/confluence/display/FINERACT/Fineract+2.0+Introduction )
+  - [Intial System Setup](https://mifosforge.jira.com/wiki/spaces/docs/pages/67895348/Initial+System+Set+Up )
 
 # API
   
@@ -162,6 +163,8 @@ Evaluate the source code for the following details:
 2) Is there an API Gateway like APIGee we can use?
    No ,there is no api life cycle management like APIGee
    https://cwiki.apache.org/confluence/display/FINERACT/REST+API+Live+Documentation+Using+Swagger
+   [+] Rest API Documentation - https://issues.apache.org/jira/browse/FINCN-6
+   
 3) Are the APIs well documented and how many APIs are available?
    It supplies but simple, I'm not sure how many they are, I will report it later.
    https://cwiki.apache.org/confluence/display/FINERACT/Apache+Fineract+CN+API+Documentation
@@ -171,8 +174,8 @@ Evaluate the source code for the following details:
     The stateless authentication is performed via JWT bearer tokens which need to be regularly refreshed.  The tokens are signed via a tenant-specific private key and long-lived tokens are transmitted as secure cookies, thus limiting the possibilities for interception
     https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=73634331
 5) How is data protected? Any database level settings for security?
-   - 5.1 Data Driven Authorisation
-         [Business Event Processor](https://cwiki.apache.org/confluence/display/FINERACT/Business+Event+Processor )
+   - [+]Data Driven Authorisation - https://cwiki.apache.org/confluence/display/FINERACT/Business+Event+Processor 
+   - [+]Flag, Lock, or Place Accounts on Hold - https://cwiki.apache.org/confluence/display/FINERACT/Flag%2C+Lock%2C+or+Place+Accounts+on+Hold
      
 6) Does it integrate with external systems (like SWIFT etc.) or is it easy to build the integrations ourselves?
    It supplies the Share Account Management & Dividends Payment
@@ -286,7 +289,8 @@ Evaluate the source code for the following details:
    [+] Mobile Money Integration Design Document Drafted by Yannick and Daniel - https://goo.gl/JGEXtQ
    [+] Outbound SMS - https://cwiki.apache.org/confluence/display/FINERACT/Outbound+SMS
    [+] Ad-Hoc Reporting - https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=73632010
-   [+] excel template-based bulkdata import - https://cwiki.apache.org/confluence/display/FINERACT/Bulkdata+Import 
+   [+] excel template-based bulkdata import - https://cwiki.apache.org/confluence/display/FINERACT/Bulkdata+Import
+   [+]  
    
 7) How well is the source code documented and do they following coding standards etc.?
    No, It's no or seldom documented wthin the source code.
