@@ -17,6 +17,7 @@
 # Documentation
 
   - [Getting Started Docs](https://cwiki.apache.org/confluence/display/FINERACT/How+To+Build+Apache+Fineract+CN )
+  - [Architecture](https://cwiki.apache.org/confluence/display/FINERACT/Fineract+2.0+Introduction )
 
 # API
   
