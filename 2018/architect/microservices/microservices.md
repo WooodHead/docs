@@ -21,6 +21,7 @@
 		
     - [chaotoolkit](https://github.com/chaostoolkit)
 	- [Discovering and Overcoming a Cascading Failure in Spring Boot services running in Kubernetes]https://katacoda.com/chaostoolkit/courses/02-chaos-engineering-experiments-with-chaostoolkit/service-down-not-visible-to-users
+    - [fineract-CN testing](https://cwiki.apache.org/confluence/display/FINERACT/Testing )
   
   - Microservice Security
 		
