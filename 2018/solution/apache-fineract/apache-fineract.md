@@ -23,6 +23,7 @@
 # API
   
   - [openmf api](https://demo.openmf.org/api-docs/apiLive.htm ) 
+  - [fineract-cn api](http://smartfinance.tech/fineract-cn-api-docs/ )
   
 # Key Design Principles
 
@@ -166,6 +167,7 @@ Evaluate the source code for the following details:
    No ,there is no api life cycle management like APIGee
    https://cwiki.apache.org/confluence/display/FINERACT/REST+API+Live+Documentation+Using+Swagger
    [+] Rest API Documentation - https://issues.apache.org/jira/browse/FINCN-6
+   [+] fineract-cn api - http://smartfinance.tech/fineract-cn-api-docs/
    
 3) Are the APIs well documented and how many APIs are available?
    It supplies but simple, I'm not sure how many they are, I will report it later.
@@ -288,14 +290,14 @@ Evaluate the source code for the following details:
      [+] stateless authentication - https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=73634331
      [+] containerization - https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=73634331
      [+] data tier - https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=73634331
+     
 6) Does it integrate with external systems (like SWIFT etc.) or is it easy to build the integrations ourselves?
    It supplies the Share Account Management & Dividends Payment
    https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=66852875
    [+] Mobile Money Integration Design Document Drafted by Yannick and Daniel - https://goo.gl/JGEXtQ
    [+] Outbound SMS - https://cwiki.apache.org/confluence/display/FINERACT/Outbound+SMS
    [+] Ad-Hoc Reporting - https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=73632010
-   [+] excel template-based bulkdata import - https://cwiki.apache.org/confluence/display/FINERACT/Bulkdata+Import
-   [+]  
+   [+] excel template-based bulkdata import - https://cwiki.apache.org/confluence/display/FINERACT/Bulkdata+Import 
    
 7) How well is the source code documented and do they following coding standards etc.?
    No, It's no or seldom documented wthin the source code.
