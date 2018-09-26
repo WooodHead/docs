@@ -2,6 +2,10 @@
 
   - [finance cn](https://cwiki.apache.org/confluence/display/FINERACT/Fineract+CN )
   
+# demo
+
+  - [generation 1- mifos2.x mifos/password](https://demo.openmf.org )
+  
 # rumtine configuration 
 
   - [runtime configuration](https://cwiki.apache.org/confluence/display/FINERACT/Requesting+An+Ubuntu+VM+For+Apache+Fineract+CN )
@@ -22,8 +26,10 @@
 
 # API
   
-  - [openmf api](https://demo.openmf.org/api-docs/apiLive.htm ) 
+  - [Generation 1 - Mifos 2.x]( )
+  - [Generation 2 - Mifos X](https://demo.openmf.org/api-docs/apiLive.htm ) 
   - [fineract-cn api](http://smartfinance.tech/fineract-cn-api-docs/ )
+  - [group-based methodology](https://cwiki.apache.org/confluence/display/FINERACT/Group-Based+Financial+Inclusion+Methodologies )
   
 # Key Design Principles
 
@@ -167,7 +173,7 @@ Evaluate the source code for the following details:
    No ,there is no api life cycle management like APIGee
    https://cwiki.apache.org/confluence/display/FINERACT/REST+API+Live+Documentation+Using+Swagger
    [+] Rest API Documentation - https://issues.apache.org/jira/browse/FINCN-6
-   [+] fineract-cn api - http://smartfinance.tech/fineract-cn-api-docs/
+   [+] fineract-cn api - http://smartfinance.tech/fineract-cn-api-docs/ 
    
 3) Are the APIs well documented and how many APIs are available?
    It supplies but simple, I'm not sure how many they are, I will report it later.
@@ -184,6 +190,7 @@ Evaluate the source code for the following details:
 6) Does it integrate with external systems (like SWIFT etc.) or is it easy to build the integrations ourselves?
    It supplies the Share Account Management & Dividends Payment
    https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=66852875
+   [+] email sms integration - https://cwiki.apache.org/confluence/display/FINERACT/Proposal
 7) How well is the source code documented and do they following coding standards etc.?
    No, It's no or seldom documented wthin the source code.
 8) How easy is it for a team in Bamboo to take up this source code and maintain it/ add new functionality/ etc.?
@@ -274,6 +281,24 @@ Evaluate the source code for the following details:
    It supplies but simple, I'm not sure how many they are, I will report it later.
    https://cwiki.apache.org/confluence/display/FINERACT/Apache+Fineract+CN+API+Documentation
    
+   [+]
+   [fineract-cn-api-docs](http://smartfinance.tech/fineract-cn-api-docs/ )
+  
+   - [customer management](http://smartfinance.tech/fineract-cn-api-docs/customer/ )
+   - [financial accounting](http://smartfinance.tech/fineract-cn-api-docs/accounting/ )
+   - [teller management](http://smartfinance.tech/fineract-cn-api-docs/teller/ )
+   - [group management](http://smartfinance.tech/fineract-cn-api-docs/group/ ) 
+   - [identity management](http://smartfinance.tech/fineract-cn-api-docs/identity/ )
+   - [deposit account management](http://smartfinance.tech/fineract-cn-api-docs/deposit/ )
+   - [office management](http://smartfinance.tech/fineract-cn-api-docs/office/ )
+   - [paroll management](http://smartfinance.tech/fineract-cn-api-docs/payroll/ )
+     - Payroll Configurations
+      - Prepare A Payroll Configuration
+      - Find A Payroll Configuration
+     - Distribute Payments
+     - Fetch Distribution History
+     - Fetch Payments
+   
 4) How is security handled in the system?
     It uses configuable two-Factor authentication.
     https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=67641984
@@ -290,6 +315,8 @@ Evaluate the source code for the following details:
      [+] stateless authentication - https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=73634331
      [+] containerization - https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=73634331
      [+] data tier - https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=73634331
+     [+] KYC document - https://cwiki.apache.org/confluence/display/FINERACT/Digital+Credit+App
+                      - https://cwiki.apache.org/confluence/display/FINERACT/TIERED+KYC+V1+-+Mobile+Wallet+2.0+on+Mifos-X
      
 6) Does it integrate with external systems (like SWIFT etc.) or is it easy to build the integrations ourselves?
    It supplies the Share Account Management & Dividends Payment
