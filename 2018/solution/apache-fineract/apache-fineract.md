@@ -45,6 +45,7 @@
     
 # project dependencies
 
+  ```
   [fineract-cn-identity](https://github.com/apache/fineract-cn-identity )
    | --> [fineract-cn-command](https://github.com/apache/fineract-cn-command *)
           | --> [fineract-cn-anubis](https://github.com/apache/fineract-cn-anubis *)
@@ -66,6 +67,7 @@
   [fineract-cn-payroll](https://github.com/apache/fineract-cn-payroll )
   [fineract-cn-portfolio](https://github.com/apache/fineract-cn-portfolio )
   [fineract-cn-teller](https://github.com/apache/fineract-cn-teller )
+  ```
   
 # issuses
 
@@ -176,7 +178,7 @@ Evaluate the source code for the following details:
 5) How is data protected? Any database level settings for security?
    - [+]Data Driven Authorisation - https://cwiki.apache.org/confluence/display/FINERACT/Business+Event+Processor 
    - [+]Flag, Lock, or Place Accounts on Hold - https://cwiki.apache.org/confluence/display/FINERACT/Flag%2C+Lock%2C+or+Place+Accounts+on+Hold
-     
+   - [+]Backwards incompatible change to the persistence migration plan - (https://cwiki.apache.org/confluence/display/FINERACT/Composing+a+Release+out+of+Microservices )
 6) Does it integrate with external systems (like SWIFT etc.) or is it easy to build the integrations ourselves?
    It supplies the Share Account Management & Dividends Payment
    https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=66852875
@@ -281,8 +283,11 @@ Evaluate the source code for the following details:
          [Business Event Processor](https://cwiki.apache.org/confluence/display/FINERACT/Business+Event+Processor )
      [+] Workflow using Datatable Verification
          [Workflow using Datatable Verification](https://cwiki.apache.org/confluence/display/FINERACT/Workflow+using+Datatable+Verification )
-         
-     
+     [+] CQRS - https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=73634331   
+     [+] multi-tenancy - https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=73634331
+     [+] stateless authentication - https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=73634331
+     [+] containerization - https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=73634331
+     [+] data tier - https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=73634331
 6) Does it integrate with external systems (like SWIFT etc.) or is it easy to build the integrations ourselves?
    It supplies the Share Account Management & Dividends Payment
    https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=66852875

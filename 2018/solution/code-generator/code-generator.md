@@ -24,6 +24,7 @@
 ### gradle-plugin
    
     - [kingcos/MyBatisGenerator-Tool](https://github.com/kingcos/MyBatisGenerator-Tool )
+    - [fineract-cn-template](https://github.com/apache/fineract-cn-template )
    
 ### intellij-plugin
 
