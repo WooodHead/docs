@@ -52,7 +52,7 @@
     
 # project dependencies
 
-  ```
+  [fineract-cn-anubis](https://github.com/apache/fineract-cn-anubis *)
   [fineract-cn-identity](https://github.com/apache/fineract-cn-identity )
    | --> [fineract-cn-command](https://github.com/apache/fineract-cn-command *)
           | --> [fineract-cn-anubis](https://github.com/apache/fineract-cn-anubis *)
@@ -60,32 +60,52 @@
                         | --> [fineract-cn-cassandra](https://github.com/apache/fineract-cn-cassandra ) 
                                | --> [cassandra 3.0.1 127.0.0.1:9042,127.0.0.2:9042,127.0.0.3:9042](https://github.com/apache/fineract-cn-cassandra/blob/develop/src/main/java/org/apache/fineract/cn/cassandra/util/CassandraConnectorConstants.java )
                         | --> [fineract-cn-mariadb](https://github.com/apache/fineract-cn-mariadb )
-   | --> [fineract-cn-crypto](https://github.com/apache/fineract-cn-crypto *)
+   | --> 
    | --> [fineract-cn-async] (https://github.com/apache/fineract-cn-async *)
           | --> [fineract-cn-api](https://github.com/apache/fineract-cn-api *)
                  |-->[fineract-cn-lang](https://github.com/apache/fineract-cn-lang *)
+  [fineract-cn-permitted-feign-client](https://github.com/apache/fineract-cn-permitted-feign-client ) 
   [fineract-cn-provisioner](https://github.com/apache/fineract-cn-provisioner )
     | --> [fineract-cn-permitted-feign-client](https://github.com/apache/fineract-cn-permitted-feign-client ) 
            | --> [fineract-cn-identity](https://github.com/apache/fineract-cn-identity )
   [fineract-cn-rhythm](https://github.com/apache/fineract-cn-rhythm.git )
+  [fineract-cn-template](https://github.com/apache/fineract-cn-template.git )
+  [fineract-cn-office](https://github.com/apache/fineract-cn-office )
   [fineract-cn-customer](https://github.com/apache/fineract-cn-customer )
   [fineract-cn-accounting](https://github.com/apache/fineract-cn-accounting )
    | --> [fineract-cn-customer](https://github.com/apache/fineract-cn-customer )
-  [fineract-cn-office](https://github.com/apache/fineract-cn-office )
-  [fineract-cn-group](https://github.com/apache/fineract-cn-group )
+   [fineract-cn-portfolio](https://github.com/apache/fineract-cn-portfolio )
   [fineract-cn-deposit-account-management/](https://github.com/apache/fineract-cn-deposit-account-management )
-  [fineract-cn-portfolio](https://github.com/apache/fineract-cn-portfolio )
+  [fineract-cn-cheques](https://github.com/apache/fineract-cn-cheques )
+  [fineract-cn-group](https://github.com/apache/fineract-cn-group )
+  [fineract-cn-payroll](https://github.com/apache/fineract-cn-payroll )  
   [fineract-cn-teller](https://github.com/apache/fineract-cn-teller )
    | --> [fineract-cn-portfolio](https://github.com/apache/fineract-cn-portfolio )
    | --> [fineract-cn-cheques](https://github.com/apache/fineract-cn-cheques )
   [fineract-cn-reporting](https://github.com/apache/fineract-cn-reporting )
   [fineract-cn-notifications](https://github.com/apache/fineract-cn-notifications )
-  [fineract-cn-payroll](https://github.com/apache/fineract-cn-payroll )
   
-  Integeration Tests
-  [fineract-cn-service-starter](https://github.com/apache/fineract-cn-service-starter )
-  [fineract-cn-default-setup](https://github.com/apache/fineract-cn-default-setup )
-  ```
+  core
+  
+  - [fineract-cn-lang](https://github.com/apache/fineract-cn-lang *)
+  - [fineract-cn-api](https://github.com/apache/fineract-cn-api *)
+  - [fineract-cn-async] (https://github.com/apache/fineract-cn-async *)
+  - [fineract-cn-cassandra](https://github.com/apache/fineract-cn-cassandra )
+  - [fineract-cn-mariadb](https://github.com/apache/fineract-cn-mariadb )
+  - [fineract-cn-data-jpa](https://github.com/apache/fineract-cn-data-jpa )
+  - [fineract-cn-command](https://github.com/apache/fineract-cn-command *)
+  - [fineract-cn-test](https://github.com/apache/fineract-cn-test )
+  
+  tools
+  
+  -  [fineract-cn-crypto](https://github.com/apache/fineract-cn-crypto *)
+  
+  integeration-tests
+  
+  - [fineract-cn-service-starter](https://github.com/apache/fineract-cn-service-starter )
+  - [fineract-cn-default-setup](https://github.com/apache/fineract-cn-default-setup )
+  - [fineract-cn-demo-server](https://github.com/apache/fineract-cn-demo-server )
+  
   
 # issuses
 
