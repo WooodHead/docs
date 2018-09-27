@@ -11,6 +11,9 @@
   echo 'export JAVA_HOME=/usr/java/jdk1.8.0_181-amd64' | sudo tee -a /etc/profile
   echo 'export JRE_HOME=/usr/java/jdk1.8.0_181-amd64/jre' | sudo tee -a /etc/profile
   source /etc/profile
+  
+  
+  java -XX:+PrintFlagsFinal -version | grep MaxHeapSize
   ```
 
 # Java issue
