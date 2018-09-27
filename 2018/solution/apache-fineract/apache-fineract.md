@@ -345,16 +345,17 @@ Evaluate the source code for the following details:
 5) How is data protected? Any database level settings for security?
    - [+] Data Driven Authorisation
          [Business Event Processor](https://cwiki.apache.org/confluence/display/FINERACT/Business+Event+Processor )
-     [+] Workflow using Datatable Verification
+   - [+] Workflow using Datatable Verification
          [Workflow using Datatable Verification](https://cwiki.apache.org/confluence/display/FINERACT/Workflow+using+Datatable+Verification )
-     [+] CQRS - https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=73634331   
-     [+] multi-tenancy - https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=73634331
-     [+] stateless authentication - https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=73634331
-     [+] containerization - https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=73634331
-     [+] data tier - https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=73634331
-     [+] KYC document - https://cwiki.apache.org/confluence/display/FINERACT/Digital+Credit+App
+   - [+] CQRS - https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=73634331   
+   - [+] multi-tenancy - https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=73634331
+   - [+] stateless authentication - https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=73634331
+   - [+] containerization - https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=73634331
+   - [+] data tier - https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=73634331
+   - [+] KYC document - https://cwiki.apache.org/confluence/display/FINERACT/Digital+Credit+App
                       - https://cwiki.apache.org/confluence/display/FINERACT/TIERED+KYC+V1+-+Mobile+Wallet+2.0+on+Mifos-X
-         5.1 For data protected: (from coarse to fine)
+     ```
+      5.1 For data protected: (from coarse to fine)
                    Data Isolation - https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=73634331
                        Data is placed in separate databases for each tenant         
                    Data Tier Design Consideration - https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=73634331
@@ -378,7 +379,7 @@ Evaluate the source code for the following details:
          
          5.2 For database level settings for security
                 It only  supplies user/password to authenticate with jdbc connection, When I find new content, I will report it to you in time.
- 
+      ```
         
 6) Does it integrate with external systems (like SWIFT etc.) or is it easy to build the integrations ourselves?
    It supplies the Share Account Management & Dividends Payment
