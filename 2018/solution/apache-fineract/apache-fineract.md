@@ -255,13 +255,15 @@ Evaluate the source code for the following details:
    Not sure without performane test
    ```
 11) Deploy the mobile application and see if it works on both android + iOS.
-   ```
+
+    ```
     Android is supported but iOS is not mentioned
     https://cwiki.apache.org/confluence/display/FINERACT/Fineract+CN+Mobile+User+Guide
     https://github.com/apache/fineract-cn-mobile
     ```
     
   # work progress
+  
     ```
     1 .the progress of building finance-cn runtime  
    
