@@ -199,48 +199,70 @@
 
 Evaluate the source code for the following details:
 1) Is it pure Microservices architecture?
+   ```
    Some like, e.g. It uses Eureka as service registry and discovery, but it doesn't mention distributed monitoring and dependency tracing.
    https://cwiki.apache.org/confluence/display/FINERACT/Composing+a+Release+out+of+Microservices   
+   ```
 2) Is there an API Gateway like APIGee we can use?
+   ```
    No ,there is no api life cycle management like APIGee
    https://cwiki.apache.org/confluence/display/FINERACT/REST+API+Live+Documentation+Using+Swagger
    [+] Rest API Documentation - https://issues.apache.org/jira/browse/FINCN-6
    [+] fineract-cn api - http://smartfinance.tech/fineract-cn-api-docs/ 
+   ```
    
 3) Are the APIs well documented and how many APIs are available?
+   ```
    It supplies but simple, I'm not sure how many they are, I will report it later.
    https://cwiki.apache.org/confluence/display/FINERACT/Apache+Fineract+CN+API+Documentation
+   ```
 4) How is security handled in the system?
+   ```
     It uses configuable two-Factor authentication.
     https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=67641984
     The stateless authentication is performed via JWT bearer tokens which need to be regularly refreshed.  The tokens are signed via a tenant-specific private key and long-lived tokens are transmitted as secure cookies, thus limiting the possibilities for interception
     https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=73634331
+    ```
 5) How is data protected? Any database level settings for security?
+   ```
    - [+]Data Driven Authorisation - https://cwiki.apache.org/confluence/display/FINERACT/Business+Event+Processor 
    - [+]Flag, Lock, or Place Accounts on Hold - https://cwiki.apache.org/confluence/display/FINERACT/Flag%2C+Lock%2C+or+Place+Accounts+on+Hold
    - [+]Backwards incompatible change to the persistence migration plan - (https://cwiki.apache.org/confluence/display/FINERACT/Composing+a+Release+out+of+Microservices )
+   ```
 6) Does it integrate with external systems (like SWIFT etc.) or is it easy to build the integrations ourselves?
+   ```
    It supplies the Share Account Management & Dividends Payment
    https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=66852875
    [+] email sms integration - https://cwiki.apache.org/confluence/display/FINERACT/Proposal
+   ```
 7) How well is the source code documented and do they following coding standards etc.?
+   ```
    No, It's no or seldom documented wthin the source code.
+   ```
 8) How easy is it for a team in Bamboo to take up this source code and maintain it/ add new functionality/ etc.?
+   ```
    I'm not sure how easy because there are some features or stratgies are in-progress and some are outstanding.
    https://cwiki.apache.org/confluence/display/FINERACT/In-Progress+Features
    https://cwiki.apache.org/confluence/display/FINERACT/Outstanding+Features
+   ```
 9) How does the system scale? Is it purely on cloud? Can it run in AWS with auto scaling?
+   ```
    Presently Fineract CN is in the process being deployed on a Virtual Machine. they have the plan to containized it now.
    https://cwiki.apache.org/confluence/display/FINERACT/Design+architecture+of+Containerized+FineractCN
+   ```
 10) Any performance bottlenecks you can evaluate in the source code or architecture?
+   ```
    Not sure without performane test
+   ```
 11) Deploy the mobile application and see if it works on both android + iOS.
+   ```
     Android is supported but iOS is not mentioned
     https://cwiki.apache.org/confluence/display/FINERACT/Fineract+CN+Mobile+User+Guide
     https://github.com/apache/fineract-cn-mobile
+    ```
     
   # work progress
-
+    ```
     1 .the progress of building finance-cn runtime  
    
        1.1 bulid the enviroment (Partially completed)
@@ -300,22 +322,24 @@ Evaluate the source code for the following details:
        
     suggestions:
        If someone help me to build rumtime , I may have more time to read source code for analysis of data protected 
-
+    ```
 
 Evaluate the source code for the following details:
 2) Is there an API Gateway like APIGee we can use?
+   ```
    No ,there is no api life cycle management like APIGee
    https://cwiki.apache.org/confluence/display/FINERACT/REST+API+Live+Documentation+Using+Swagger
    [+]But, fineract[https://github.com/apache/fineract] api is by Apigee
       https://demo.openmf.org/api-docs/apiLive.htm
+   ```
    
 3) Are the APIs well documented and how many APIs are available?
+   ```
    It supplies but simple, I'm not sure how many they are, I will report it later.
    https://cwiki.apache.org/confluence/display/FINERACT/Apache+Fineract+CN+API+Documentation
+   ```
    
-   [+]
-   [fineract-cn-api-docs](http://smartfinance.tech/fineract-cn-api-docs/ )
-  
+   - [+]fineract-cn-api-docs](http://smartfinance.tech/fineract-cn-api-docs/ )
    - [customer management](http://smartfinance.tech/fineract-cn-api-docs/customer/ )
    - [financial accounting](http://smartfinance.tech/fineract-cn-api-docs/accounting/ )
    - [teller management](http://smartfinance.tech/fineract-cn-api-docs/teller/ )
@@ -325,22 +349,26 @@ Evaluate the source code for the following details:
    - [office management](http://smartfinance.tech/fineract-cn-api-docs/office/ )
    - [paroll management](http://smartfinance.tech/fineract-cn-api-docs/payroll/ )
      - Payroll Configurations
-      - Prepare A Payroll Configuration
-      - Find A Payroll Configuration
+       - Prepare A Payroll Configuration
+       - Find A Payroll Configuration
      - Distribute Payments
      - Fetch Distribution History
      - Fetch Payments
+    ```
       About APIs well documented
                   My past answer is :  It supplies but simple, I'm not sure how many they are until I stats it.
                   My current answer is :Yes, It supplies the details with website http://smartfinance.tech/fineract-cn-api-docs
      About how many APIs are available
                   Up to now, There are 149 apis , the attachment is detail.
+    ```
    
 4) How is security handled in the system?
+   ```
     It uses configuable two-Factor authentication.
     https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=67641984
     The stateless authentication is performed via JWT bearer tokens which need to be regularly refreshed.  The tokens are signed via a tenant-specific private key and long-lived tokens are transmitted as secure cookies, thus limiting the possibilities for interception
     https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=73634331
+   ```
     
 5) How is data protected? Any database level settings for security?
    - [+] Data Driven Authorisation
@@ -382,26 +410,38 @@ Evaluate the source code for the following details:
       ```
         
 6) Does it integrate with external systems (like SWIFT etc.) or is it easy to build the integrations ourselves?
+   ```
    It supplies the Share Account Management & Dividends Payment
    https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=66852875
    [+] Mobile Money Integration Design Document Drafted by Yannick and Daniel - https://goo.gl/JGEXtQ
    [+] Outbound SMS - https://cwiki.apache.org/confluence/display/FINERACT/Outbound+SMS
    [+] Ad-Hoc Reporting - https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=73632010
    [+] excel template-based bulkdata import - https://cwiki.apache.org/confluence/display/FINERACT/Bulkdata+Import 
+   ```
    
 7) How well is the source code documented and do they following coding standards etc.?
+   ```
    No, It's no or seldom documented wthin the source code.
+   ```
 8) How easy is it for a team in Bamboo to take up this source code and maintain it/ add new functionality/ etc.?
+   ```
    I'm not sure how easy because there are some features or stratgies are in-progress and some are outstanding.
    https://cwiki.apache.org/confluence/display/FINERACT/In-Progress+Features
    https://cwiki.apache.org/confluence/display/FINERACT/Outstanding+Features
+   ```
 9) How does the system scale? Is it purely on cloud? Can it run in AWS with auto scaling?
+   ```
    Presently Fineract CN is in the process being deployed on a Virtual Machine. they have the plan to containized it now.
    https://cwiki.apache.org/confluence/display/FINERACT/Design+architecture+of+Containerized+FineractCN
+   ```
 10) Any performance bottlenecks you can evaluate in the source code or architecture?
+   ```
    Not sure without performane test
+   ```
 11) Deploy the mobile application and see if it works on both android + iOS.
+    ```
     Android is supported but iOS is not mentioned
     https://cwiki.apache.org/confluence/display/FINERACT/Fineract+CN+Mobile+User+Guide
     https://github.com/apache/fineract-cn-mobile 
-    [+]https://cwiki.apache.org/confluence/display/FINERACT/Mobile+Field+Operations    
+    [+]https://cwiki.apache.org/confluence/display/FINERACT/Mobile+Field+Operations   
+    ```    
