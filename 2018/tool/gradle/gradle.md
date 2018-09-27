@@ -27,7 +27,6 @@
   ```
     gradlew build -x test
   ```
-# test one class
 
   ```
     gradle test --tests IdentityApiDocumentation
@@ -41,6 +40,12 @@
     ~/.gradle/caches/modules-2/files-2.1
     Window
     C:\Users\<user>\.gradle\caches\modules-2\files-2.1\
+  ```
+  
+# fasten download from aliyun repository
+
+  ```
+     vim ~/.gradle/init.gradle
   ```
 
 # reference
