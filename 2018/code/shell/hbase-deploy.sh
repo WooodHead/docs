@@ -1,5 +1,6 @@
 #!/bin/bash
 # Example Script to copy the HBase files across a cluster
+# HBase_The Definitive Guide, 2nd Edition (Sixth Early Release)-O'Reilly(2018)
 # Rsync's HBase files across all slaves. Must run on master. Assumes
 # all files are located in /usr/local
 if [ "$#" != "2" ]; then
