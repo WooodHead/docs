@@ -9,6 +9,10 @@
 # private cloud
 
   - [eucalptus](../../tool/eucalptus/eucalptus.md)
+  
+# private/public cloud
+
+  - [openstack](../../tool/openstack/openstack.md) 
 
 # Reference
 
