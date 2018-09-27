@@ -52,6 +52,7 @@
     
 # project dependencies
 
+  ```
   [fineract-cn-anubis](https://github.com/apache/fineract-cn-anubis *)
   [fineract-cn-identity](https://github.com/apache/fineract-cn-identity )
    | --> [fineract-cn-command](https://github.com/apache/fineract-cn-command *)
@@ -105,7 +106,7 @@
   - [fineract-cn-service-starter](https://github.com/apache/fineract-cn-service-starter )
   - [fineract-cn-default-setup](https://github.com/apache/fineract-cn-default-setup )
   - [fineract-cn-demo-server](https://github.com/apache/fineract-cn-demo-server )
-  
+  ```
   
 # issuses
 
@@ -329,6 +330,11 @@ Evaluate the source code for the following details:
      - Distribute Payments
      - Fetch Distribution History
      - Fetch Payments
+      About APIs well documented
+                  My past answer is :  It supplies but simple, I'm not sure how many they are until I stats it.
+                  My current answer is :Yes, It supplies the details with website http://smartfinance.tech/fineract-cn-api-docs
+     About how many APIs are available
+                  Up to now, There are 149 apis , the attachment is detail.
    
 4) How is security handled in the system?
     It uses configuable two-Factor authentication.
@@ -348,26 +354,31 @@ Evaluate the source code for the following details:
      [+] data tier - https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=73634331
      [+] KYC document - https://cwiki.apache.org/confluence/display/FINERACT/Digital+Credit+App
                       - https://cwiki.apache.org/confluence/display/FINERACT/TIERED+KYC+V1+-+Mobile+Wallet+2.0+on+Mifos-X
-        data isoluation
-          Data is placed in separate databases for each tenant - https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=73634331
-        data tier design consideration
-          rdbms        :  It is used to store relational data to create user based views, internal validation, reporting, or analytics
-          nosql        :  It is used to handle the fast processing of state changes and financial transactions.
-          message queue:  It is used to provide signals to parties which are interested in the change of data to build use case related sets of data
-        data access authentication and authrization:
-          JWT is used to stateless authentication  - https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=73634331
-          The data saved for the tenant in identity includes: - https://cwiki.apache.org/confluence/display/FINERACT/Identity+Data+model
-            public and private key used to sign tokens
-            fixed salt used for server-side password hashing
-            password for the admin. The admin is saved user in isis. Her permissions could be changed.
-            how long a user's password is valid between password changes.
-            how long the user's grace period is to change a password after it has expired.
-        request isolution
-          Command and Query Responsibility Segregation (CQRS) segregates operations that read data from operations that update data by using separate interfaces - https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=73634331
-        data driven authorisation
-          Data Driven Authorisation enforces the user to have specific role before being able to perform an action. For eg, Loan Approval of amount more than 10000 should be done by user with role "Manager". - https://cwiki.apache.org/confluence/display/FINERACT/Business+Event+Processor 
-        private data protected
-          I just find the KYC documents topic, but it doesn't talk about the solution because it is draft up to now  - https://cwiki.apache.org/confluence/display/FINERACT/Digital+Credit+App
+         5.1 For data protected: (from coarse to fine)
+                   Data Isolation - https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=73634331
+                       Data is placed in separate databases for each tenant         
+                   Data Tier Design Consideration - https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=73634331
+                                     rdbms :  It is used to store relational data to create user based views, internal validation, reporting, or analytics
+                                       nosql:  It is used to handle the fast processing of state changes and financial transactions.
+                       message queue:  It is used to provide signals to parties which are interested in the change of data to build use case related sets of data
+                   Data Access Authentication and Authorization:
+                      JWT is used to stateless authentication  - https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=73634331
+                     The data saved for the tenant in identity includes: - https://cwiki.apache.org/confluence/display/FINERACT/Identity+Data+model
+                         public and private key used to sign tokens
+                         fixed salt used for server-side password hashing
+                         password for the admin. The admin is saved user in isis. Her permissions could be changed.
+                         how long a user's password is valid between password changes.
+                        how long the user's grace period is to change a password after it has expired.
+                  Request Update and Query Isolation - https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=73634331
+                       Command and Query Responsibility Segregation (CQRS) segregates operations that read data from operations that update data by using separate interfaces.
+                  Data Driven Authorization - https://cwiki.apache.org/confluence/display/FINERACT/Business+Event+Processor
+                       Data Driven Authorization enforces the user to have specific role before being able to perform an action. For e.g., Loan Approval of amount more than 10000 should be done by user with role "Manager".
+                  Private Data Protected  -  https://cwiki.apache.org/confluence/display/FINERACT/Digital+Credit+App
+                       I just find the KYC documents topic, but it doesn't talk about the solution because it is draft up to now 
+         
+         5.2 For database level settings for security
+                It only  supplies user/password to authenticate with jdbc connection, When I find new content, I will report it to you in time.
+ 
         
 6) Does it integrate with external systems (like SWIFT etc.) or is it easy to build the integrations ourselves?
    It supplies the Share Account Management & Dividends Payment
