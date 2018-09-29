@@ -1,5 +1,5 @@
 The server is ready; 
-IP: 39.106.214.49
+IP: 39.106.214.49 172.17.147.94 
 Root’s password: GGrt43567w
 
 
@@ -647,3 +647,143 @@ usermod -aG sudo fineract-cn
 
         To learn about more common UFW configurations, check out the UFW Essentials: Common Firewall Rules and Commands tutorial.
    ```
+
+   ```
+   npm i --registry=https://registry.npm.taobao.org
+   
+   
+    740 error code ELIFECYCLE
+    741 error errno 1
+    742 error fims@0.1.0 postinstall: `webdriver-manager update`
+    742 error Exit status 1
+    743 error Failed at the fims@0.1.0 postinstall script.
+    743 error This is probably not a problem with npm. There is likely additional logging output above.
+    744 verbose exit [ 1, true ]
+    
+    vim package.json
+    "postinstall": "webdriver-manager update", => "postinstall": "webdriver-manager",
+
+    
+    ERROR in 10.41d1ee052ac45f6cad9f.chunk.js from UglifyJs
+    TypeError: Cannot set property 'fixed' of undefined
+        at TreeWalker.eval [as visit] (eval at <anonymous> (/home/fineract-cn/github/integration-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:27:1), <anonymous>:5584:25)
+        at TreeWalker._visit (eval at <anonymous> (/home/fineract-cn/github/integration-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:27:1), <anonymous>:1339:24)
+        at AST_This._walk (eval at <anonymous> (/home/fineract-cn/github/integration-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:27:1), <anonymous>:480:24)
+        at AST_Dot.eval (eval at <anonymous> (/home/fineract-cn/github/integration-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:27:1), <anonymous>:1061:29)
+        at TreeWalker._visit (eval at <anonymous> (/home/fineract-cn/github/integration-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:27:1), <anonymous>:1343:21)
+        at AST_Dot._walk (eval at <anonymous> (/home/fineract-cn/github/integration-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:27:1), <anonymous>:1060:24)
+        at AST_Dot.walk (eval at <anonymous> (/home/fineract-cn/github/integration-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:27:1), <anonymous>:483:21)
+        at TreeWalker.eval [as visit] (eval at <anonymous> (/home/fineract-cn/github/integration-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:27:1), <anonymous>:5722:31)
+        at TreeWalker._visit (eval at <anonymous> (/home/fineract-cn/github/integration-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:27:1), <anonymous>:1339:24)
+        at AST_ForIn._walk (eval at <anonymous> (/home/fineract-cn/github/integration-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:27:1), <anonymous>:653:24)
+        at walk_body (eval at <anonymous> (/home/fineract-cn/github/integration-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:27:1), <anonymous>:530:17)
+        at AST_Function.eval (eval at <anonymous> (/home/fineract-cn/github/integration-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:27:1), <anonymous>:771:13)
+        at eval (eval at <anonymous> (/home/fineract-cn/github/integration-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:27:1), <anonymous>:1340:21)
+        at TreeWalker.eval [as visit] (eval at <anonymous> (/home/fineract-cn/github/integration-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:27:1), <anonymous>:5665:21)
+        at TreeWalker._visit (eval at <anonymous> (/home/fineract-cn/github/integration-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:27:1), <anonymous>:1339:24)
+        at AST_Function._walk (eval at <anonymous> (/home/fineract-cn/github/integration-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:27:1), <anonymous>:765:24)
+    npm ERR! code ELIFECYCLE
+    npm ERR! errno 1
+    npm ERR! fims@0.1.0 build: `ng build --prod`
+    npm ERR! Exit status 1
+    npm ERR!
+    npm ERR! Failed at the fims@0.1.0 build script.
+    npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+    npm ERR! A complete log of this run can be found in:
+    npm ERR!     /home/fineract-cn/.npm/_logs/2018-09-29T09_28_04_514Z-debug.log
+
+    npm WARN deprecated spdx@0.5.2: see spdx-expression-parse, spdx-satisfies, &c.
+    npm WARN @angular-devkit/schematics@0.0.52 requires a peer of @angular-devkit/core@0.0.29 but none is installed. You must                                install peer dependencies yourself.
+    npm WARN @angular/core@4.4.5 requires a peer of rxjs@^5.0.1 but none is installed. You must install peer dependencies you                               rself.
+    npm WARN @angular/http@4.4.5 requires a peer of rxjs@^5.0.1 but none is installed. You must install peer dependencies you                               rself.
+    npm WARN @angular/router@4.4.5 requires a peer of rxjs@^5.0.1 but none is installed. You must install peer dependencies y                               ourself.
+    npm WARN @ngrx/core@1.2.0 requires a peer of rxjs@^5.0.0-beta.12 but none is installed. You must install peer dependencie                               s yourself.
+    npm WARN @ngrx/effects@2.0.5 requires a peer of rxjs@^5.4.0 but none is installed. You must install peer dependencies you                               rself.
+    npm WARN @ngrx/store@2.2.2 requires a peer of rxjs@^5.0.0-beta.12 but none is installed. You must install peer dependenci                               es yourself.
+    npm WARN @ngrx/store-devtools@3.2.4 requires a peer of rxjs@^5.0.0-beta.12 but none is installed. You must install peer d                               ependencies yourself.
+    npm WARN @schematics/angular@0.0.49 requires a peer of @angular-devkit/schematics@0.0.34 but none is installed. You must                                install peer dependencies yourself.
+    npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.4 (node_modules/fsevents):
+    npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.4: wanted {"os":"darwin","arch":"any"                               } (current: {"os":"linux","arch":"x64"})
+
+   ```  
+   
+   ```
+    fineract-cn@iZ2zebkntawn4isywy6frwZ:~/github/integration-tests/fineract-cn-fims-web-app$ npm i --registry=https://registry.npm.taobao.org
+    npm WARN deprecated browserslist@1.7.7: Browserslist 2 could fail on reading Browserslist >3.0 config used in other tools.
+    npm WARN deprecated hoek@2.16.3: The major version is no longer supported. Please update to 4.x or newer
+    npm WARN deprecated nodemailer@2.7.2: All versions below 4.0.1 of Nodemailer are deprecated. See https://nodemailer.com/status/
+    npm WARN deprecated node-uuid@1.4.8: Use uuid module instead
+    npm WARN deprecated socks@1.1.9: If using 2.x branch, please upgrade to at least 2.1.6 to avoid a serious bug with socket data flow and an import issue introduced in 2.1.0
+    npm WARN deprecated mailcomposer@4.0.1: This project is unmaintained
+    npm WARN deprecated buildmail@4.0.1: This project is unmaintained
+    npm WARN deprecated uws@9.14.0: stop using this version
+    npm WARN deprecated bfj-node4@5.3.1: Switch to the `bfj` package for fixes and new features!
+    npm WARN prefer global node-gyp@3.8.0 should be installed with -g
+    npm WARN prefer global license-checker@7.1.1 should be installed with -g
+
+   ```
+   
+   ```
+    sudo apt-get purge nodejs npm
+    v=6
+    curl -sL https://deb.nodesource.com/setup_$v.x | sudo -E bash -
+    sudo apt-get install -y nodejs
+    
+    
+    Try these steps:
+
+    npm install -g npm@latest to update npm because it is sometimes buggy.
+    rm -rf node_modules to remove the existing modules.
+    npm install to re-install the project dependencies.
+   ```
+   
+   ```
+    npm WARN @ngrx/effects@2.0.5 requires a peer of rxjs@^5.4.0 but none is installed. You must install peer dependencies yourself.
+    npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.4 (node_modules/fsevents):
+    npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.4: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+   ```
+   
+   ```
+    npm uninstall rxjs
+    npm install rxjs@5.0.3
+    npm view rxjs
+   ```
+   
+   ```
+    npm WARN @angular-devkit/schematics@0.0.52 requires a peer of @angular-devkit/core@0.0.29 but none is installed. You must install peer dependencies yourself.
+    npm WARN @angular/core@4.4.5 requires a peer of rxjs@^5.0.1 but none is installed. You must install peer dependencies yourself.
+    npm WARN @angular/http@4.4.5 requires a peer of rxjs@^5.0.1 but none is installed. You must install peer dependencies yourself.
+    npm WARN @angular/router@4.4.5 requires a peer of rxjs@^5.0.1 but none is installed. You must install peer dependencies yourself.
+    npm WARN @ngrx/core@1.2.0 requires a peer of rxjs@^5.0.0-beta.12 but none is installed. You must install peer dependencies yourself.
+    npm WARN @ngrx/effects@2.0.5 requires a peer of rxjs@^5.4.0 but none is installed. You must install peer dependencies yourself.
+    npm WARN @ngrx/store@2.2.2 requires a peer of rxjs@^5.0.0-beta.12 but none is installed. You must install peer dependencies yourself.
+    npm WARN @ngrx/store-devtools@3.2.4 requires a peer of rxjs@^5.0.0-beta.12 but none is installed. You must install peer dependencies yourself.
+    npm WARN @schematics/angular@0.0.49 requires a peer of @angular-devkit/schematics@0.0.34 but none is installed. You must install peer dependencies yourself.
+    npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.4 (node_modules/fsevents):
+    npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.4: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+   ```
+   
+   ```  
+    npm WARN @schematics/angular@0.0.49 requires a peer of @angular-devkit/schematics@0.0.34 but none is installed. You must install peer dependencies yourself.
+    npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.4 (node_modules/fsevents):
+    npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.4: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+   ```
+   
+   ```
+     ERROR: CALL_AND_RETRY_LAST Allocation failed - JavaScript heap out of memory
+     npm run build --max_old_space_size=4096 --optimize_for_size --max_executable_size=4096 --stack_size=4096
+
+   ```
+   
+
+   
+# reference
+  
+  - [npm mirror](https://npm.taobao.org/ )
+  - [fineract-cn-fims-web-app](https://github.com/apache/fineract-cn-fims-web-app )
+  - [install npm 6 on ubuntu 16.04](https://askubuntu.com/questions/786272/why-does-installing-node-6-x-on-ubuntu-16-04-actually-install-node-4-2-6 )
+  - [Failed to exec start script - EventEmitter.<anonymous> ](https://stackoverflow.com/questions/49446277/failed-to-exec-start-script-eventemitter-anonymous-usr-local-lib-node-modu )
