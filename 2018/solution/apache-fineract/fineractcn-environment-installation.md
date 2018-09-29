@@ -709,22 +709,6 @@ usermod -aG sudo fineract-cn
    ```  
    
    ```
-    fineract-cn@iZ2zebkntawn4isywy6frwZ:~/github/integration-tests/fineract-cn-fims-web-app$ npm i --registry=https://registry.npm.taobao.org
-    npm WARN deprecated browserslist@1.7.7: Browserslist 2 could fail on reading Browserslist >3.0 config used in other tools.
-    npm WARN deprecated hoek@2.16.3: The major version is no longer supported. Please update to 4.x or newer
-    npm WARN deprecated nodemailer@2.7.2: All versions below 4.0.1 of Nodemailer are deprecated. See https://nodemailer.com/status/
-    npm WARN deprecated node-uuid@1.4.8: Use uuid module instead
-    npm WARN deprecated socks@1.1.9: If using 2.x branch, please upgrade to at least 2.1.6 to avoid a serious bug with socket data flow and an import issue introduced in 2.1.0
-    npm WARN deprecated mailcomposer@4.0.1: This project is unmaintained
-    npm WARN deprecated buildmail@4.0.1: This project is unmaintained
-    npm WARN deprecated uws@9.14.0: stop using this version
-    npm WARN deprecated bfj-node4@5.3.1: Switch to the `bfj` package for fixes and new features!
-    npm WARN prefer global node-gyp@3.8.0 should be installed with -g
-    npm WARN prefer global license-checker@7.1.1 should be installed with -g
-
-   ```
-   
-   ```
     sudo apt-get purge nodejs npm
     v=6
     curl -sL https://deb.nodesource.com/setup_$v.x | sudo -E bash -
@@ -736,19 +720,6 @@ usermod -aG sudo fineract-cn
     npm install -g npm@latest to update npm because it is sometimes buggy.
     rm -rf node_modules to remove the existing modules.
     npm install to re-install the project dependencies.
-   ```
-   
-   ```
-    npm WARN @ngrx/effects@2.0.5 requires a peer of rxjs@^5.4.0 but none is installed. You must install peer dependencies yourself.
-    npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.4 (node_modules/fsevents):
-    npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.4: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
-
-   ```
-   
-   ```
-    npm uninstall rxjs
-    npm install rxjs@5.0.3
-    npm view rxjs
    ```
    
    ```
@@ -764,18 +735,80 @@ usermod -aG sudo fineract-cn
     npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.4 (node_modules/fsevents):
     npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.4: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
 
-   ```
-   
-   ```  
-    npm WARN @schematics/angular@0.0.49 requires a peer of @angular-devkit/schematics@0.0.34 but none is installed. You must install peer dependencies yourself.
-    npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.4 (node_modules/fsevents):
-    npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.4: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+    edit package.json
+    
+    "dependencies": {
+    "@angular-devkit/schematics": "0.0.34", <== add
+    "@angular-devkit/core": "0.0.29",       <== add 
+    "@angular/animations": "4.4.5",
+    "@angular/cdk": "2.0.0-beta.12",
+    "@angular/common": "4.4.5",
+    "@angular/compiler": "4.4.5",
+    "@angular/core": "4.4.5",
+    "@angular/forms": "4.4.5",
+    "@angular/http": "4.4.5",
+    "@angular/material": "2.0.0-beta.12",
+    "@angular/platform-browser": "4.4.5",
+    "@angular/platform-browser-dynamic": "4.4.5",
+    "@angular/platform-server": "4.4.5",
+    "@angular/router": "4.4.5",
+    "@covalent/core": "1.0.0-beta.8-1",
+    "@ngrx/core": "1.2.0",
+    "@ngrx/effects": "2.0.5",
+    "@ngrx/store": "2.2.2",
+    "@ngrx/store-devtools": "3.2.4",
+    "@ngx-translate/core": "7.0.0",
+    "@ngx-translate/http-loader": "0.1.0",
+    "@reactivex/rxjs": "^5.0.3",
+    "angular2-text-mask": "^8.0.2",
+    "core-js": "2.4.1",
+    "hammerjs": "2.0.8",
+    "highlight.js": "9.10.0",
+    "ngrx-store-localstorage": "0.1.8",
+    "reselect": "2.5.4",
+    "showdown": "1.6.4",
+    "text-mask-addons": "^3.6.0",
+    "zone.js": "0.8.17"
+  },
 
    ```
    
    ```
      ERROR: CALL_AND_RETRY_LAST Allocation failed - JavaScript heap out of memory
+     
      npm run build --max_old_space_size=4096 --optimize_for_size --max_executable_size=4096 --stack_size=4096
+
+   ```
+   
+   ```
+    ERROR in 10.41d1ee052ac45f6cad9f.chunk.js from UglifyJs
+    TypeError: Cannot set property 'fixed' of undefined
+        at Object.eval [as visit] (eval at <anonymous> (/home/fineract-cn/github/integration-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:1:0), <anonymous>:5584:25)
+        at Object._visit (eval at <anonymous> (/home/fineract-cn/github/integration-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:1:0), <anonymous>:1339:24)
+        at AST_Node._walk (eval at <anonymous> (/home/fineract-cn/github/integration-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:1:0), <anonymous>:480:24)
+        at AST_Node.eval (eval at <anonymous> (/home/fineract-cn/github/integration-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:1:0), <anonymous>:1061:29)
+        at Object._visit (eval at <anonymous> (/home/fineract-cn/github/integration-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:1:0), <anonymous>:1343:21)
+        at AST_Node._walk (eval at <anonymous> (/home/fineract-cn/github/integration-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:1:0), <anonymous>:1060:24)
+        at AST_Node.walk (eval at <anonymous> (/home/fineract-cn/github/integration-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:1:0), <anonymous>:483:21)
+        at Object.eval [as visit] (eval at <anonymous> (/home/fineract-cn/github/integration-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:1:0), <anonymous>:5722:31)
+        at Object._visit (eval at <anonymous> (/home/fineract-cn/github/integration-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:1:0), <anonymous>:1339:24)
+        at AST_Node._walk (eval at <anonymous> (/home/fineract-cn/github/integration-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:1:0), <anonymous>:653:24)
+        at walk_body (eval at <anonymous> (/home/fineract-cn/github/integration-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:1:0), <anonymous>:530:17)
+        at AST_Node.eval (eval at <anonymous> (/home/fineract-cn/github/integration-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:1:0), <anonymous>:771:13)
+        at eval (eval at <anonymous> (/home/fineract-cn/github/integration-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:1:0), <anonymous>:1340:21)
+        at Object.eval [as visit] (eval at <anonymous> (/home/fineract-cn/github/integration-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:1:0), <anonymous>:5665:21)
+        at Object._visit (eval at <anonymous> (/home/fineract-cn/github/integration-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:1:0), <anonymous>:1339:24)
+        at AST_Node._walk (eval at <anonymous> (/home/fineract-cn/github/integration-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:1:0), <anonymous>:765:24)
+        npm ERR! code ELIFECYCLE
+        npm ERR! errno 1
+        npm ERR! fims@0.1.0 build: `ng build --prod`
+        npm ERR! Exit status 1
+        npm ERR!
+        npm ERR! Failed at the fims@0.1.0 build script.
+        npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+        npm ERR! A complete log of this run can be found in:
+        npm ERR!     /home/fineract-cn/.npm/_logs/2018-09-29T11_57_35_451Z-debug.log
 
    ```
    
