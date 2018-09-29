@@ -770,7 +770,24 @@ usermod -aG sudo fineract-cn
     "text-mask-addons": "^3.6.0",
     "zone.js": "0.8.17"
   },
+  
+    
+    npm WARN @angular/core@4.4.5 requires a peer of rxjs@^5.0.1 but none was installed.
+    npm WARN @angular/http@4.4.5 requires a peer of rxjs@^5.0.1 but none was installed.
+    npm WARN @angular/router@4.4.5 requires a peer of rxjs@^5.0.1 but none was installed.
+    npm WARN @ngrx/core@1.2.0 requires a peer of rxjs@^5.0.0-beta.12 but none was installed.
+    npm WARN @ngrx/effects@2.0.5 requires a peer of rxjs@^5.4.0 but none was installed.
+    npm WARN @ngrx/store@2.2.2 requires a peer of rxjs@^5.0.0-beta.12 but none was installed.
+    npm WARN @ngrx/store-devtools@3.2.4 requires a peer of rxjs@^5.0.0-beta.12 but none was installed.
 
+
+    
+    npm uninstall -g angular-cli
+    npm cache clear
+    npm install -g @angular/cli
+    
+    rpm -qa | grep -i nodesource
+    rpm -e some-repository-rpm-package
    ```
    
    ```
