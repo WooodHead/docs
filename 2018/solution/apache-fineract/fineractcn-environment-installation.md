@@ -788,6 +788,13 @@ usermod -aG sudo fineract-cn
     
     rpm -qa | grep -i nodesource
     rpm -e some-repository-rpm-package
+    
+    sudo apt-get remove nodejs ^node-* nodejs-*
+    sudo apt-get autoremove
+    sudo apt-get clean
+    sudo apt-get install curl python-software-properties
+    curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash 
+    sudo apt-get install nodejs
    ```
    
    ```
@@ -798,36 +805,226 @@ usermod -aG sudo fineract-cn
    ```
    
    ```
-    ERROR in 10.41d1ee052ac45f6cad9f.chunk.js from UglifyJs
-    TypeError: Cannot set property 'fixed' of undefined
-        at Object.eval [as visit] (eval at <anonymous> (/home/fineract-cn/github/integration-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:1:0), <anonymous>:5584:25)
-        at Object._visit (eval at <anonymous> (/home/fineract-cn/github/integration-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:1:0), <anonymous>:1339:24)
-        at AST_Node._walk (eval at <anonymous> (/home/fineract-cn/github/integration-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:1:0), <anonymous>:480:24)
-        at AST_Node.eval (eval at <anonymous> (/home/fineract-cn/github/integration-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:1:0), <anonymous>:1061:29)
-        at Object._visit (eval at <anonymous> (/home/fineract-cn/github/integration-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:1:0), <anonymous>:1343:21)
-        at AST_Node._walk (eval at <anonymous> (/home/fineract-cn/github/integration-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:1:0), <anonymous>:1060:24)
-        at AST_Node.walk (eval at <anonymous> (/home/fineract-cn/github/integration-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:1:0), <anonymous>:483:21)
-        at Object.eval [as visit] (eval at <anonymous> (/home/fineract-cn/github/integration-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:1:0), <anonymous>:5722:31)
-        at Object._visit (eval at <anonymous> (/home/fineract-cn/github/integration-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:1:0), <anonymous>:1339:24)
-        at AST_Node._walk (eval at <anonymous> (/home/fineract-cn/github/integration-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:1:0), <anonymous>:653:24)
-        at walk_body (eval at <anonymous> (/home/fineract-cn/github/integration-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:1:0), <anonymous>:530:17)
-        at AST_Node.eval (eval at <anonymous> (/home/fineract-cn/github/integration-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:1:0), <anonymous>:771:13)
-        at eval (eval at <anonymous> (/home/fineract-cn/github/integration-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:1:0), <anonymous>:1340:21)
-        at Object.eval [as visit] (eval at <anonymous> (/home/fineract-cn/github/integration-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:1:0), <anonymous>:5665:21)
-        at Object._visit (eval at <anonymous> (/home/fineract-cn/github/integration-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:1:0), <anonymous>:1339:24)
-        at AST_Node._walk (eval at <anonymous> (/home/fineract-cn/github/integration-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:1:0), <anonymous>:765:24)
-        npm ERR! code ELIFECYCLE
-        npm ERR! errno 1
-        npm ERR! fims@0.1.0 build: `ng build --prod`
-        npm ERR! Exit status 1
-        npm ERR!
-        npm ERR! Failed at the fims@0.1.0 build script.
-        npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+     nodejs v8.10.0
+     npm 3.5.2
+   ```
+   
+   ```
+    > fims@0.1.0 postinstall /home/ubuntu/github/integratoin-tests/fineract-cn-fims-web-app
+    > webdriver-manager update
 
-        npm ERR! A complete log of this run can be found in:
-        npm ERR!     /home/fineract-cn/.npm/_logs/2018-09-29T11_57_35_451Z-debug.log
+    [11:29:38] I/file_manager - creating folder /home/ubuntu/github/integratoin-tests/fineract-cn-fims-web-app/node_modules/protractor/node_modules/webdriver-manager/selenium
+    [11:29:38] I/config_source - curl -o/home/ubuntu/github/integratoin-tests/fineract-cn-fims-web-app/node_modules/protractor/node_modules/webdriver-manager/selenium/standalone-response.xml https://selenium-release.storage.googleapis.com/
+    [11:29:38] I/config_source - curl -o/home/ubuntu/github/integratoin-tests/fineract-cn-fims-web-app/node_modules/protractor/node_modules/webdriver-manager/selenium/chrome-response.xml https://chromedriver.storage.googleapis.com/
+    [11:29:38] I/config_source - curl -o/home/ubuntu/github/integratoin-tests/fineract-cn-fims-web-app/node_modules/protractor/node_modules/webdriver-manager/selenium/gecko-response.json https://api.github.com/repos/mozilla/geckodriver/releases
+    events.js:183
+          throw er; // Unhandled 'error' event
+          ^
+    Error: connect ETIMEDOUT 172.217.160.112:443
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+
+    sudo npm install -g webdriver-manager
+   ```
+   ```
+     notsup Not compatible with your operating system or architecture: fsevents@1.2.4
+     
+     npm install --no-optional
+   ```
+   ```
+    npm WARN @angular-devkit/schematics@0.0.52 requires a peer of @angular-devkit/core@0.0.29 but none was installed.
+    npm WARN @angular/core@4.4.5 requires a peer of rxjs@^5.0.1 but none was installed.
+    npm WARN @angular/http@4.4.5 requires a peer of rxjs@^5.0.1 but none was installed.
+    npm WARN @angular/router@4.4.5 requires a peer of rxjs@^5.0.1 but none was installed.
+    npm WARN @ngrx/core@1.2.0 requires a peer of rxjs@^5.0.0-beta.12 but none was installed.
+    npm WARN @ngrx/effects@2.0.5 requires a peer of rxjs@^5.4.0 but none was installed.
+    npm WARN @ngrx/store@2.2.2 requires a peer of rxjs@^5.0.0-beta.12 but none was installed.
+    npm WARN @ngrx/store-devtools@3.2.4 requires a peer of rxjs@^5.0.0-beta.12 but none was installed.
+    npm WARN @schematics/angular@0.0.49 requires a peer of @angular-devkit/schematics@0.0.34 but none was installed.
+
+    "dependencies": {
+    "@angular-devkit/schematics": "0.0.34", <== add
+    "@angular-devkit/core": "0.0.29",  <== add 
+    "@angular/animations": "4.4.5",
+    "@angular/cdk": "2.0.0-beta.12",
+    "@angular/common": "4.4.5",
+    "@angular/compiler": "4.4.5",
+
+
+    npm WARN @angular/core@4.4.5 requires a peer of rxjs@^5.0.1 but none was installed.
+    npm WARN @angular/http@4.4.5 requires a peer of rxjs@^5.0.1 but none was installed.
+    npm WARN @angular/router@4.4.5 requires a peer of rxjs@^5.0.1 but none was installed.
+    npm WARN @ngrx/core@1.2.0 requires a peer of rxjs@^5.0.0-beta.12 but none was installed.
+    npm WARN @ngrx/effects@2.0.5 requires a peer of rxjs@^5.4.0 but none was installed.
+    npm WARN @ngrx/store@2.2.2 requires a peer of rxjs@^5.0.0-beta.12 but none was installed.
+    npm WARN @ngrx/store-devtools@3.2.4 requires a peer of rxjs@^5.0.0-beta.12 but none was installed.
+
+   
+   ```
+   
+   ```
+    Date: 2018-09-30T04:52:00.185Z
+Hash: 0affb03c00d8767fcb3f
+Time: 209049ms
+chunk {0} 0.a62a5fb2bedf8b6d4218.chunk.js (common) 1.25 MB {18}  [rendered]
+chunk {1} 1.8dc4b170dc29c0c7cf9f.chunk.js () 91 kB {18}  [rendered]
+chunk {2} 2.54e8d81894c3e0f8b770.chunk.js () 21.8 kB {18}  [rendered]
+chunk {3} 3.514185cb75783f532ac1.chunk.js () 160 kB {18}  [rendered]
+chunk {4} 4.f5419c75a72333686ee5.chunk.js () 52.3 kB {18}  [rendered]
+chunk {5} 5.a730782d3a43198eb24a.chunk.js () 70.1 kB {18}  [rendered]
+chunk {6} 6.da0ea3f72faecf4087d0.chunk.js () 216 kB {18}  [rendered]
+chunk {7} 7.229d7f1fd070efdeb2a4.chunk.js () 83.8 kB {18}  [rendered]
+chunk {8} 8.ad26cbeff9b589bca7c1.chunk.js () 47 kB {18}  [rendered]
+chunk {9} 9.af3b37da898cd4246048.chunk.js () 328 kB {18}  [rendered]
+chunk {10} 10.bf4f22bf447fda294c62.chunk.js () 525 kB {18}  [rendered]
+chunk {11} 11.617f5ec96c9d3116f4fa.chunk.js () 66.2 kB {18}  [rendered]
+chunk {12} 12.1efff38d031deeeae6a2.chunk.js () 146 kB {18}  [rendered]
+chunk {13} 13.ccbf328054703ff7a786.chunk.js () 59.5 kB {18}  [rendered]
+chunk {14} 14.b3ca72853dbf5f3c87f7.chunk.js () 335 kB {18}  [rendered]
+chunk {15} 15.4395bf6c537185467ab8.chunk.js () 329 kB {18}  [rendered]
+chunk {16} 16.96d00dfd9598e0741863.chunk.js () 396 kB {18}  [rendered]
+chunk {17} polyfills.b7fedfe1b384d13077de.bundle.js (polyfills) 97.3 kB {21} [initial] [rendered]
+chunk {18} main.074bf37234dadf6d1219.bundle.js (main) 82.7 kB {20} [initial] [rendered]
+chunk {19} styles.791ec5bdd3c3b536c656.bundle.css (styles) 277 kB {21} [initial] [rendered]
+chunk {20} vendor.7258f30a02f1c5f6097a.bundle.js (vendor) 482 kB [initial] [rendered]
+chunk {21} inline.a091fac56efd1f626c2d.bundle.js (inline) 1.88 kB [entry] [rendered]
+
+ERROR in 10.bf4f22bf447fda294c62.chunk.js from UglifyJs
+TypeError: Cannot set property 'fixed' of undefined
+    at TreeWalker.eval [as visit] (eval at <anonymous> (/home/ubuntu/github/integratoin-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:27:1), <anonymous>:5584:25)
+    at TreeWalker._visit (eval at <anonymous> (/home/ubuntu/github/integratoin-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:27:1), <anonymous>:1339:24)
+    at AST_This._walk (eval at <anonymous> (/home/ubuntu/github/integratoin-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:27:1), <anonymous>:480:24)
+    at AST_Dot.eval (eval at <anonymous> (/home/ubuntu/github/integratoin-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:27:1), <anonymous>:1061:29)
+    at TreeWalker._visit (eval at <anonymous> (/home/ubuntu/github/integratoin-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:27:1), <anonymous>:1343:21)
+    at AST_Dot._walk (eval at <anonymous> (/home/ubuntu/github/integratoin-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:27:1), <anonymous>:1060:24)
+    at AST_Dot.walk (eval at <anonymous> (/home/ubuntu/github/integratoin-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:27:1), <anonymous>:483:21)
+    at TreeWalker.eval [as visit] (eval at <anonymous> (/home/ubuntu/github/integratoin-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:27:1), <anonymous>:5722:31)
+    at TreeWalker._visit (eval at <anonymous> (/home/ubuntu/github/integratoin-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:27:1), <anonymous>:1339:24)
+    at AST_ForIn._walk (eval at <anonymous> (/home/ubuntu/github/integratoin-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:27:1), <anonymous>:653:24)
+    at walk_body (eval at <anonymous> (/home/ubuntu/github/integratoin-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:27:1), <anonymous>:530:17)
+    at AST_Function.eval (eval at <anonymous> (/home/ubuntu/github/integratoin-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:27:1), <anonymous>:771:13)
+    at eval (eval at <anonymous> (/home/ubuntu/github/integratoin-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:27:1), <anonymous>:1340:21)
+    at TreeWalker.eval [as visit] (eval at <anonymous> (/home/ubuntu/github/integratoin-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:27:1), <anonymous>:5665:21)
+    at TreeWalker._visit (eval at <anonymous> (/home/ubuntu/github/integratoin-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:27:1), <anonymous>:1339:24)
+    at AST_Function._walk (eval at <anonymous> (/home/ubuntu/github/integratoin-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:27:1), <anonymous>:765:24)
+
+    npm ERR! Linux 4.15.0-34-generic
+    npm ERR! argv "/usr/bin/node" "/usr/bin/npm" "run" "build"
+    npm ERR! node v8.10.0
+    npm ERR! npm  v3.5.2
+    npm ERR! code ELIFECYCLE
+    npm ERR! fims@0.1.0 build: `ng build --prod`
+    npm ERR! Exit status 1
+    npm ERR!
+    npm ERR! Failed at the fims@0.1.0 build script 'ng build --prod'.
+    npm ERR! Make sure you have the latest version of node.js and npm installed.
+    npm ERR! If you do, this is most likely a problem with the fims package,
+    npm ERR! not with npm itself.
+    npm ERR! Tell the author that this fails on your system:
+    npm ERR!     ng build --prod
+    npm ERR! You can get information on how to open an issue for this project with:
+    npm ERR!     npm bugs fims
+    npm ERR! Or if that isn't available, you can get their info via:
+    npm ERR!     npm owner ls fims
+    npm ERR! There is likely additional logging output above.
+
+    npm ERR! Please include the following file with any support request:
+    npm ERR!     /home/ubuntu/github/integratoin-tests/fineract-cn-fims-web-app/npm-debug.log
+
 
    ```
+   
+   ```
+       
+       nodejs : v10.11.0
+       npm : 6.4.1
+
+       npm : 依赖: nodejs 但是它将不会被安装
+       依赖: node-abbrev (>= 1.0.4) 但是它将不会被安装
+       依赖: node-ansi (>= 0.3.0-2) 但是它将不会被安装
+       依赖: node-ansi-color-table 但是它将不会被安装
+       依赖: node-archy 但是它将不会被安装
+       依赖: node-block-stream 但是它将不会被安装
+       依赖: node-fstream (>= 0.1.22) 但是它将不会被安装
+       依赖: node-fstream-ignore 但是它将不会被安装
+       依赖: node-github-url-from-git 但是它将不会被安装
+       依赖: node-glob (>= 3.1.21) 但是它将不会被安装
+       依赖: node-graceful-fs (>= 2.0.0) 但是它将不会被安装
+       依赖: node-inherits 但是它将不会被安装
+       依赖: node-ini (>= 1.1.0) 但是它将不会被安装
+       依赖: node-lockfile 但是它将不会被安装
+       依赖: node-lru-cache (>= 2.3.0) 但是它将不会被安装
+       依赖: node-minimatch (>= 0.2.11) 但是它将不会被安装
+       依赖: node-mkdirp (>= 0.3.3) 但是它将不会被安装
+       依赖: node-gyp (>= 0.10.9) 但是它将不会被安装
+       依赖: node-nopt (>= 3.0.1) 但是它将不会被安装
+       依赖: node-npmlog 但是它将不会被安装
+       依赖: node-once 但是它将不会被安装
+       依赖: node-osenv 但是它将不会被安装
+       依赖: node-read 但是它将不会被安装
+       依赖: node-read-package-json (>= 1.1.0) 但是它将不会被安装
+       依赖: node-request (>= 2.25.0) 但是它将不会被安装
+       依赖: node-retry 但是它将不会被安装
+       依赖: node-rimraf (>= 2.2.2) 但是它将不会被安装
+       依赖: node-semver (>= 2.1.0) 但是它将不会被安装
+       依赖: node-sha 但是它将不会被安装
+       依赖: node-slide 但是它将不会被安装
+       依赖: node-tar (>= 0.1.18) 但是它将不会被安装
+       依赖: node-underscore 但是它将不会被安装
+       依赖: node-which 但是它将不会被安装
+    E: 无法修正错误，因为您要求某些软件包保持现状，就是它们破坏了软件包间的依赖关系。
+
+   ```
+   
+   ```
+    npm WARN @angular/core@4.4.5 requires a peer of rxjs@^5.0.1 but none is installed. You must install peer dependencies yourself.
+    npm WARN @angular/http@4.4.5 requires a peer of rxjs@^5.0.1 but none is installed. You must install peer dependencies yourself.
+    npm WARN @angular/router@4.4.5 requires a peer of rxjs@^5.0.1 but none is installed. You must install peer dependencies yourself.
+    npm WARN @ngrx/core@1.2.0 requires a peer of rxjs@^5.0.0-beta.12 but none is installed. You must install peer dependencies yourself.
+    npm WARN @ngrx/effects@2.0.5 requires a peer of rxjs@^5.4.0 but none is installed. You must install peer dependencies yourself.
+    npm WARN @ngrx/store@2.2.2 requires a peer of rxjs@^5.0.0-beta.12 but none is installed. You must install peer dependencies yourself.
+    npm WARN @ngrx/store-devtools@3.2.4 requires a peer of rxjs@^5.0.0-beta.12 but none is installed. You must install peer dependencies yourself.
+    npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.4 (node_modules/fsevents):
+    npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.4: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+    npm i -save @covalent/core
+   ```
+   
+   ```
+    ERROR in 10.bf4f22bf447fda294c62.chunk.js from UglifyJs
+    TypeError: Cannot set property 'fixed' of undefined
+    at TreeWalker.eval [as visit] (eval at <anonymous> (/home/ubuntu/github/integratoin-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:27:1), <anonymous>:5584:25)
+    at TreeWalker._visit (eval at <anonymous> (/home/ubuntu/github/integratoin-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:27:1), <anonymous>:1339:24)
+    at AST_This._walk (eval at <anonymous> (/home/ubuntu/github/integratoin-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:27:1), <anonymous>:480:24)
+    at AST_Dot.eval (eval at <anonymous> (/home/ubuntu/github/integratoin-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:27:1), <anonymous>:1061:29)
+    at TreeWalker._visit (eval at <anonymous> (/home/ubuntu/github/integratoin-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:27:1), <anonymous>:1343:21)
+    at AST_Dot._walk (eval at <anonymous> (/home/ubuntu/github/integratoin-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:27:1), <anonymous>:1060:24)
+    at AST_Dot.walk (eval at <anonymous> (/home/ubuntu/github/integratoin-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:27:1), <anonymous>:483:21)
+    at TreeWalker.eval [as visit] (eval at <anonymous> (/home/ubuntu/github/integratoin-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:27:1), <anonymous>:5722:31)
+    at TreeWalker._visit (eval at <anonymous> (/home/ubuntu/github/integratoin-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:27:1), <anonymous>:1339:24)
+    at AST_ForIn._walk (eval at <anonymous> (/home/ubuntu/github/integratoin-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:27:1), <anonymous>:653:24)
+    at walk_body (eval at <anonymous> (/home/ubuntu/github/integratoin-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:27:1), <anonymous>:530:17)
+    at AST_Function.eval (eval at <anonymous> (/home/ubuntu/github/integratoin-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:27:1), <anonymous>:771:13)
+    at eval (eval at <anonymous> (/home/ubuntu/github/integratoin-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:27:1), <anonymous>:1340:21)
+    at TreeWalker.eval [as visit] (eval at <anonymous> (/home/ubuntu/github/integratoin-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:27:1), <anonymous>:5665:21)
+    at TreeWalker._visit (eval at <anonymous> (/home/ubuntu/github/integratoin-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:27:1), <anonymous>:1339:24)
+    at AST_Function._walk (eval at <anonymous> (/home/ubuntu/github/integratoin-tests/fineract-cn-fims-web-app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js:27:1), <anonymous>:765:24)
+    npm ERR! code ELIFECYCLE
+    npm ERR! errno 1
+    npm ERR! fims@0.1.0 build: `ng build --prod`
+    npm ERR! Exit status 1
+    npm ERR!
+    npm ERR! Failed at the fims@0.1.0 build script.
+    npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+    npm ERR! A complete log of this run can be found in:
+    npm ERR!     /home/ubuntu/.npm/_logs/2018-09-30T07_52_57_298Z-debug.log
+
+   ```
+   
+   
+   
    
 
    
