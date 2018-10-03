@@ -11,7 +11,8 @@
   - [icon](icon/icon.md)
   - [jenkins](jenkins/jenkins.md)
   - [kafka](kafka/kafka.md)
-  - [kubernetes](kubernetes/kubernetes.md)
+  - [kubernetes](kubernetes/kubernetes.md
+  - [maven](maven/maven.md))
   - [portworx](portworx/portworx.md)
   - [redis](redis/redis.md)
   - [spark](spark/spark.md)
