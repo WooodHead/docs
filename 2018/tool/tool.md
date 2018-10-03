@@ -4,7 +4,8 @@
   - [beam](beam/beam.md)
   - [druid](driud/druid.md)
   - [elasticsearch](elasticsearch/elasticsearch.md)
-  - [fastdfs](fastdfs/fastdfs.md)
+  - [fastdfs](fastdfs/fastdfs.md
+  - [findbugs](findbugs/findbugs.md))
   - [flink](flink/flink.md)
   - [hbase](hbase/hbase.md)
   - [icon](icon/icon.md)
