@@ -1,9 +1,10 @@
 # solution overview
 
+  - [apache-fineract](apache-fineract/apache-fineract.md)
   - [code-generator](code-generator/code-generator.md)
   - [datasource-monitor](datasource-monitor/datasource-monitor.md)
   - [e-commerce](e-commerce/e-commerce.md)
-  - [authentication-authorization/authentication-authorization.md]
+  - [authentication-authorization](authentication-authorization/authentication-authorization.md]
   - [organization](organization/organization.md)
   - [passwor-encryption](password-encryption/password-encryption.md)
   - [rdac](rdac/rdac.md)
