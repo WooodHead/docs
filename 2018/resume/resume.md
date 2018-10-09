@@ -1,5 +1,6 @@
 # resume update history
 
-20180910-20180914 log etl intime and offline spark demo poc
-20180917-20180922 fineract-cn 选型分析
-20180925-20180930 fineract-cn-aliyun 
+  - [0910-0914](0914.md) log etl intime and offline spark demo poc
+  - [0917-0922](0922.md) fineract-cn 选型分析
+  - [0925-0930](0930.md) fineract-cn-aliyun 
+  - [1009-1012](1012.md) 
