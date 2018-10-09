@@ -381,7 +381,6 @@ usermod -aG sudo fineract-cn
    ```
    
  # install ActiveMQ
- 
    - [How to install activemq On Ubuntu 16.04 Lts? Uninstall and remove activemq Package](https://www.devmanuals.net/install/ubuntu/ubuntu-16-04-LTS-Xenial-Xerus/how-to-install-activemq.html)
    - [How to install ActiveMQ on Ubuntu 16.04](https://www.virtual-server.org/blog/how-to-install-activemq-on-ubuntu-16-04/)
    - [ActiveMQ shell script](http://activemq.apache.org/unix-shell-script.html )
