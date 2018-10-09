@@ -339,7 +339,9 @@ usermod -aG sudo fineract-cn
 
     service cassandra start
     Systemd based distributions may require to run systemctl daemon-reload once to make Cassandra available as a systemd service. This should happen automatically by running the command above.
-
+    
+    sudo systemctl restart cassandra.service
+    
     Make Cassandra start automatically after reboot:
 
     chkconfig cassandra on
@@ -354,20 +356,20 @@ usermod -aG sudo fineract-cn
 
    ```
    Install activemq on Mac OSX
-JUNE 23, 2017
-AMBER
-About the App
-App name: activemq
-App description: Apache ActiveMQ: powerful open source messaging server
-App website: https://activemq.apache.org/
-Install the App
-Press Command+Space and type Terminal and press enter/return key.
-Run in Terminal app:
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2> /dev/null
-and press enter/return key. 
-If the screen prompts you to enter a password, please enter your Mac's user password to continue. When you type the password, it won't be displayed on screen, but the system would accept it. So just type your password and press ENTER/RETURN key. Then wait for the command to finish.
-Run:
-brew install activemq
+    JUNE 23, 2017
+    AMBER
+    About the App
+    App name: activemq
+    App description: Apache ActiveMQ: powerful open source messaging server
+    App website: https://activemq.apache.org/
+    Install the App
+    Press Command+Space and type Terminal and press enter/return key.
+    Run in Terminal app:
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2> /dev/null
+    and press enter/return key. 
+    If the screen prompts you to enter a password, please enter your Mac's user password to continue. When you type the password, it won't be displayed on screen, but the system would accept it. So just type your password and press ENTER/RETURN key. Then wait for the command to finish.
+    Run:
+    brew install activemq
    ```
   
  # install nodejs & npm
@@ -378,7 +380,75 @@ brew install activemq
     sudo apt-get install npm
    ```
    
+ # install ActiveMQ
+ 
+   - [How to install activemq On Ubuntu 16.04 Lts? Uninstall and remove activemq Package](https://www.devmanuals.net/install/ubuntu/ubuntu-16-04-LTS-Xenial-Xerus/how-to-install-activemq.html)
+   - [How to install ActiveMQ on Ubuntu 16.04](https://www.virtual-server.org/blog/how-to-install-activemq-on-ubuntu-16-04/)
+   - [ActiveMQ shell script](http://activemq.apache.org/unix-shell-script.html )
+   - [How to install ActiveMQ on Ubuntu](https://gist.github.com/rodrigomaia/2869447 )
+ 
+   ```
+    First things update/upgrade your Virtual Server with the latest software:
+
+    # apt-get update && apt-get upgrade
+    Install the default Java JDK
+
+    # apt-get install default-jdk
+    Check if the java has correctly been installed:
+
+    # java -version
+    openjdk version "1.8.0_111"
+    OpenJDK Runtime Environment (build 1.8.0_111-8u111-b14-2ubuntu0.16.04.2-b14)
+    OpenJDK 64-Bit Server VM (build 25.111-b14, mixed mode)
+    We are now ready to install ActiveMQ. We will be installing into the /opt directory by downloading the tar archive from their official site. At the moment of installing 5.14.3 is the current version:
+
+    # cd /opt
+    # wget http://archive.apache.org/dist/activemq/5.15.6/apache-activemq-5.15.6-bin.tar.gz
+
+    ### Unpack the archive and create a simlink to the current installation for easier access later.
+    # tar zxf apache-activemq-5.14.3-bin.tar.gz
+    # ln -s /opt/apache-activemq-5.14.3 activemq
+    # rm apache-activemq-5.14.3-bin.tar.gz
+    At this moment the installation is complete. ActiveMQ configuration files are located in its default directory in the conf folder. In our case, they are located into /opt/activemq/conf/. The default configuration files work well for testing the application. The file of our interest is the /opt/activemq/conf/activemq.xml file because in here are defined the transport connectors i.e. the protocols which we like to be enabled or disabled for our ActiveMQ implementation.
+
+    Feel free to check the <transportConnectors> section and comment out any unwanted protocols. For testing purposes, you can leave the default as it is.
+
+    <transportConnectors>
+     <!-- DOS protection, limit concurrent connections to 1000 and frame size to 100MB -->
+     <transportConnector name="openwire" uri="tcp://0.0.0.0:61616?maximumConnections=1000&amp;wireFormat.maxFrameSize=104857600"/>
+     <transportConnector name="amqp" uri="amqp://0.0.0.0:5672?maximumConnections=1000&amp;wireFormat.maxFrameSize=104857600"/>
+     <transportConnector name="stomp" uri="stomp://0.0.0.0:61613?maximumConnections=1000&amp;wireFormat.maxFrameSize=104857600"/>
+     <transportConnector name="mqtt" uri="mqtt://0.0.0.0:1883?maximumConnections=1000&amp;wireFormat.maxFrameSize=104857600"/>
+     <transportConnector name="ws" uri="ws://0.0.0.0:61614?maximumConnections=1000&amp;wireFormat.maxFrameSize=104857600"/>
+    </transportConnectors>
+
+    Start the ActiveMQ server whenever you feel ready:
+
+    # /opt/activemq/bin/activemq start
+    Check that everything is good using the netstat command:
+
+    # netstat -tulnp | grep java
+    tcp 0 0 0.0.0.0:1883 0.0.0.0:* LISTEN 25074/java
+    tcp 0 0 0.0.0.0:8161 0.0.0.0:* LISTEN 25074/java
+    tcp 0 0 0.0.0.0:5672 0.0.0.0:* LISTEN 25074/java
+    tcp 0 0 0.0.0.0:42699 0.0.0.0:* LISTEN 25074/java
+    tcp 0 0 0.0.0.0:61613 0.0.0.0:* LISTEN 25074/java
+    tcp 0 0 0.0.0.0:61614 0.0.0.0:* LISTEN 25074/java
+    tcp 0 0 0.0.0.0:61616 0.0.0.0:* LISTEN 25074/java
+    ActiveMQ’s web administration interface listens on port :8161. It can be accessed using the bellow URL for the front-end and the back-end respectively where WW.XX.YY.ZZ is your VPS IP Address. The default username and password are both admin
+
+    http://WW.XX.YY.ZZ:8161
+    http://WW.XX.YY.ZZ:8161/admin
+    
+    
+    
+   ```
+   
  # install nginx
+ 
+   ```
+    sudo systemctl reload nginx
+   ```
  
    ```
         Introduction
@@ -1052,4 +1122,4 @@ TypeError: Cannot set property 'fixed' of undefined
   - [npm mirror](https://npm.taobao.org/ )
   - [fineract-cn-fims-web-app](https://github.com/apache/fineract-cn-fims-web-app )
   - [install npm 6 on ubuntu 16.04](https://askubuntu.com/questions/786272/why-does-installing-node-6-x-on-ubuntu-16-04-actually-install-node-4-2-6 )
-  - [Failed to exec start script - EventEmitter.<anonymous> ](https://stackoverflow.com/questions/49446277/failed-to-exec-start-script-eventemitter-anonymous-usr-local-lib-node-modu )
+  - [Failed to exec start script - EventEmitter.<anonymous> ](https://stackoverflow.com/questions/49446277/failed-to-exec-start-script-eventemitter-anonymous-usr-local-lib-node-modu  )
