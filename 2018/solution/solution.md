@@ -5,7 +5,7 @@
   - [datasource-monitor](datasource-monitor/datasource-monitor.md)
   - [e-commerce](e-commerce/e-commerce.md)
   - [authentication-authorization](authentication-authorization/authentication-authorization.md)
-  - [organization](organization/organization.md)
+  - [human-resource-management](human-resource-management/human-resource-management.md)
   - [passwor-encryption](password-encryption/password-encryption.md)
   - [rdac](rdac/rdac.md)
   - [scaleout-storage](scaleout-storage/scaleout-storage.md)
