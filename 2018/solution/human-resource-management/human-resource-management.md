@@ -2,7 +2,7 @@
 
 # human resource management open-source 
 
-  - [Odoo](../tool/odoo/odoo.md)
+  - [Odoo](../../tool/odoo/odoo.md)
 
 # reference
 
