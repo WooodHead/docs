@@ -2,6 +2,7 @@
 
   - [activiti](activiti/activiti.md)
   - [beam](beam/beam.md)
+  - [diagram](diagram/diagram.md)
   - [druid](driud/druid.md)
   - [elasticsearch](elasticsearch/elasticsearch.md)
   - [fastdfs](fastdfs/fastdfs.md)
