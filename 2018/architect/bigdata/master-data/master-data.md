@@ -1,10 +1,11 @@
-# master data service
+# master data management
 
   ```
-    Master Data Services enables you to manage a master set of your organizatio's
-    data. You can organize the data into models, create rules for updating 
-    the data, and control who updates the data. With Excel, you can share the 
-    master data set with other people in your organization
+    In business, master data management (MDM) is a method used to define and 
+  manage the critical data of an organization to provide, with data integration, 
+  a single point of reference.[1] The data that is mastered may include reference
+  data- the set of permissible values, and the analytical data that supports 
+  decision making.
   ```
   
 # reference
