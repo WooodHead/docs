@@ -4,6 +4,7 @@
   - [code-generator](code-generator/code-generator.md)
   - [datasource-monitor](datasource-monitor/datasource-monitor.md)
   - [e-commerce](e-commerce/e-commerce.md)
+  - [e-learning](e-learning/e-learning.md)
   - [authentication-authorization](authentication-authorization/authentication-authorization.md)
   - [human-resource-management](human-resource-management/human-resource-management.md)
   - [passwor-encryption](password-encryption/password-encryption.md)
