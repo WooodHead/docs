@@ -4,3 +4,5 @@
   - [0917-0922](0922.md) fineract-cn 选型分析
   - [0925-0930](0930.md) fineract-cn-aliyun 
   - [1009-1012](1012.md) fineract-cn, DIC
+  - [1015-1019](1019.md) DIC
+  - [1022-1026](1026.md) DIC
