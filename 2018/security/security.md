@@ -5,7 +5,7 @@
   - [API Security]
   - [Applicaiton Security]
   - [CIAM - Customer Identity & Access Management]
-  - [IAM - Identity & Access Managment]
+  - [IAM - Identity & Access Managment](identity-access-management.md)
   - [IDaaS - Identity-As-A-Service]
   - [Passwords]
   - [RBA - Risk-Based Authentication]
@@ -18,6 +18,7 @@
   - [跨域资源共享 CORS 详解](http://www.ruanyifeng.com/blog/2016/04/cors.html)
   - [CSRF - Cross-Site Request Forgery](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF) )
   - [java.util.Random and java.security.SecureRandom](https://stackoverflow.com/questions/11051205/difference-between-java-util-random-and-java-security-securerandom)
+  - [ransomware](ransomware.md)
   
 # common security issues prevention
   
@@ -49,4 +50,8 @@
 
 # Security Position
 
-  - [CISO - Chief Information Security Officer](chief-information-security-officer.md))
+  - [CISO - Chief Information Security Officer](chief-information-security-officer.md)
+
+# Security Training
+
+  - [knowbe4](https://www.knowbe4.com )
