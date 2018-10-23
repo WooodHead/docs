@@ -1,3 +1,17 @@
+# Security Overview
+
+# Security Insight
+
+  - [API Security]
+  - [Applicaiton Security]
+  - [CIAM - Customer Identity & Access Management]
+  - [IAM - Identity & Access Managment]
+  - [IDaaS - Identity-As-A-Service]
+  - [Passwords]
+  - [RBA - Risk-Based Authentication]
+  - [SSO - Single Sign-On]
+  - [2FA - Two-Factor Authentication]
+
 # common security issues
 
   - [CORS - cross origin resource sharing](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing)
@@ -21,3 +35,18 @@
   - [OWASP- Open Web Application Security Project](https://www.owasp.org )
   - [CSA - Cloud Security Alliance](https://cloudsecurityalliance.org )
   - [ISACA- Information Systems Audit and Control Association](https://www.isaca.org/Pages/default.aspx )
+
+## Big Four accounting firms
+
+  - [Emst & Young](https://www.ey.com )
+  - [Deloitte & Touche](https://www2.deloitte.com/cn/en.html )
+  - [KPMG](https://home.kpmg.com/xx/en/home.html )
+  - [PricewaterhouseCoopers](https://www.pwc.com )
+
+## Research Company
+
+  - [Forrester](https://go.forrester.com )
+
+# Security Position
+
+  - [CISO - Chief Information Security Officer](chief-information-security-officer.md))
