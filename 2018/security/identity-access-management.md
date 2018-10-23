@@ -36,6 +36,43 @@
     authorization and personally identifiable data.
     ```
 
+   - [CIAM - Customer identity and access management]
+    
+    ```
+      allow "kcomprehensive management and authentication of users; self-service and profile management;
+    and integration with CRM, ERP and other customer management systems and databases"
+    ```
+
+  - [IA - Identity Analytics]
+
+    ```
+      allow security teams to detect and stop risky identity behaviors usring rules,machine learning, and
+    other statistical algorithms
+    ```
+
+  - [IDass - Identity as a service]
+
+    ```
+      include "software-as-a-service(SaaS) solutions that offer SSO from a portal to web application and 
+    native mobile applications as well as some level of user account provisioning and access request 
+    management"
+    ```
+
+  - [IMG - Identity Management and Governance]
+ 
+    ```
+      provides automated and repeated ways to govern the identity life cycle. This is important when it 
+    comes to compliance with identity and privacy regulations
+    ```
+
+  - [RBA - Risk-based authentication]
+ 
+    ```
+      solution " take in the context of a auser session and authentication and form a risk score. The 
+    firm can then prompt high-risk users for 2FA and allow low-risk users to authenticate with single
+    factor(e.g., username plus password)credentials"
+    ```
+
 # IAM tools
 
 # IAM Provider
