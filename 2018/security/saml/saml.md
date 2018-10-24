@@ -28,7 +28,7 @@
     assertion to the server that actually can actually provide those services
     to you. A SAML assertion may be encrypted for increased security.
     ```
-    [saml example illustration](security-assertion-markup-language-saml-explainer-100738529-large.jpg)
+    ![saml example illustration](security-assertion-markup-language-saml-explainer-100738529-large.jpg)
     ```
       1. You try to access the resource on the server, which in SAML terminology
       is sercie provider. The service provider in turn checks to see if you're 
