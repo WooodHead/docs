@@ -47,7 +47,7 @@
 ## Research Company
 
   - [Forrester](https://go.forrester.com )
-
+  - [Dimensional Research](http://dimensionalresearch.com )
 # Security Position
 
   - [CISO - Chief Information Security Officer](chief-information-security-officer.md)
