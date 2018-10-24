@@ -10,7 +10,7 @@
   - [Passwords]
   - [RBA - Risk-Based Authentication]
   - [SSO - Single Sign-On]
-  - [2FA - Two-Factor Authentication]
+  - [2FA - Two-Factor Authentication](two-factoro-authentication.md)
 
 # common security issues
 
