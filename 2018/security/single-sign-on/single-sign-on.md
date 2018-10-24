@@ -30,8 +30,8 @@
 # Specification
  
   - [SAML 2.0- Security Assertion Markup Language](saml/saml.md)
-  - [OAuth]
-  - [OpenID Connect]
+  - [OAuth](https://oauth.net )
+  - [OpenID Connect](https://openid.net/connect )
 # Contenders
 
   - [Centrify](https://www.centrify.com )
