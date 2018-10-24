@@ -57,7 +57,7 @@
 
 # reference
 
-  - [What is SAML,What is it used for and how does it workhttps://www.csoonline.com/article/3232355/authentication/what-is-saml-what-is-it-used-for-and-how-does-it-work.html ) 
+  - [What is SAML,What is it used for and how does it work](https://www.csoonline.com/article/3232355/authentication/what-is-saml-what-is-it-used-for-and-how-does-it-work.html ) 
   - [OASIS - SAMLL](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=security )
   - [SAMLDiffs](https://wiki.shibboleth.net/confluence/display/SHIB/SAMLDiffs )
   - [SAML: The Secret to Centralized Identity Management](https://www.informationweek.com/software/information-management/saml-the-secret-to-centralized-identity-management/d/d-id/1028656 )
