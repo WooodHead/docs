@@ -72,12 +72,168 @@
     firm can then prompt high-risk users for 2FA and allow low-risk users to authenticate with single
     factor(e.g., username plus password)credentials"
     ```
+# IAM terms
+  
+  - [Access Management]
 
-# IAM tools
+    ```
+      Access management refers to the processes and technologies used to control
+    and monitor network access. Access management features, such as authentication,
+    authorization, trust and security auditing, are part and parcel of the top 
+    ID management systems for both on-prmises and cloud-based systems. 
+    ```
+  - [Active Directory]
+    
+    ```
+      Microsoft developed AD as a user-identity directory service for Windows
+    domain networks. Though properietary, AD is included in the Windows Server
+    operating system and is thus widely deployed.
+    ```
 
-# IAM Provider
+  - [Context-aware network access control]
 
+    ```
+      Context-aware network access conrol is a policy-based method of granting
+    access to netowrk resources according to the current context of the user
+    seeking access. For example, a user attempting to authenticate from an IP
+    address that hasn't been whitelisted would be blocked.
+   ```
+
+  - [Credential]
+
+    ```
+      An identifier employed by the user to gain access to a network such as 
+    the user's password, public key infrastructure(PKI) certificate, or biometric
+    information(fingerprint, iris scan)
+
+  - [De-provisioning]
+
+    ```
+      The process of removing an identity from an ID repository and terminating
+    access privileges
+    ```
+
+  - [Digital identity]
+   
+    ```
+      The ID itself, including the description of the user and his/her/its 
+     access privileges. ("it's" because an endpoint, such as a laptop or 
+     smartphone, can have its own digital identity.
+    ```
+
+  - [Entitlement]
+
+    ```
+      The set of attributes that specify the access rights and privileges of 
+     an authenticated security principal.
+    ```
+
+  - [Identity lifecycle managment]
+
+    ```
+      Similar to access lifecycle management, the term refers to the entire set
+    of processes and technologies for maintaining and updating digital identities.
+    Identity lifecycle management includes identity synchronization, provisioning,
+    de-provisioing, and the ongoing management of user attributes, credentials
+    and entitlements.
+    ```
+  - [LDAP - Lightweight Idrectory Access Protocal]
+
+    ```
+      LDAP is open standards-based protocol for managing and accessing a distributed
+    directory service, such as Microsoft's AD
+    ```
+
+  - [MFA - Multi-factor authentication]
+
+    ```
+      MFA is when more than just a single factor, such as a user name and password
+    is required for authentication to a network or system. At least one additional 
+    step is also required, such as receiving a code sent via SMS to a smartphone,
+    inserting a smart card or USB stick, or satisfying a biometric authentication
+    requirement, such as a fingerprint scan.
+    ```
+
+  - [Password reset]
+    
+    ```
+      in this context, it's a feature of an ID management system that allows
+    users ot re-establish their own passwords, relieving the administrators of
+    the job and cutting support calls. The reset applicaiton is often accessed
+    by the user through a brower. The application asks for a secret word or a 
+    set of questions to verify the user's identity.
+    ```
+  
+  - [Privileges account management]
+
+    ```
+      This term refers to managing and auditing accounts and data access based
+    on the privileges of the user. In general terms, because of his or her job
+    or function, a privileges user has been granted administrative access to 
+    systems. A privileged user, for example, would be able set up and delete user
+    accounts and roles.
+    ```
+   
+  - [Provisioning]
+
+    ```
+      The process of creating identities, defining their access privileges and
+    adding them to an ID repository.
+    ```
+  
+  - [RBA - Risk-based authentication]
+
+    ```
+      Risk-based authentication dynamically adjust authentication requirements
+    based on the user's situation at the moment authentication is attempted.
+    For example, when users attempt to authenticate from a geopraphic location
+    or IP address not previously associated with them, those users may face
+    addtional authentication requirements.
+    ```
+
+  - [Security principal]
+
+    ```
+      A digital identity with one or more credentials that can be authenticated
+    and authorized to interact with the network
+   ```
+  
+  - [SSO - Single sign-on]
+
+    ```
+      A type of access control for multiple related but separate systems. With
+    a single username and password, a user can access a system or systems without
+    using different credentials.
+    ```
+
+  - [UBA - User behavior analytics]
+
+    ```
+      UBA technologies examine patterns of user behavior and automatically apply
+    algorithms and analytics to detect importnat anomalies that may indicate
+    potential security threats. UBA differs form other seucrity technologies,
+    which focus on tracking devices or security event. UBA is also sometimes 
+    grouped with entity behavior analytics and knwon as UEBA.
+    ```
+
+# IAM vendors
+
+  - [Atos(Edidan)]
+  - [CA Technologies]
+  - [Centrify]
+  - [Covisint]
+  - [ForgeRock]
+  - [IBM Security Identity and Access Assurance]
+  - [I-Spring Innovations]
+  - [Mico Focus]
+  - [Microsoft Azure Active Directory]
   - [Okta](https://www.okta.com )
+  - [OneLogin]
+  - [Optimal idM]
+  - [Oracle Identity Cloud Service]
+  - [Ping]
+  - [SecureAuth]
+
 
 # Reference
 
