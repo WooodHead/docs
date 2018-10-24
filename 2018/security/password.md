@@ -10,11 +10,17 @@
     and applicaiton, without requiring you to memorize or write down these random
     strings of charactors. These strong passwords help shield against tranditional
     password attacks such as dictionary, rainbow tables or brute-force attacks.
+
 # Password attack
 
   - [dictionary]
   - [rainbow table]
   - [brute-force] 
+
+# Password Providers
+
+  - [KeePass](https://keepass.com )
+  - [1Password](https://1password.com )
 
 # Reference
 
