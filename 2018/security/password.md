@@ -10,7 +10,16 @@
     and applicaiton, without requiring you to memorize or write down these random
     strings of charactors. These strong passwords help shield against tranditional
     password attacks such as dictionary, rainbow tables or brute-force attacks.
+  
+  - [LastPass](https://www.lastpass.com )
 
+    ```
+      Two-factor authentication increases security by asking a user to provide
+    not only their password, but also more proof that they are who they say they
+    are. There are lots of forms of two-factor authentication, such as a code
+    texted to a phone, a code generated from an app or a fingerprint.
+    ```
+ 
 # Password attack
 
   - [dictionary]
