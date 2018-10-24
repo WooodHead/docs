@@ -26,13 +26,17 @@
   - [rainbow table]
   - [brute-force] 
 
-# Password Providers
+# Password Contenderss
 
-  - [KeePass](https://keepass.com )
   - [1Password](https://1password.com )
-  - [SplashID](https://www.splashid.com )
+  - [Buttercup](https://buttercup.pw )
   - [Dashlane](https://www.dashlane.com ) 
-  - [LastPass](https://www.lastpass.com )
+  - [KeePass](https://keepass.com )
+  - [keeper](https://keepersecurity.com )
+  - [LastPass](https://lastpoass.com )
+  - [Norton Idsafe](https://my.norton.com/extspa/idsafe )
+  - [RoboForm](https://roboform.com )
+  - [Trend Micro Password Manager](https://www.trendmicro.com/en_us/forHome/products/password-manager.html )
 
 # Reference
 
