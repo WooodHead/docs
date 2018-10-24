@@ -10,7 +10,30 @@
     Its beauty is in its simplicity; the service authenticates you one on one
     designated platform, enabling you to then a plethora of services without
     having to log in and out each time.
+
     ```
+# Capability Model
+ 
+  - Barry Scott, CTO at Centrify EMEA
+
+   ```
+     The first is that it improves the user experience by stopping the sprawl of
+   different usernames and passwords which came about through the incredible rise
+   in SaaS cloud-based applications.
+     The second reason is improved security. The main cause of breaches is 
+   compromised credentials and the more usernames and passwords we have, the worse
+   our password hygiene becomes. We start to use the same passwords everywhere
+   and they often becom less complex, making it easier for credentials to be
+   compromiesed.
+   ```
+
+# Specification
+ 
+  - [SAML 2.0- Security Assertion Markup Language](saml/saml.md)
+
+# Contenders
+
+  - [Centrify](https://www.centrify.com )
 
 # Reference
 
