@@ -21,6 +21,9 @@
 
   - [KeePass](https://keepass.com )
   - [1Password](https://1password.com )
+  - [SplashID](https://www.splashid.com )
+  - [Dashlane](https://www.dashlane.com ) 
+  - [LastPass](https://www.lastpass.com )
 
 # Reference
 
