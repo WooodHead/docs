@@ -50,7 +50,10 @@
       in again.
       8. The resource is finally returned to you  
     ```
- 
+# Developer Tools
+
+  - [samltool](https://www.samltool.com )
+
 # Contenders
 
   - [Saleforce Identity Provider](https://help.salesforce.com/articleView?id=identity_provider_about.htm&type=0 )
