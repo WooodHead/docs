@@ -7,9 +7,9 @@
   - [CIAM - Customer Identity & Access Management]
   - [IAM - Identity & Access Managment](identity-access-management.md)
   - [IDaaS - Identity-As-A-Service]
-  - [Passwords]
+  - [Passwords](password.md)
   - [RBA - Risk-Based Authentication]
-  - [SSO - Single Sign-On]
+  - [SSO - Single Sign-On](single-sign-on.md)
   - [2FA - Two-Factor Authentication](two-factoro-authentication.md)
 
 # common security issues
