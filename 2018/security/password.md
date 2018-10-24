@@ -40,4 +40,5 @@
 
 # Reference
 
-  - [The 6 best password managers](https://www.csoonline.com/article/3198507/security/the-6-best-password-managers.html )
+  - [The 6 best password managers](https://www.csoonline.com/article/3198507/security/the-6-best-password-managers.html 
+  - [Want stronger passwords?Understand these 4 common password security myths](https://www.csoonline.com/article/3228106/password-security/want-stronger-passwords-understand-these-4-common-password-security-myths.html ))
