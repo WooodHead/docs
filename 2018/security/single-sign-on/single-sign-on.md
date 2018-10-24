@@ -27,11 +27,13 @@
    compromiesed.
    ```
 
-# Specification
+# Open Standard
  
   - [SAML 2.0- Security Assertion Markup Language](saml/saml.md)
   - [OAuth](https://oauth.net )
   - [OpenID Connect](https://openid.net/connect )
+  - [WS-Trust - Web Services Trust]
+  - [WS-Federation]
   
   ```
     Josh Fruhlinger
