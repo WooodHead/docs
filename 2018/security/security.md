@@ -9,7 +9,7 @@
   - [IDaaS - Identity-As-A-Service]
   - [Passwords](password.md)
   - [RBA - Risk-Based Authentication]
-  - [SSO - Single Sign-On](single-sign-on.md)
+  - [SSO - Single Sign-On](single-sign-on/single-sign-on.md)
   - [2FA - Two-Factor Authentication](two-factoro-authentication.md)
 
 # common security issues
