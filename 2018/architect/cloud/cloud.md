@@ -16,6 +16,7 @@
 # hybird cloud
 
 * [重新定义服务与交付方法](https://www.ibm.com/developerworks/cn/cloud/library/cl-hybridcloud1/)
+* [Using Terraform Across Multiple Cloud Providers](http://darylscorner.com/2016/11/using-terraform-across-multiple-cloud-providers/)
 
 # Reference
 
