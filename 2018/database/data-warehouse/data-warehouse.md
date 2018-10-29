@@ -1,0 +1,4 @@
+# data warehouse
+
+* [Vertica]()
+* [Teradata]()
