@@ -1,3 +1,6 @@
+# IaaS vs PaaS vs SaaS
+![IaaS vs PaaS vs SaaS](iaas-paas-saas.png)
+
 # IaaS
 
 * [VMware Integrate OpenStack](https://www.vmware.com/products/openstack.html)
