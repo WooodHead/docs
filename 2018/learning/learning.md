@@ -1,6 +1,7 @@
 # Learning Platform
 
 * [KataCoda](https://www.katacoda.com/)
+* [Udemy](https://www.udemy.com)
 
 # Machine Learning
 
@@ -14,3 +15,7 @@
 # Man
 
 * [John Leahy]
+
+# Search Institute
+
+* [video media institute](https://livestream.com)
