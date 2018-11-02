@@ -1,6 +1,24 @@
 # Media Overview
 
-## 视频解码
+* [英特尔® 高级矢量扩展指令集 512（英特尔® AVX-512]
+* [英特尔® QuickAssist Technology]
+
+## video encoder
+
+### video encorder catalog
+
+* [x265 HEVC - MulticoreWare]
+
+### video encoder vendors
+
+* [Haivision]
+
+## video compression
+
+### video compression vendors 
+
+* [MulticoreWare]
+* [Nablet](http://www.nablet.com)
 
 ## Cases
  
