@@ -16,6 +16,7 @@
 
 * [John Leahy]
 
-# Search Institute
+# Research Institute
 
 * [video media institute](https://livestream.com)
+* [IDC Research](https://www.idc.com)
