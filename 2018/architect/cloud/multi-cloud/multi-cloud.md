@@ -11,3 +11,4 @@
 * [How to Effectively Implement Multi cloud Management](https://www.simform.com/multi-cloud-management/)
 * [Multi-Cloud Architecture Designs for an Effective Cloud ](https://www.simform.com/multi-cloud-architecture/)
 * [Cloud Marketplace](https://platform.doublehorn.com/)
+* [BlueData](https://www.bluedata.com/product/architecture/)
