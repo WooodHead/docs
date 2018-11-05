@@ -28,5 +28,9 @@
         DESCRIBE keyspaces;
   ```
 
-  - [cassandra installation](https://www.linode.com/docs/databases/cassandra/deploy-scalable-cassandra-on-ubuntu-18.04-and-centos-7/)
-  - [cassandra installation](http://cassandra.apache.org/download/ )
+* [cassandra installation](https://www.linode.com/docs/databases/cassandra/deploy-scalable-cassandra-on-ubuntu-18.04-and-centos-7/)
+* [cassandra installation](http://cassandra.apache.org/download/ )
+
+# cassandra providers
+
+* [datastarx](https://www.datastax.com) - Data autonomy gives you the power to maintain control of your data, no matter where it resides. This means having the flexibility to store, run, and handle your data in any type of environment (public, hybrid, on-premises, or multi-cloud), and to do it securely with granular data access control)
