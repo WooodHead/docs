@@ -18,8 +18,6 @@
 # PaaS
 
 * [Heroku](https://www.heroku.com)
-
-* []
   
 # private cloud
 
