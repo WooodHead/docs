@@ -6,7 +6,7 @@
 * [Cloud Computing: The 15 Ways Your Business Can Benefit from the Cloud](https://www.thorntech.com/2016/06/cloud-computing-the-15-ways-your-business-can-benefit-from-the-cloud/)
 
 # [IaaS vs PaaS vs SaaS](https://www.bmc.com/blogs/saas-vs-paas-vs-iaas-whats-the-difference-and-how-to-choose)
-![IaaS vs PaaS vs SaaS](iaas-paas-saas-comporision.jpg)
+![IaaS vs PaaS vs SaaS](iaas-paas-saas-comparison.jpg)
 
 # IaaS
 
