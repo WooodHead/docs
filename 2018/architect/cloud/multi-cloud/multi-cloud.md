@@ -12,3 +12,4 @@
 * [Multi-Cloud Architecture Designs for an Effective Cloud ](https://www.simform.com/multi-cloud-architecture/)
 * [Cloud Marketplace](https://platform.doublehorn.com/)
 * [BlueData](https://www.bluedata.com/product/architecture/)
+* [Avoiding the Dark Clouds in your Multi-Cloud Architecture](https://blogs.informatica.com/2018/02/13/avoiding-dark-clouds-multi-cloud-architecture/)
