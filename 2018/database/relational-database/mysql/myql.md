@@ -12,7 +12,11 @@
     mysql> GRANT ALL ON *.* TO 'root'@'localhost';
   ```
   
- # issues
+# tools
+
+* [go-sql-driver/mysql](https://github.com/go-sql-driver/mysql)
+
+# issues
  
-   - [priviledges issue: cannot create table](https://stackoverflow.com/questions/10130296/mysql5-as-root-cant-create-database-or-do-anything-access-denied )
-   - [[ERROR] Could not open file '/var/log/mysqld.log'](https://unix.stackexchange.com/questions/208328/permission-denied-writing-to-mysql-log)
+* [priviledges issue: cannot create table](https://stackoverflow.com/questions/10130296/mysql5-as-root-cant-create-database-or-do-anything-access-denied )
+* [[ERROR] Could not open file '/var/log/mysqld.log'](https://unix.stackexchange.com/questions/208328/permission-denied-writing-to-mysql-log)
