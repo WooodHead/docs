@@ -43,4 +43,6 @@
     order-delivery-algorithms.jpg
     
   ```
-  - [recommendation]
+  
+  * [recommendation]
+  * [Cloud Foundry Diego Auction Algorithms](auction-cloud-foundry.md)
