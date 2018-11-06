@@ -8,7 +8,7 @@
 * [OpenStack]
 * [VMWare vSphere]
 * [SoftLayer]
-* [Cloud Foundry](https://docs.cloudfoundry.org/concepts/overview.html)
+* [Cloud Foundry](cloud-foundry/cloud-foundry.md)
 
 
 # Cloud Benefits
