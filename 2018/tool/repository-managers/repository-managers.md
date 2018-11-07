@@ -1,6 +1,6 @@
 # source code repository management overview
 
-* [BitBucket](https://bitbucket.org)
+* [Nexus]
 
 # reference
 

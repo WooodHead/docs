@@ -27,6 +27,10 @@
 * [private - eucalpytus](encalpytus/encalpytus.md) 
 * [storage - portworx](portworx/portworx.md)
 
+## Code Quality
+
+* [SonarQube]
+
 ## Code Generator
 
 * [JHipster](https://www.jhipster.tech/)
@@ -111,6 +115,10 @@
 * [JFinalOA-office website](https://www.oschina.net/p/jfinaloa)
 * [JFinalOA-source code](https://gitee.com/glorylion/JFinalOA)
 
+## Project Management
+
+* [Jira]
+
 ## Sourcecode Repository Manager
 
 * [Repository Manager](repository-managers/repository-managers.md)
@@ -131,9 +139,17 @@
 
 ## Test
 
+### portable auto-testing
+
+* [Selenium]
+
 ### automated acceptance tests
 
 * [Cucumber](https://cucumber.io)
+
+## Version Control
+
+* [BitBucket](https://bitbucket.org)
 
 ## Workflow
 
