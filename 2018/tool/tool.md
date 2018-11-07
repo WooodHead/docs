@@ -9,6 +9,19 @@
 * [Gradle](gradle/gradle.md)
 * [Mavne](maven/maven.md)
 
+## BigData
+
+### data science notebooks 
+
+* [JupyterHub - Julia,Python,R](http://jupyter.org/hub)
+* [RStudio - R](https://www.rstudio.com)
+* [Zeppenlin](https://zeppelin.apache.org)
+
+### machine learning / deep machince learning
+
+* [TensorFlow](https://www.tensorflow.org)
+* [H2O](https://www.h2o.ai)
+
 ## Cloud
 
 * [private - eucalpytus](encalpytus/encalpytus.md) 

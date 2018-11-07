@@ -21,5 +21,12 @@
     
     hadoop jar /opt/hadoop-2.7.5/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.5.jar grep ~/datas/hadoop ~/output 'principal[.]*'
     ```
+# hadoop distributions
 
-  - [hadoop installatoin](https://www.vultr.com/docs/how-to-install-hadoop-in-stand-alone-mode-on-centos-7)
+* [Cloudera](https://www.cloudera.com) 
+* [Hortonworks](https://hortonworks.com)
+* [MapR](https://mapr.com)
+
+#  hadoop installatoin(
+  
+* [Install hadoop in centos7](https://www.vultr.com/docs/how-to-install-hadoop-in-stand-alone-mode-on-centos-7)
