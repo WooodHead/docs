@@ -129,6 +129,12 @@
 
 * [Beam SQL](beam/beam-sql.md)
 
+## Test
+
+### automated acceptance tests
+
+* [Cucumber](https://cucumber.io)
+
 ## Workflow
 
 * [Activiti](activiti/activiti.md)
