@@ -13,6 +13,9 @@
 
 * [SaaS Dashboards](kpi-saas/kpi-saas.md)
 * [SEO Metrics and KIP ](kpi-seo/kpi-seo.md)
+  ```
+  Search Engine Optimization (SEO) is the process of increasing the visibility of a website or webpage through organic (“natural” or unpaid) search engine results. The objective of SEO is to generate content that specifically fulfills the purpose of user's online searches through tailored content that search engines recognize as quantifiably valuable.
+  ```
 
 
 
