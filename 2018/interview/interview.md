@@ -1,3 +1,5 @@
 # interview overview
 
-* [linux-operation](linux-operation/linux-operation.md)
+* [operation linux](operation-linux/operation-linux.md)
+* [operation dba](operation-dba/operatiob-dba.md)
+* [developer Java](developer-java/developer-java.md)
