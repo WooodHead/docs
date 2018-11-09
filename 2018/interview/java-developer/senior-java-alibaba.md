@@ -127,3 +127,7 @@ Sonar
 
 由浅入深的，带你从零到项目发布上线与运维，让你体验真实的企业级项目开发过程，掌握大牛的编码思维、经验与技巧
 ```
+
+# Reference
+
+* [Alibaba Senior Java Engineerer](https://www.toutiao.com/a6620304873587999239/?iid=50049209260&app=news_article)
