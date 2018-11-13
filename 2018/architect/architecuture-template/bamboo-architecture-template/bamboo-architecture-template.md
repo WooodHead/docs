@@ -30,3 +30,20 @@
 * Operation
 * Coming Plan
 * Investment
+
+# Focus
+
+* Core Service Modules/Components
+* API Design
+* System Integration (base on BMW’s system landscape) and other Service components such as OCR, FR, CFCA, SSO, etc)
+* Infrastructure Design
+* Database and/or Data Integration/Synchronization
+* Notification Design
+* Security
+* Performance
+
+
+
+
+
+

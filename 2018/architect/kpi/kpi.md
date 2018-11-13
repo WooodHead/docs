@@ -17,7 +17,9 @@
   Search Engine Optimization (SEO) is the process of increasing the visibility of a website or webpage through organic (“natural” or unpaid) search engine results. The objective of SEO is to generate content that specifically fulfills the purpose of user's online searches through tailored content that search engines recognize as quantifiably valuable.
   ```
 
+# KPI Tools
 
+* [ResponseTime - measure server response time](https://www.websitepulse.com/blog/how-to-check-server-response-time)
 
 
 # KPI Reference
