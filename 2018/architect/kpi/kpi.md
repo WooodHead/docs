@@ -1,5 +1,7 @@
 # KPI Overview
 
+* [QPS](qps.md)
+
 # KPI dashboard
 
 * [KPI dashboard](https://www.klipfolio.com/resources/kpi-examples)

@@ -15,7 +15,8 @@
 * Confidential information is stored in database or stored with encryption in file system 
 * Integrate static application security testing into the build process
 * Work with information security, architects, and engineers for code reviews and static code analysis. we take problem reports and watches for patterns
-
+* https://moz.com/learn/seo/robotstxt
+* https://www.mewx.org/blog/201801/anti-crawler-ideas/
 
 * [Authentication and Authorization](authentication-authorization/authentication-authorization.md)
 * [Open Web Application Security Project](https://www.owasp.org/index.php/About_The_Open_Web_Application_Security_Project)
