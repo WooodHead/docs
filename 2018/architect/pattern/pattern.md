@@ -58,6 +58,18 @@ One way to implement the open host service pattern is to expose the upstream mic
 ![multple anti-corruption-layer downstreams](pattern-multiple-acl.png)
 ![Open host service pattern](pattern-open-host-service.png)
 
+* Separate Ways
+
+Let’s revisit the microservices design we did for our e-commerce application. There we have a Customer microservice and an Order Processing microservice (see Figure 2-2). Think of a customer portal, which talks to the Customer microservice and displays user profile. It may be useful to the end user to see his/her order history, along with the profile data. But the Customer microservice does not have direct access to the order history of a given customer; it’s under the control of Order Processing microservice. One way to facilitate this is to integrate the Order Processing microservice with the Customer microservice, and change the domain model of the Customer microservice to return the order history along with the profile data, which is a costly integration.
+Integration is always expensive and sometimes the benefit is small. The separate ways pattern suggests avoiding such costly integrations, and finds other ways to cater such requests. For example, in this particular scenario, we can avoid the integration between the Order Processing microservice and the Customer microservice and provide a link to the customer portal, along with the profile data to retrieve order history, and that will directly talk to the Order Processing microservice
+
+![Separate way pattern](pattern-separate-way.png)
+
+* Big ball of mud pattern
+
+Most of the time you don’t get a chance to work on a green-field project. Always you find some kind of a legacy system with lots of resistance to integrate with other systems in a standard manner. These systems do not have clear boundaries and clean domain models. The big ball of mud pattern highlights the need to identify such systems and treat them in a special context. We should not try to apply sophisticated modeling to these contexts, but rather find a way to integrate via an API or some kind of a service interface and use an anti-corruption layer pattern at the downstream service end.
+
+
 ## reference
 
 * streaming data-understanding the real-time pipeline-Manning.2017
