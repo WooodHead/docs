@@ -16,6 +16,7 @@
 * [kpi](kpi/kpi.md)
 * [license](license/license.md)
 * [machine-learning](machine-learning.md))
+* [methodology](methodology)
 * [microservices](microservices/microservices.md)
 * [operation-system](operation-system/operation-system.md)
 * [pattern](pattern/pattern.md) Architecture Communication
@@ -26,11 +27,10 @@
 * [test](test/test.md)
 * [template](template/template.md)
 
-# learning
+## learning
   
 * [Light Platform](https://www.networknt.com/about/ )
 * [架构师进阶:2fr9](https://pan.baidu.com/s/15sAbuCBTeLFI-FvfdT26Ig)
 * [Geekbang TeamStuQ Skill-Map](https://github.com/TeamStuQ/skill-map)
 * [architecture.of.internet-product](https://github.com/davideuler/architecture.of.internet-product)
-*  [互联网公司架构: 微信技术架构， 腾讯技术架构](https://github.com/davideuler/architecture.wechat-tencent)
-
+* [互联网公司架构: 微信技术架构， 腾讯技术架构](https://github.com/davideuler/architecture.wechat-tencent)
