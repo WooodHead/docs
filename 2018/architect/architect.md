@@ -4,10 +4,12 @@
 * [bigdata](bigdata/bigdata.md)
 * [blockchain](blockchain/blockchain.md)
 * [cache](cache/cache.md)
+* [case](case/case.md)
 * [cloud](cloud/cloud.md)
 * [container](container/container.md)
 * [continuous-delivery](continuous-delivery.md)
 * [continuous-integration](continuous-integration.md)
+* [diagram](diagram/diagram.md)
 * [distributed-transaction](distributed-transaction/distributed-transaction.md)
 * [elasticsearch-logstash-kibana](elasticsearch-logstash-kibana/elasticsearch-logstash-kibana.md)
 * [extract-transform-load](extract-transform-load/extract-transform-load.md)
@@ -16,11 +18,13 @@
 * [machine-learning](machine-learning.md))
 * [microservices](microservices/microservices.md)
 * [operation-system](operation-system/operation-system.md)
+* [pattern](pattern/pattern.md) Architecture Communication
 * [security](security/security.md)
 * [serverless](serverless/serverless.md)
 * [service-meshes](service-meshes/service-meshes.md)
 * [storage](storage/storage.md)
 * [test](test/test.md)
+* [template](template/template.md)
 
 # learning
   
