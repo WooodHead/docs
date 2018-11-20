@@ -16,3 +16,4 @@
 * [BlueData](https://www.bluedata.com/product/architecture/)
 * [Avoiding the Dark Clouds in your Multi-Cloud Architecture](https://blogs.informatica.com/2018/02/13/avoiding-dark-clouds-multi-cloud-architecture/)
 * [Spinnaker - Netflix](https://www.spinnaker.io)
+* [Microsoft System Center](https://www.microsoft.com/zh-cn/cloud-platform/system-center)
