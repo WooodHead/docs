@@ -41,8 +41,24 @@ Continuous integration enables software development teams to work collaborativel
 ## Continuous Delivery
 
 The continuous delivery tools bundle applications, infrastructure, middleware, and the supporting installation processes and dependencies into release packages that transition across the lifecycle
+
+* Atlassian
+* CA Technologies
+* Chef Software
+* Clarive
+* CloudBees
+* Electric Cloud
+* Flexagon
+* Hewlett Packard Enterprise
+* IBN
+* Micro Focus
+* Microsoft
+* Puppet
+* Red Hat
+* VMware
+* XebiaLabs
   
-##  Reference
+## Reference
 
 * [移动端持续集成的落地](https://mp.weixin.qq.com/s/1nlK6Nt3ewS7f4PkVU6IBA )
 * Microservices for the Enterprise_Designing Developing, and Deploying
