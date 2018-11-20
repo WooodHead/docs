@@ -14,3 +14,5 @@ on corresponding bounded contexts do not get propagated to other parties properl
 * Domain-Driven Design Trackling Complexity in the heart of software- Eric Evans
 * Patterns, Principles, and Practices of Domain-Driven Design - Scott Millett & Nick Tune
 * Adaptive Code - Gary McLean Hall
+* the eight fallacies of distributed computing - Peter Deutsch & James Gosling
+* Release It Michael T. Nygard
