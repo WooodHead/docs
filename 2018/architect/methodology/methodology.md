@@ -40,6 +40,15 @@ having a clear separation among the build, release, and run phases of an applica
 
 a system should not share either the disk or the memory with other nodes
 
+* Port Binding
+
+self-contained,application itself has to do the port binding and expose it as a service
+
+* Concurrency
+
+an application should be able to horizontally scale or scale out.
+
+
 
 
 ## Reference
