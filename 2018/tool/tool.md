@@ -1,5 +1,17 @@
 # tool overview
 
+## API-based Application
+
+* [Last.fm](https://www.last.fm/api)
+
+The Last.fm API allows anyone to build their own programs using Last.fm data, whether they're on the web, the desktop or mobile devices. Find out more about how you can start exploring the social music playground or just browse the list of methods below.
+
+* [Twitter](http://dev.twitter.com)
+
+online news and social networking service on which users post and interact with messages known as "tweets". 
+
+* [Google Map](https://developers.google.com/maps/)
+
 ## App Performance Management
 
 * [AppDynamics](appdynamics/appdynamics.md)
@@ -108,10 +120,21 @@
 
 * [Kafka](kafka/kafka.md)
 * [NATS Messageing - Cloud Foundry](https://en.wikipedia.org/wiki/NATS_Messaging)
+* [Beanstalk](https://beanstalkd.github.io)
 
-## monitoring
+Beanstalk is a simple, fast work queue.
+Its interface is generic, but was originally designed for reducing the latency of page views in high-volume web applications by running time-consuming tasks asynchronously.
+
+## Monitoring/metrics-gathering
 
 * [Nagios](https://www.nagios.org) -open source network monitoring tools
+* [New Relic](https://newrelic.com)
+
+ It monitors Web and mobile applications in real-time with support for custom-built plugins to collect arbitrary data
+
+* [Loggly](https://www.loggly.com)
+
+Unified Log analysis & log monitoring, connect the dots across apps ,infrastructure,clouds,devices.
 
 ## OA
 
@@ -138,6 +161,13 @@
 * [File - fastdfs](fastdfs/fastdfs.md)
 * [Cloud Native - portworx](portworx/portworx.md)
 
+## SMTP
+
+* [Postfix](http://www.postfix.org)
+* [Postmark](https://postmarkapp.com)
+
+Postmark delivers your transactional email to customers on time,every time
+
 ## SQL
 
 * [Beam SQL](beam/beam-sql.md)
@@ -163,3 +193,7 @@
 ## XaaS
 
 * [Iaas - openstack](openstack/openstack.md)
+
+## Reference
+
+* [12 Factors](https://12factor.net/backing-services)

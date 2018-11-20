@@ -63,6 +63,9 @@ The continuous delivery tools bundle applications, infrastructure, middleware, a
 * Red Hat
 * VMware
 * XebiaLabs
+* [Spinnaker - Netflix](https://www.spinnaker.io)
+
+Spinnaker is an open source, multi-cloud continuous delivery platform for releasing software changes with high velocity and confidence.
   
 ## Reference
 
