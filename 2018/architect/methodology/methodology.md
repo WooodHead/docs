@@ -7,6 +7,10 @@ on corresponding bounded contexts do not get propagated to other parties properl
 
 * [Domain-Driven Design](https://en.wikipedia.org/wiki/Domain-driven_design)
 
+* [12 factors - Heroku  2012](https://12factor.net)
+
+The 12 Factor App is a manifesto9 published by Heroku in 2012. This manifesto is a collection of best practices and guidelines to build and maintain scalable, maintainable, and portable applications. Even though these best practices are initially derived from the applications deployed on the Heroku cloud platform, today it has become a mantra for any successful microservices deployment. These 12 factors discussed next are quite common and natural, so chances are very high that you are adhering to them, knowingly or unknowingly.
+
 ## Reference
 
 * Microservices for the Enterprise_Designing Developing, and Deploying
