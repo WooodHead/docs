@@ -1,5 +1,13 @@
 # DevOps Overview
 
+## Centralized Configuration Management
+
+In a typical web application, the disk is shared between nodes for two main purposes. One is to share some common configuration files between the nodes and, in most of the cases, mounting a shared disk drive to each node does this. If use of a shared drive is not possible, we can build some kind of a replication mechanism between those nodes, possibly using a shared repository. One node may commit its changes to a shared Git or subversion repository, and the other nodes will periodically pull updates. There
+is another approach, which is quite common these days with the new advancements in DevOps engineering. We can use configuration management tools like Puppet12 or Chef13 to manage configurations centrally and automate the distribution between all the nodes
+
+* Puppet
+* Chef
+
 ## Git Code Management
 
 * [BitBucket](https://bitbucket.org/)
