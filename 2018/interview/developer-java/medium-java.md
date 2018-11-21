@@ -112,13 +112,21 @@
 * 无向图：图的邻接矩阵是对称的，因此如果存在节点 u 到节点 v 的边，那节点 v 到节点 u 的边也一定存在。
 * 有向图：图的邻接矩阵不是对称的。因此如果存在节点 u 到节点 v 的边并不意味着一定存在节点 v 到节点 u 的边。
 
-
 ## Java
 
 ###  [如何使用ArrayList实现一个人拥有多张借记卡消费时，将上次使用的卡放在第一位显示]（https://mp.weixin.qq.com/s/Lg1j8JeWnmt55VdSUL-r4A）
 
 * 数组的比较  compareTo()
 * 数据的插入  add(index,value)
+
+## MySQL
+
+### [datetime vs timestamp](https://dev.mysql.com/doc/refman/8.0/en/datetime.html)
+
+* [datatime vs timestamp]((https://stackoverflow.com/questions/409286/should-i-use-the-datetime-or-timestamp-data-type-in-mysql))
+
+The DATETIME type is used when you need values that contain both date and time information. MySQL retrieves and displays DATETIME values in 'YYYY-MM-DD HH:MM:SS' format. The supported range is '1000-01-01 00:00:00' to '9999-12-31 23:59:59'.
+The TIMESTAMP data type has a range of '1970-01-01 00:00:01' UTC to '2038-01-09 03:14:07' UTC. It has varying properties, depending on the MySQL version and the SQL mode the server is running in.
 
 ## Reference
 
