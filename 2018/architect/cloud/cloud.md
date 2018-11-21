@@ -25,7 +25,7 @@
 * [VMware NSX](https://www.vmware.com/products/nsx.html)
 * [VMware vSan](https://www.vmware.com/products/vsan.html)
 
-#3 PaaS
+## PaaS
 
 * [Heroku](https://www.heroku.com)
 * [Microsoft System Center](https://partner.microsoft.com/en-us/solutions/microsoft-system-center)

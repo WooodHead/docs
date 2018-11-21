@@ -48,7 +48,9 @@ self-contained,application itself has to do the port binding and expose it as a 
 
 an application should be able to horizontally scale or scale out.
 
+* Disposability
 
+the ability of an application to spin up fast and shut down gracefully when required
 
 
 ## Reference
