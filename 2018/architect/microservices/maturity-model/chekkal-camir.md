@@ -73,3 +73,7 @@ This is exactly what Kubernetes (or k8s) allows us to do, without writing all th
 With K8s you also avoid vendor locking on any specific provider of a public cloud.
 
 There is only one catch: it is dificult to set up a k8s cluster, but once done it will make the life of the operational team much more easier.
+
+## Reference
+
+* [Microservices maturity model: From Monolith to Kubernetes](https://medium.com/@chekkal/microservices-maturity-model-from-monolith-to-kubernetes-90ce574a6b49)
