@@ -3,8 +3,8 @@
 
 fiammante  | May 6 2017 ‎  | 7,999 Views 0 people like this
  
-Opengroup has standardized  the Open Group Service Integration Maturity Model (OSIMM)  which provides means to assess and organization SOA maturity levels and to define desired target maturity for an SOA roadmap.
-On the Opengroup site there also is a Microservices architecture where it is stated that a Microservices Architecture is a subset of SOA. However the SOA maturity model had not been adapted for microservices.
+Opengroup has standardized  the [Open Group Service Integration Maturity Model (OSIMM)](http://www.opengroup.org/soa/source-book/osimmv2/)  which provides means to assess and organization SOA maturity levels and to define desired target maturity for an SOA roadmap.
+On the Opengroup site there also is a [Microservices architecture](http://www.opengroup.org/soa/source-book/msawp/index.htm) where it is stated that a Microservices Architecture is a subset of SOA. However the SOA maturity model had not been adapted for microservices.
 Here are my first toughts on a Microservices Maturity Model, that incorporates recent industry practices.
 First I reduce the levels to 5, as in my OSIMM practice I never had maturities above level 5. Then I replace the level 4 and 5 by a microservices version, where the level 5 is able to bill microservices or have an explicit funding, is using cloud environment and is based on agile approaches.
 On the business dimension, the end goal is to make direct or indirect profit from microservices.
