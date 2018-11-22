@@ -1,0 +1,94 @@
+# Spring 5 Microservices Maturity Model 
+
+Microservice adoption needs some careful thoughts. A quick  maturity assessment will
+be helpful  to understand the maturity  of the organization and some of the challenges
+the organization can expect.
+The maturity model in the following diagram is derived from the capability model
+![Microservices Maturity Model - Spring5](img/microservices-maturity-model-spring5.png)
+The 4*5 maturity model is simple enough for a quick self-evaluation. Four levels of 
+maturities are mapped against five characteristics of application development--
+ Application, Database, Infrastructure, Monitoring, and Processes.
+
+## Level 0 - Traditional
+
+Characteristics of the Traditional maturity level are explained as follows:
+• Organizations still develop applications in a monolithic approach. There may be internal modularizations using subsystem designs, but packaged as a monolithic WAR. Use of proprietary service interfaces instead of RESTful service.
+• Organizations use the one size fits all database model based on an enterprise standard and license model, irrespective of application types or application size.
+• The infrastructure will be primarily based on physical machines with no virtualization implemented
+• The infrastructure monitoring may exist, but only as a limited application-level monitoring, for example, the application's URL monitoring.
+• These organizations will be primarily based on waterfall development methods with long and fat release cycles.
+These characteristics are not fully suitable for microservice development. Such
+organizations may struggle when attempting large-scale microservice developments. The
+recommended approach is to start small and adopt in small scale. A big stride needs
+careful planning and adoption of all related capabilities.
+
+## Level 1 - Basic
+
+The characteristics of the  Basic  maturity level are explained as follows:
+• Organizations still develop applications in a monolithic model, but uses Service-Oriented Integration for application-to-application communications
+• While predominantly these organizations use one size fit for all database models, there may be some footprints of NoSQL and other lightweight databases
+• The infrastructure will be primarily based on virtual machines, with no cloud adoption yet
+• The infrastructure monitoring may be sophisticated, which includes somewhat matured application layer
+monitoring
+• These organizations use agile development methods with automated tools for continuous integration
+These characteristics are still not fully suitable for microservice development. Such
+organizations will face issues around optimal infrastructure usage and faster
+application delivery. The recommended approach for organizations at this level is to
+identify candidates for microservices and carefully approach them with some tactical
+decisions on infrastructure to start with, such as sharing a single instance of
+database. The risk level is less compared to Level 0, Traditional.
+
+## Level 2 - Intermediate
+
+The characteristics of the Intermediate  maturity level are explained as follows:
+• Organizations develop SOA-based applications with a strong focus on service-based developments. For optimization purposes, they may still use proprietary protocols at application level.
+• These organizations use polyglot persistence as a first class citizen. These organizations will have the culture of choosing the right databases for the right purpose without much worry about the economies of the scale.
+• The infrastructure will be primarily based on cloud--either public or private.
+• Organizations use both infrastructure monitoring as well as APM tools for end-to-end application
+monitoring.
+• These organizations use agile development methods with automated tools for continuous integration and
+delivery.
+Such organizations are more or less just one step away from full-scale microservices
+developments. Microservices is their natural progression as  their next phase of
+architecture adoption. The risk is very minimal at this level.
+
+## Level 3 - Advanced
+
+The characteristics of the Advanced  maturity level are explained as follows:
+• Organizations use APIs as first-class citizens for development. They use an API-first design philosophy.
+• These organizations use polyglot persistence as first class citizen. Also, these organizations are matured in
+terms of data lake and near real-time analytics.
+• The infrastructure will be primarily based on cloud, but also use containers and container-orchestration tools.
+• Organizations use both infrastructure monitoring as well as APM tools for end-to-end application
+monitoring, including synthetic and real-user monitoring. They also use the centralized log management
+solutions.
+• These organizations use full DevOps philosophies for application/product developments.
+Such organizations may already be using some form of microservices, and they are ready
+to quickly move to large-scale microservice developments.
+
+## Entry points for adoption
+
+When adopting microservices, organizations generally  use one of the two entry points
+mentioned in the following diagram
+![Microservice Conway Law](microservice-maturity-model-spring5-conwaylaw.png)
+The first entry point is termed as the Green Field approach. In this approach, organizations will use microservice for developing new capabilities. There are a couple of use cases for Green Field development:
+• Development of computing services, such as IoTs, AI algorithms, Big Data processing, and more
+• New ground-up application developments
+The second entry point is termed as the Brown Field approach. In this case, organizations will use microservices for monolithic migrations.
+
+## Summary
+In this chapter, we established a technology and tool agnostic capability model for
+microservice based on best practices, common patterns, and design guidelines, inspired
+from successful microservices implementations across the industry. This will be useful
+for organizations thinking about the microservices journey to understand the different
+areas to be considered before attempting microservice adoption.
+We expanded each of these capabilities in the capability model and learned their
+importance in microservices implementations. Along side, we also learned various
+technology solutions available to support these capabilities. Finally, we explored a
+maturity model for microservices adoption.
+Next, we will take a real-world problem and model using the microservices architecture
+to see how to translate our learnings into practice.
+
+## Reference
+
+* [Spring 5.0 Microservices](https://www.packtpub.com/mapt/book/application_development/9781787127685/5/ch05lvl1sec47/microservices-maturity-model)
