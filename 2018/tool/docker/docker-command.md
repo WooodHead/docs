@@ -17,4 +17,5 @@ docker tag kubia luksa/kubia
 docker images | head
 docker push luksa/kubia
 docker run -p 8080:8080 -d luksa/kubia
+docker logs <container id>
 ```
