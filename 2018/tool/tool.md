@@ -23,6 +23,10 @@ online news and social networking service on which users post and interact with 
 
 ## BigData
 
+### in-time data searching ,monitoring, dashboard
+
+* [Splunk](https://www.splunk.com)
+
 ### data science notebooks 
 
 * [JupyterHub - Julia,Python,R](http://jupyter.org/hub)
@@ -156,6 +160,10 @@ Unified Log analysis & log monitoring, connect the dots across apps ,infrastruct
 * [tacefik](https://traefik.io) 
 
 The Cloud Native Edge Router,A reverse proxy / load balancer that's easy, dynamic, automatic, fast, full-featured, open source, production proven, provides metrics, and integrates with every major cluster technology.
+
+## Software development and collaboration
+
+* [Atlassian](https://www.atlassian.com)
 
 ## Sourcecode Repository Manager
 
