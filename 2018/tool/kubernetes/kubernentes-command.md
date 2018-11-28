@@ -19,4 +19,6 @@ kubectl get po <pod_name> -o json
 kubectl logs <pod_name>
 kubectl logs <pod_name> -c <container_name>
 kubectl port-forward kubia-manual 8888:8080
+kubectl get pods --all-namespaces
+kubectl get svc inbound-intranet -n=local
 ```
