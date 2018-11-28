@@ -1,3 +1,3 @@
 # project overview
 
-  - [bamboo](bamboo/bamboo.md)
+* [bamboo](bamboo/bamboo.md)

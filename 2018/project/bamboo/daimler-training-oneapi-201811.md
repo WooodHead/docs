@@ -8,7 +8,7 @@ is being build
 
 ## API  maturity model
 
-* api design 
+* api design
 
 how apis is desined e.g. in an ad-hoc approach , or follows the HATESAS chema
 

@@ -14,7 +14,7 @@
 * [Patterns, Principles, and Practices of Domain-Driven Design - Scott Millett & Nick Tune]
 
 ## SourceCode Management
-		
+
 * [Microservices architecture for Electronic Single Window System](https://sumoonp.wordpress.com/)
 * [SpringCloud Practices Git](https://gitee.com/ylimhhmily/SpringCloudTutorial)
 
