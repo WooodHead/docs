@@ -15,3 +15,4 @@
 * [sindresorhus/awesome](https://github.com/sindresorhus/awesome)
 * [Dave Farley's Weblog](http://www.davefarley.net) Thoughts on Continuous Delivery and Agile development.
 * [Coursera](https://www.coursera.org)
+* [Lynda](https://www.lynda.com)
