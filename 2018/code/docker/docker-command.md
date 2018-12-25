@@ -31,4 +31,9 @@
    # remove container
    docker rm <container-name>
 
+   # tag container
+   docker tag kubila  <docker Hub ownId>/<image>
+
+   # push image
+   docker push <tag>
 ```
