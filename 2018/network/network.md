@@ -1,3 +1,3 @@
 # network overview
 
-  - [communication-protocol](communication-protocol/communication-protocol.md)
+[communication-protocol](communication-protocol/communication-protocol.md)
