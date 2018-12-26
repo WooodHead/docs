@@ -10,6 +10,10 @@
 
 ## Kubernetes Concepts
 
+* pluggable Container Runtime Interface (CRI) 
+
+  It's makes easy to swap-out Docker(default Container Runtime ) for a different container runtime.
+
 ### ephemeral
 
 A pod may disappear at any time—because the node it’s running on has failed, because someone deleted the pod, or because the pod was evicted from an otherwise healthy node. When any of those occurs, a missing pod is replaced with a new one by the ReplicationController, as described previously. This new pod gets a different IP address from the pod it’s replacing. This is where services come in—to solve the prob- lem of ever-changing pod IP addresses, as well as exposing multiple pods at a single constant IP and port pair.
@@ -40,3 +44,4 @@ Services represent a static location for a group of one or more pods that all pr
 ## Kubernetes Reference
 
 * [Kubernetes in action ]
+* [Kubernetes install on Mac](https://matthewpalmer.net/kubernetes-app-developer/articles/guide-install-kubernetes-mac.html)

@@ -36,4 +36,29 @@
 
    # push image
    docker push <tag>
+
+   # list image
+   docker image ls
+
+   # list container
+   docker container ls
+
+   # view system info
+   docker system info
+
+   # docker version
+   docker --version
+
+   # docker compose version
+   docker-compose version
+
+   # docker machine version
+   docker-machine version s
+
+   # notary version
+   notray version
+
+   # view service
+   docker service ls
+
 ```
