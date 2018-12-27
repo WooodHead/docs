@@ -2,6 +2,12 @@
 
 * [ISCSI](https://en.wikipedia.org/wiki/ISCSI)
 * [DataCenter Storage Commerial products](../../tool/storage.md)
+* [LUN - Logical Unit Number](https://en.wikipedia.org/wiki/Logical_unit_number)
+* [LVM - Linux Logical Volumn Manager](https://en.wikipedia.org/wiki/Logical_Volume_Manager_(https://en.wikipedia.org/wiki/Logical_Volume_Manager_(Linux))
+ physical devices(pv)
+ volume group(vg)
+ logical volumns(lv)
+ thinpool(tp)
 
 ## Reference
 

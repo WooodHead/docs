@@ -70,12 +70,35 @@ A storage driver is a per node decision. This means a single Docker host can onl
 
 If someone change the storage driver on an already-running Docker host, existing images and containers will not be available after Docker is restarted. This is because each storage driver has its own subdirectory on the host whsere it stores image laysers(usually /var/lib/docker/<storage-driver>)
 
+## Devicemapper
+
+* Block devices.
+  You need to have block devices available in order to configure direct-lvm mode. Thess should be high performance external LUNs. If your Docker environment is on-promises, external LUNs can be on FC,iSCSI, or other block-protocol storage cloud, these can be any form of high performance block storage(usually SSD-based) supported by your cloud provider.
+
+* LVM config.
+  The devicemapper storage driver leverages LVM, the Linux Logical Volume Manager. This means you will need
+  to configure the required physical devices(pdev), volume group(vg), logical volumes(lv), and thinpool(tp). You should use dedicated physical volumes and form them into a new volume group. You should not share the volume group with non-Docker workloads; one for data and the otehr for metadata. Create an LVM profile spefifying the auto-extend threshold and auto-extend values,and configure monitoring so that auto-extend operations can happen.
+
+* Docker config
+  The current Docker config file(/etc/docker/daemon.json) and then update it as follows. The name of the dm.thinpooldev might be different in your environment and you should adjust as appropriate.
+
+```json
+  {
+    "storage-driver": "devicemapper",
+    "storage-opts":[
+      "dm.thinpooldev=/dev/mapper/docker-thinpool",
+      "dm.use_deferred_removal=true",
+      "dm.use_deferred_deletion=true"
+    ]
+}
+```
+
+
 ## Note
 
 * It is best practice to use non-root users when working with Docker,then log out and log back to take effect.
 
    sudo usermod -aG docker <user>
-   
    cat /etc/group | grep docker
    docker:x:999:<user>
 
