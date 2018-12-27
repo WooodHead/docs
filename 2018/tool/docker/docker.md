@@ -27,6 +27,8 @@
 * Rocket
 * [HyperKit](https://blog.docker.com/2016/05/docker-unikernels-open-source/)
 * Docker EE includes Docker Trusted Registry and Universal Control Plane
+* storage driver
+* devicemapper
 
 ## Upgrading Docker
 
@@ -67,7 +69,6 @@ A storage driver is a per node decision. This means a single Docker host can onl
 ```
 
 If someone change the storage driver on an already-running Docker host, existing images and containers will not be available after Docker is restarted. This is because each storage driver has its own subdirectory on the host whsere it stores image laysers(usually /var/lib/docker/<storage-driver>)
-
 
 ## Note
 
