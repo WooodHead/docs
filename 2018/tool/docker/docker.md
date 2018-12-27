@@ -31,6 +31,8 @@
 * devicemapper
 * follows the tried-and-tested Unix philosophy
 * "daemonless containers" it makes it possible to perform maintenance and upgrades on the Docker daemon without impacting running containers
+* images are considered build-time constructs
+* containers are considered run-time constructs
 
 ## Upgrading Docker
 
@@ -58,7 +60,7 @@
 * devicemapper
 * btrfs
 * zfs
-* windowsfilter(windows only)
+* windowsfilter(windows only which implements layering and Copy-on-Write on top of NTFS)
 
 A storage driver is a per node decision. This means a single Docker host can only run a single storage driver
 
@@ -132,15 +134,58 @@ docker-containerd(containerd)
 docker-containerd-shim(shim)
 docker-runc(runc)
 
+## Image Registries
+
+Docker image are stored in image registries. The most common registry is Docer Hub(httlps://hub.docker.com) Other registires exists, including 3rd party registries and secure on-promises registires.
+
+Most of the popular operating system and applications have their own official repositories on Docker Hub. They're easy to spot because they live at the top level of the Docker Hun namespace. the following list contains a few of the official repositories, and shows their URLs that exist at the top-level of the Docker Hub namespace:
+
+* nginx: https://hub.docker.com/_/nginx/
+* busybox: https://hub.docker.com/_busybox/
+* redis: https://hub.docker.com/_/redis/
+* mongo: https://hub.docker.com/_/mongo/
+
+## Images and Layers
+
+ [Docker Image Layer](img/docker-image-layer.png)
+ docker image inspect alpine:latest
+
+## Image Digests
+
+Docker 1.10 introduced a new content addressable storage model. As port of this new model, all images neow get a cryptographic content hash. /for the purposes of this discussion, we'll refer to this hash as the digest. Becasue the digest is a hash of the content of the image, it is not possible to change the contents of the iamge without the digest also changing. This means digests are immutable. Each layer also gets something called a distribution hash. This is a hash of the compressed version of the layer.
+
 ## Note
 
 * It is best practice to use non-root users when working with Docker,then log out and log back to take effect.
 
-   sudo usermod -aG docker <user>
-   cat /etc/group | grep docker
-   docker:x:999:<user>
+```bash
+#!/bin/bash
+  sudo usermod -aG docker <user>
+  cat /etc/group | grep docker
+  docker:x:999:<user>
+```
 
-* till Docker 0.9, Dokcer depends on LXC which is Linux-specific. after that, Docker. Inc. developed theire own tool called libcontainer as a replacement for LXC. The goal of libcontainer was to be a platform-agnostic tool
+* libcontainer
+
+till Docker 0.9, Dokcer depends on LXC which is Linux-specific. after that, Docker. Inc. developed theire own tool called libcontainer as a replacement for LXC. The goal of libcontainer was to be a platform-agnostic tool
+
+* dangling image
+
+  docker image ls --fliter dangling=true
+
+A dangling image is an image that is no longer tagged, and appears in listings as <none>:<none>.
+A common way they occur is when building a new image and tagging it with an existing tag. When this happens. Docker will build the new image. notice that an existing image has a matching tag, remove the tag from the existing image, give the tag to the new image. For example, you build a new image based on alpinle:3.4 and tag ti as dodge:challenger. The you update the Docker to replace a alpine:3.4 with alpine:3.5 and run the exact same docker image build command. The build will cerate a new image tagged as dodge:challenger and remove the tags from the older image. The older image will become a dangling image.
+
+Docker currently support the following filters:
+
+1. dangling: Accepts true or false, and returns only dangling iamge(true), or non-dangling image(false)
+2. before: Requries an image name or ID as argument, and returns all images created before it
+3. since : Same as before, but returns images created after the specified image
+4. lable: Filters images based on the presence of a label or label and value. The docke iamge ls command does not display labels in its output.
+
+docker image ls --filter=reference="*:latest"
+
+ 
 
 ## Reference
 
@@ -149,3 +194,4 @@ docker-runc(runc)
 * [Play with Docker](https://play-with-docker.com)
 * [Open Container](https://github.com/opencontainers)
 * [Containerd](https://github.com/containerd)
+* [Image Registry](https://hub.docker.com)
