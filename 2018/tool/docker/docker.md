@@ -23,12 +23,14 @@
 * co-opetition( a balance of co-operation and competition)
 * frenemy(a mix of a friend and an enemy)
 * Open Container Initiative - ecosystem
-* OCI is a governace council responsible for standardizing the most fundamental componets of container infrastructure such as image format(image-spec) and container runtime(runtime-spec)
+* OCI is a governace council responsible for standardizing the most fundamental componets of container infrastructure such as image format(image-spec) and container runtime(runtime-spec),the first version was released in July 2017
 * Rocket
 * [HyperKit](https://blog.docker.com/2016/05/docker-unikernels-open-source/)
 * Docker EE includes Docker Trusted Registry and Universal Control Plane
 * storage driver
 * devicemapper
+* follows the tried-and-tested Unix philosophy
+* "daemonless containers" it makes it possible to perform maintenance and upgrades on the Docker daemon without impacting running containers
 
 ## Upgrading Docker
 
@@ -105,6 +107,31 @@ If someone change the storage driver on an already-running Docker host, existing
 
   if to use 'sudo docker version' command to get right response, you will need to add use account to the local docker group.
 
+## Docker Engine
+
+* [Docker Engine Monolithic High Level View - v0.9](img/docker-engine-monolithic-high-level.png)
+* [Docker Engine Modular High Level View  v1.0-](img/docker-engine-modular-high-level.png)
+* [Docker Engine Architecture High Level](img/docker-engine-architecture-high-level.png)
+
+The tool called runc is the reference implementation of the OCI container-runtime-spec.
+from Docker 1.11(early 2016),in fact, It is a small,lightweight CLI wrapper for libcontainer(originally replaaced LXC in the early Docker architecture)
+
+A new tool called containerd(pronounced container-dee) is to manage container lifecycle operation - start | stop | pause | rm ... since 1.11 release. containerd sits between the daemaon and runc at the OCI layer. Kubernetes can also use
+containered via cri-containerd. It was developed by Docker, Inc and donated to Cloud Native Computing Foundation(CNCF). It released version 1.0
+in December 2017.
+
+Docker client converts the commands into the approprivate API payload and POSTs them to the correct API endpoint. the API implemented in the daemaon. The daemon communicates with containerd via a CRUD-style API over gRPC. till now, daemon includes : image management, image builds, the REST API, authentication, security, core networking and orchestration.
+
+The shim is integral to the implementation of daemonless containers(about decoupling running containers from the daemon for things like daemon upgrades). the containerd uses runc to create new containers. In fact, it forks a new instance of runc for every container it creates. However, once each container is created, its parent runc process exits. This means we can run hundreds of containers without having to run hundreds of runc instances. Once container's parent runc process exits, the associated containerd-shim process becomes teh container's parent. Some of the responsibilities the shim performs as a container's parent include:
+
+* keeping any STDIN and STDOUT streams opens so that when the daemon is restarted, the container doesn't terminate due to pipes being closed etc.
+* Reports the container's exit status back to the daemon.
+
+dockerd(the Docker daemon)
+docker-containerd(containerd)
+docker-containerd-shim(shim)
+docker-runc(runc)
+
 ## Note
 
 * It is best practice to use non-root users when working with Docker,then log out and log back to take effect.
@@ -113,8 +140,12 @@ If someone change the storage driver on an already-running Docker host, existing
    cat /etc/group | grep docker
    docker:x:999:<user>
 
+* till Docker 0.9, Dokcer depends on LXC which is Linux-specific. after that, Docker. Inc. developed theire own tool called libcontainer as a replacement for LXC. The goal of libcontainer was to be a platform-agnostic tool
+
 ## Reference
 
 * [building docker environment](https://john-hunt.com/2016/06/03/docker-os-x-homebrew-quick-start/)
 * [Docker Deep Dive - Nigel Poulton]
 * [Play with Docker](https://play-with-docker.com)
+* [Open Container](https://github.com/opencontainers)
+* [Containerd](https://github.com/containerd)
