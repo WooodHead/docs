@@ -93,6 +93,17 @@ If someone change the storage driver on an already-running Docker host, existing
 }
 ```
 
+## Local Docker socket
+
+```bash
+#!/bin/bash
+
+  ls -la /var/run/docker.sock
+```
+
+## priviledges
+
+  if to use 'sudo docker version' command to get right response, you will need to add use account to the local docker group.
 
 ## Note
 
@@ -105,5 +116,5 @@ If someone change the storage driver on an already-running Docker host, existing
 ## Reference
 
 * [building docker environment](https://john-hunt.com/2016/06/03/docker-os-x-homebrew-quick-start/)
-
 * [Docker Deep Dive - Nigel Poulton]
+* [Play with Docker](https://play-with-docker.com)
