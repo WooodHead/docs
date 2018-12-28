@@ -37,18 +37,6 @@
    # show local images
    docker images
 
-   # remove images
-   docker image rm -a [container-name|container-id]
-   docker image rm $(docker image ls -q) -f
-
-   -a flag: docker will also remove all unused images(those not in use by any containers)
-   Deleting an image will remove the image and all of its laysers from your Docker host. This means it will no longer show up in docker image ls commands, and all directories on the Docker host containing the layer data will be deleted. However, if an image layer is shared by more than one image, that layer will not be deleted until all images that reference it have been deleted.
-   -q returns a list containing just the image IDs
-
-   Error response from daemon:conflict : unable to remove repository reference "<image-name>" (must force) - container <container-id> is using its referenceed image
-
-   The Cause is that attempting to delete an iamge without stopping and destorying all containers using
-
    # tag container
    docker image tag kubila  <docker Hub ownId>/<image>:<tag>
 
@@ -72,6 +60,18 @@
    docker image ls --filter=reference="*:latest"
    docker image ls --format "{{.Respository}}":"{{.Tag}}":"{{.Size}}"
    docker image ls --digests <image>
+
+   # remove images
+   docker image rm -a [container-name|container-id]
+   docker image rm $(docker image ls -q) -f
+
+   -a flag: docker will also remove all unused images(those not in use by any containers)
+   Deleting an image will remove the image and all of its laysers from your Docker host. This means it will no longer show up in docker image ls commands, and all directories on the Docker host containing the layer data will be deleted. However, if an image layer is shared by more than one image, that layer will not be deleted until all images that reference it have been deleted.
+   -q returns a list containing just the image IDs
+
+   Error response from daemon:conflict : unable to remove repository reference "<image-name>" (must force) - container <container-id> is using its referenceed image
+
+   The Cause is that attempting to delete an iamge without stopping and destorying all containers using
 
    # search image
    docker search <image> --limit=10
@@ -101,6 +101,14 @@
    container un tells the Docker daemon to start a new container
    -it flags tell Docker to make the container interactive and to attach our current shell to the container\'s terminal
 
+    # list all running containers
+   docker container ls
+   docker container ls -a
+   -a flag : tells Docker to list all containers, even those in the stopped state.
+
+    # attaching to running container
+   docker container exec -it [container name|container id] bash
+
    # checking running docker container
    docker ps
 
@@ -115,13 +123,5 @@
 
    # go to container inside
    docker exec -it container-name|container-id] bash
-
-    # list all running containers
-   docker container ls
-   docker container ls -a
-   -a flag : tells Docker to list all containers, even those in the stopped state.
-
-    # attaching to running container
-   docker container exec -it [container name|container id] bash
 
 ```
