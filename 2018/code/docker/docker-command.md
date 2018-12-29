@@ -95,11 +95,20 @@
    test:lastest
 
    # launch a container from it
+   docker container run <options> <image>:<tag> <app>
    docker container run -it ubuntu:lasted /bin/bash
    docker container run -d --name web2 --publish 8081:8080 test:latest
+   -it flag : connect your terminal window to the container\'s shell
+
+   docker container run alpine:latest sleep 10
+   The container will start, run for 10 seconds and exit
 
    container un tells the Docker daemon to start a new container
-   -it flags tell Docker to make the container interactive and to attach our current shell to the container\'s terminal
+   -it flags tell Docker to make the container interactive and to attach our 
+   current shell to the container\'s terminal
+
+   # verfiy stlling running container
+   docker container ps
 
     # list all running containers
    docker container ls
@@ -107,21 +116,27 @@
    -a flag : tells Docker to list all containers, even those in the stopped state.
 
     # attaching to running container
-   docker container exec -it [container name|container id] bash
+   docker container exec -it [container name|container id] bash. This is becasuse this command created a new Bash or PowerShell process and attached to that. This means that typing exit in this shell will not terminate the container, because the original ]Bash or PowerShell process will continue running.
 
-   # checking running docker container
-   docker ps
+   you can re-attach your terminal to it with docker container exec command
 
    # inspect running docker container
    docker inspect [container-name|container-id]
 
    # start docker container
-   docker start container-name|container-id]
+   docker container start [container-name|container-id]
 
    # stop docker container
-   docker stop container-name|container-id]
+   docker container stop [container-name|container-id]
 
-   # go to container inside
-   docker exec -it container-name|container-id] bash
+   # rm  docker container 
+   docker container rm  [container-name|container-id]
+
+  # main process
+  docker container run --name percy -it alpine:latest /bin/bash
+  docker container stop percy
+  docker container ls [-a]
+  docker container start percy
+  docker container exec -it percy bash
 
 ```
