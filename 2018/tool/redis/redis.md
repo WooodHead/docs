@@ -55,10 +55,14 @@ It is also worth to note that setting an expire to a key costs memory, so using 
 
 ### 因nfs权限问题，reids写入持久化写入失败
 
+要使用runAsUser:999在nfs上创建存储的目录
+使用999用户创建pod进行挂载，并制定workingDir
 
+* [Permissions on mounted /data volume not correct](https://github.com/docker-library/redis/issues/7)
 * [docker redis](https://github.com/litaio/docker-redis/blob/master/Dockerfile)
 * [cofig redis using configmap](https://kubernetes.io/docs/tutorials/configuration/configure-redis-using-configmap/)
 * [redis config](http://download.redis.io/redis-stable/redis.conf)
+* [redis security context run as non-root](https://kubernetes.io/docs/concepts/policy/pod-security-policy/)
 
 
 ## Reference
