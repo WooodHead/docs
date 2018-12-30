@@ -51,6 +51,16 @@ Use the volatile-ttl if you want to be able to provide hints to Redis about what
 The volatile-lru and volatile-random policies are mainly useful when you want to use a single instance for both caching and to have a set of persistent keys. However it is usually a better idea to run two Redis instances to solve such a problem.
 It is also worth to note that setting an expire to a key costs memory, so using a policy like allkeys-lru is more memory efficient since there is no need to set an expire for the key to be evicted under memory pressure.
 
+## Redis Issue
+
+### 因nfs权限问题，reids写入持久化写入失败
+
+
+* [docker redis](https://github.com/litaio/docker-redis/blob/master/Dockerfile)
+* [cofig redis using configmap](https://kubernetes.io/docs/tutorials/configuration/configure-redis-using-configmap/)
+* [redis config](http://download.redis.io/redis-stable/redis.conf)
+
+
 ## Reference
 
 * [redis gui](https://redislabs.com/blog/so-youre-looking-for-the-redis-gui/)
