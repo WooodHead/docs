@@ -81,7 +81,6 @@ Key:
 * [redis config](http://download.redis.io/redis-stable/redis.conf)
 * [redis security context run as non-root](https://kubernetes.io/docs/concepts/policy/pod-security-policy/)
 
-
 ## Reference
 
 * [redis gui](https://redislabs.com/blog/so-youre-looking-for-the-redis-gui/)
