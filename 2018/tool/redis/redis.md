@@ -55,8 +55,25 @@ It is also worth to note that setting an expire to a key costs memory, so using 
 
 ### 因nfs权限问题，reids写入持久化写入失败
 
+Kubernetes version
+Client Version: version.Info{Major:"1", Mirror:"7", GitVersion:"v1.7.7",GitCommit:"$Format:%H$",GitTreeState:"not a git tree","BuildDate":"2017-11-03T09:30:19Z", GovVersion:"go1.8.5",Compiler:"gc",Platform:"linux/amd64"}
+Server Version: version.Info(Major:"1", Mirror:"9+", GitVersion:"v1.9.11-dhc",GitCommit:"1bfeeb5f212146a22dc787b73e109-e5bccef13d,GitTreeState",GitTreeState"dirty",BuildDate:"2018-10-02T05:55:34Z",GoVersion:"go1.9.3",Complier:"gc",Platform:"linux/amd64")
+
+Redis Version:
+
+Issue Enviroment
+UAT-Redis : rdbfilename = dump.rdb mountPath: /data(nfs) RunAsRoot: 1000
+PROD-Redis : rdbfilename=dump.db  mountPath:/data/prod(nfs) RunAsRoot: 1000
+
+Solution:
+首先使用runAsUser:999 制作一个nfspod然后进入pod中创建了/prod/redis目录
+使用Redis的Pod中runAsUser:999 设置workingDir=/nfs/prod/redis mountPath=/nfs进行挂载
+
+Key:
 要使用runAsUser:999在nfs上创建存储的目录
 使用999用户创建pod进行挂载，并制定workingDir
+使用{RunAsUser：999} 创建PostgreSQL, Redis等具有postgre(uid):postgre(gid) , reids(uid):redis(gid)非root权限用户
+使用{RunAsUser：1000}创建root（uid）：root（gid）
 
 * [Permissions on mounted /data volume not correct](https://github.com/docker-library/redis/issues/7)
 * [docker redis](https://github.com/litaio/docker-redis/blob/master/Dockerfile)

@@ -16,7 +16,6 @@
   Server Version: version.Info(Major:"1", Mirror:"9+", GitVersion:"v1.9.11-dhc",GitCommit:"1bfeeb5f212146a22dc787b73e109-e5bccef13d,GitTreeState",GitTreeState"dirty",BuildDate:"2018-10-02T05:55:34Z",GoVersion:"go1.9.3",Complier:"gc",Platform:"linux/amd64")
 
 # print pod env value
-
 kubectl exec -it po <poname> -n=<namespace>
 printenv
 ```
