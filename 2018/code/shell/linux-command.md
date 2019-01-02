@@ -20,7 +20,11 @@ curl -s localhost:80 >/dev/null && echo Connected. || echo Fail.
 # find a file
 find / -name 'ide.conf'
 
+# copy all files in the directory to a directroy without coping directory structure s
 find test -type f -exec cp '{}' ./test-temp/ \;
+
+# Finding number of files in a folder
+find . -type f | wc -l
 
 ```
 
