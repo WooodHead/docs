@@ -18,4 +18,8 @@
 # print pod env value
 kubectl exec -it po <poname> -n=<namespace>
 printenv
+
+# kubectl cp
+kubectl cp /tmp/foo_dir <some-pod>:/tmp/bar_dir
+https://www.mankier.com/1/kubectl-cp
 ```

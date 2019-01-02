@@ -20,6 +20,8 @@ curl -s localhost:80 >/dev/null && echo Connected. || echo Fail.
 # find a file
 find / -name 'ide.conf'
 
+find test -type f -exec cp '{}' ./test-temp/ \;
+
 ```
 
 ## Storage
