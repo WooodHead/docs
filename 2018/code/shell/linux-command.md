@@ -17,7 +17,11 @@ curl -s localhost:80 >/dev/null && echo Connected. || echo Fail.
 ```bash
 #!/bin/bash
 
+# find a file 
 find / -name 'ide.conf'
+
+# find max size file 
+du -a /var | sort -n -r | head -n 10
 ```
 
 ## Security
