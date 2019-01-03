@@ -26,6 +26,11 @@ find test -type f -exec cp '{}' ./test-temp/ \;
 # Finding number of files in a folder
 find . -type f | wc -l
 
+# list files owned by a user or group 
+find / -group <groupname>
+find / -group <groupnumber>
+find / -user <username>
+
 ```
 
 ## Storage
@@ -33,7 +38,7 @@ find . -type f | wc -l
 ```bash
 #!/bin/bash
 
-# find max size file 
+# find max size file
 du -a /var | sort -n -r | head -n 10
 
 # show storage
@@ -45,8 +50,17 @@ df -lh
 ```bash
 #!/bin/bash
 # add group
-  sudo usermod -aG <group> <user>
+sudo usermod -aG <group> <user>
 
 # change owner
-  sudo chown <user> <dest>
+sudo chown <user> <dest>
+
+# show owning user
+stat -c %U <dir>
+
+# show owning group
+stat -c %G <dir>
+
+# show access right
+stat -c %A <dir>
 ```
