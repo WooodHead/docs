@@ -193,7 +193,16 @@ Because a container isn't a full-blown OS, it stars much faster than a VM. Remem
 ## Docker Remote API
 
  In a standard, out-of-the-box Linux installation, the Docker daemon implements the Docker Remote API on a local IPC/Unix socker at /var/run/docker.sock. On Windows, it listen on a named pipe at npipe:////./pipe/docker_engine. It's also possible to configrute the Docker client and daemon to communicate over the network. The default non-TLS network port for Docker is 2375, the default TLS port is 2376.
- 
+
+## Docker lifecycle
+
+* stop a container vs rm a container 
+
+"docker continaer stop [containername|containerId]"
+"docker container ls -a" showing as Existed(0) with status. 
+Stopping a container is like stopping a virtual machine. Although it's not currently running. Its entire configruation and contents still exist on the filesystem of the Docker host, and it can be restarted at any time.
+Stopping a container does not destory the container or the data inside of it.
+A best practice to take the two-step approach of stopping the container first and then deletingit.
 
 ## Note
 
