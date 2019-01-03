@@ -49,6 +49,13 @@ df -lh
 
 ```bash
 #!/bin/bash
+# list all existing user
+sudo passwd -Sa
+cat /etc/passwd
+
+# list all groups on the system
+cat /etc/group
+
 # add group
 sudo usermod -aG <group> <user>
 
@@ -64,3 +71,5 @@ stat -c %G <dir>
 # show access right
 stat -c %A <dir>
 ```
+
+* [users and groups](https://wiki.archlinux.org/index.php/users_and_groups)
