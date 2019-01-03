@@ -77,7 +77,7 @@ Key:
 使用{RunAsUser：999} 创建PostgreSQL, Redis等具有postgre(uid):postgre(gid) , reids(uid):redis(gid)非root权限用户
 使用{RunAsUser：1000}创建root（uid）：root（gid）
 
-* [Configure a Security Context for a Pod or Container]()
+* [Configure a Security Context for a Pod or Container](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/#set-the-security-context-for-a-pod)
 * [Permissions on mounted /data volume not correct](https://github.com/docker-library/redis/issues/7)
 * [docker redis](https://github.com/litaio/docker-redis/blob/master/Dockerfile)
 * [cofig redis using configmap](https://kubernetes.io/docs/tutorials/configuration/configure-redis-using-configmap/)
