@@ -1,6 +1,9 @@
 # Kubernetes Overview
 
 * [kubernetes commands](kubernetes-command.md)
+* [kubernetes network](kubernetes-network/kubernetes-network.md)
+* [kubernetes security](kubernetes-security/kubernetes-security.md)
+
 
 ## Kubernetes abbreviation
 
@@ -36,7 +39,8 @@ Services represent a static location for a group of one or more pods that all pr
 
 * [minikube](https://github.com/kubernetes/minikube)
 * [hepito](https://heptio.com/)
-  
+* [katacoda - online kubernetes test environment](https://www.katacoda.com/courses/kubernetes/playground)  
+
 ## Kubernetes Install
 
 * [Installing a VM Backed K8s Cluster](kubernetes-install.md)
