@@ -39,7 +39,8 @@ Services represent a static location for a group of one or more pods that all pr
 
 * [minikube](https://github.com/kubernetes/minikube)
 * [hepito](https://heptio.com/)
-* [katacoda - online kubernetes test environment](https://www.katacoda.com/courses/kubernetes/playground)  
+* [katacoda - online kubernetes test environment](https://www.katacoda.com/courses/kubernetes/playground) 
+* [Play with Kubernetes](https://labs.play-with-k8s.com) 
 
 ## Kubernetes Install
 

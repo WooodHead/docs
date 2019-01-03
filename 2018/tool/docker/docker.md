@@ -120,28 +120,28 @@ If someone change the storage driver on an already-running Docker host, existing
 * ![Docker Engine Modular High Level View  v1.0-](img/docker-engine-modular-high-level.png)
 * ![Docker Engine Architecture High Level](img/docker-engine-architecture-high-level.png)
 
-runc:
-The tool called runc is the reference implementation of the OCI container-runtime-spec.
-from Docker 1.11(early 2016),in fact, It is a small,lightweight CLI wrapper for libcontainer(originally replaaced LXC in the early Docker architecture)
-
-containerd:
-A new tool called containerd(pronounced container-dee) is to manage container lifecycle operation - start | stop | pause | rm ... since 1.11 release. containerd sits between the daemaon and runc at the OCI layer. Kubernetes can also use
-containered via cri-containerd. It was developed by Docker, Inc and donated to Cloud Native Computing Foundation(CNCF). It released version 1.0
-in December 2017.
+client:
+The docker client made the appropriate API calls to the Docker daemon
 
 daemon:
 Docker client converts the commands into the approprivate API payload and POSTs them to the correct API endpoint. the API implemented in the daemaon. The daemon communicates with containerd via a CRUD-style API over gRPC. till now, daemon includes : image management, image builds, the REST API, authentication, security, core networking and orchestration.
 The Docker daemon accepted the command and searched the Docker host's local cache to see if it already had a copy of the requested image.
 Once the image was pulled, the daemon created the container and executed the spefified app inside of it.
 
+containerd:
+A new tool called containerd(pronounced container-dee) is to manage container lifecycle operation - start | stop | pause | rm ... since 1.11 release. containerd sits between the daemaon and runc at the OCI layer. Kubernetes can also use
+containered via cri-containerd. It was developed by Docker, Inc and donated to Cloud Native Computing Foundation(CNCF). It released version 1.0
+in December 2017.
+
 shim:
 The shim is integral to the implementation of daemonless containers(about decoupling running containers from the daemon for things like daemon upgrades). the containerd uses runc to create new containers. In fact, it forks a new instance of runc for every container it creates. However, once each container is created, its parent runc process exits. This means we can run hundreds of containers without having to run hundreds of runc instances. Once container's parent runc process exits, the associated containerd-shim process becomes teh container's parent. Some of the responsibilities the shim performs as a container's parent include:
 
-client:
-The docker client made the appropriate API calls to the Docker daemon
-
 * keeping any STDIN and STDOUT streams opens so that when the daemon is restarted, the container doesn't terminate due to pipes being closed etc.
 * Reports the container's exit status back to the daemon.
+
+runc:
+The tool called runc is the reference implementation of the OCI container-runtime-spec.
+from Docker 1.11(early 2016),in fact, It is a small,lightweight CLI wrapper for libcontainer(originally replaaced LXC in the early Docker architecture)
 
 dockerd(the Docker daemon)
 docker-containerd(containerd)
@@ -177,6 +177,18 @@ The VM model carves low-level hardware resources into VMs. Each VM is a software
 as the OS tax, or VM tax - every OS your install consumes resources!
 
 The container engine takes OS resources such as the process tree, the filesystem,and the network stack. The Container model has a single kernel running in the host OS. It's possible to run tens or hundreds of containers on a single host with every container sharing that single OS/kernet. That means a single OS consuming CPU,RAM and storage. A single OS that needs licensing. A single OS that needs upgrading and patching. And a single OS kernel presenting an attack surface. All in all , a single OS tax bill. There's no kernel inside of a container that needs locating,decompressing,and intiallizing associated with a normal kernel bootstrap. None of that is needed when starting a container! The single shared kernel, down at the OS level, is already started! Net result, containers can start in less than a second. The only thing that has an impact on container start time is the time it takes to start the applicaton it's running.
+
+At a high level, we can say the hypervisors perform hardware virtualization - they carve up physical hardware resources into virtual versions. On the other hand, containers perform OS virtualization - they carve up OS resources into virtual version.
+
+The VM tax
+
+The VM model carves low-level hardware resources into VMs. Each VM is a software construct containing virtual CPU, virtual RAM, virtual disk etc. As such, every VM needs its own OS to claim, initialize, and manage all of those virtual resources. And sadly, every OS comew tih its own set of baggage and overheads. For example, every OS consumes a slice of CPU, a slice of RAM, a slice of storage etc. Most need their own licenses as well as people and infrastructure to patch and upgrade them. Each OS also presents a sizeable attack surface. We often refer to all of this as the OS tax, or VM tax - every OS you install consumes resources!
+
+The container model has a single kernel running in the host OS. It's possible to run tens or hundreds of containers on a single host with every container sharing that single OS/kernel. That means a single OS consuming CPU, RAM, and storage. A single OS that needs licensing. A single OS that needs patching and upgrading. And kernel presenting an attack surface. All in all, a single OS tax bill!
+
+Starting time
+
+Because a container isn't a full-blown OS, it stars much faster than a VM. Remember,there's no kernel inside of a container that needs locating, decompressing, and initializing - not to mention all of the hardware enumerating and initializing associated with a normal kernel bootstrap. None of that is needed wehn starting a container! The sinlge shared kernel, down at the OS level, is already started! Net result, containers can start in less than a second. The only thing that has an impact on container start time is the time it takes to start the application it's running.
 
 ## Docker Remote API
 

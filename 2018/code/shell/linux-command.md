@@ -34,6 +34,13 @@ find / -user <username>
 # copy directories and files by recusively
 cp -r <src_dir> <des_dir>
 
+# find open files with pid
+lsof -a -p <pid>
+
+# find docker install path
+ps -elf|grep docker
+lsof -a -p <pid>
+sudo find / -name <filename>   -- docker.sock
 ```
 
 ## Storage
@@ -73,6 +80,9 @@ stat -c %G <dir>
 
 # show access right
 stat -c %A <dir>
+
+# get username by uid
+awk -v val=1000 -F ":" '$3==val{print $1}' /etc/passwd
 ```
 
 * [users and groups](https://wiki.archlinux.org/index.php/users_and_groups)
