@@ -31,6 +31,9 @@ find / -group <groupname>
 find / -group <groupnumber>
 find / -user <username>
 
+# copy directories and files by recusively
+cp -r <src_dir> <des_dir>
+
 ```
 
 ## Storage
