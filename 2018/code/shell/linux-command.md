@@ -2,8 +2,6 @@
 
 ## Network
 
-* check network
-
 ```bash
 #!/bin/bash
 
@@ -11,8 +9,6 @@ curl -s localhost:80 >/dev/null && echo Connected. || echo Fail.
 ```
 
 ## File , Folder
-
-* find
 
 ```bash
 #!/bin/bash
@@ -41,6 +37,10 @@ lsof -a -p <pid>
 ps -elf|grep docker
 lsof -a -p <pid>
 sudo find / -name <filename>   -- docker.sock
+
+# list files top 10
+ls -la | head -n <number>
+ls -la | head -n 10
 ```
 
 ## Storage
