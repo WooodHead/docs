@@ -1,4 +1,11 @@
-# awesome-postgres
+# PostgreSQL Overview
+
+## PostgreSQL Install
+
+* [How to Install PostgreSQL for Mac OS X](https://launchschool.com/blog/how-to-install-postgresql-on-a-mac)
+* [default password for postgresql](https://www.liquidweb.com/kb/what-is-the-default-password-for-postgresql/)
+
+## awesome-postgres
 
 [awesome-postgres](https://github.com/dhamaniasad/awesome-postgres/blob/master/README.md)
 

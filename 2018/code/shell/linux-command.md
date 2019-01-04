@@ -41,6 +41,10 @@ sudo find / -name <filename>   -- docker.sock
 # list files top 10
 ls -la | head -n <number>
 ls -la | head -n 10
+
+# file multiply files by filenames
+find . \( -name '150157196*' -o -name '15023306*' \)
+find . \( -name '1545880018157.vsd' -o -name '1545617257706.pdf' -o -name '1545880675288.xlsx' \)
 ```
 
 ## Storage
@@ -83,6 +87,16 @@ stat -c %A <dir>
 
 # get username by uid
 awk -v val=1000 -F ":" '$3==val{print $1}' /etc/passwd
+```
+
+## Hack
+
+```bash
+#!/bin/bash
+
+# clear history
+~/.bash_history
+* [clear history](https://unix.stackexchange.com/questions/203290/how-do-i-clear-the-terminal-history)
 ```
 
 * [users and groups](https://wiki.archlinux.org/index.php/users_and_groups)
