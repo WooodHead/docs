@@ -45,6 +45,25 @@ ls -la | head -n 10
 # file multiply files by filenames
 find . \( -name '150157196*' -o -name '15023306*' \)
 find . \( -name '1545880018157.vsd' -o -name '1545617257706.pdf' -o -name '1545880675288.xlsx' \)
+
+# [find get all files modified after <date>](https://stackoverflow.com/questions/848293/shell-script-get-all-files-modified-after-date)
+
+# [Find and sort files by date modified](hhttps://unix.stackexchange.com/questions/29899/how-can-i-use-find-and-sort-the-results-by-mtime)
+find . your-options -printf "%T+\t%p\n" | sort -rn | head -n 10
+
+```
+
+## Data and time
+
+```bash
+#!/bin/bash
+
+# [stat](https://superuser.com/questions/387042/how-to-check-all-timestamps-of-a-file)
+# atime is for Last data access timestamp. let's access the file's data by reading it (less or vim), printing it out (cat) or copy it to another file
+# mtime is for Last data modification timestamp. Now let's change the file status, by changing the permission (chmod) or renaming it (mv)
+# ctime is for Last file status change timestamp. modify the contents of the file by editing the file
+
+# [modified file atime mtime ctime](https://askubuntu.com/questions/62492/how-can-i-change-the-date-modified-created-of-a-file)
 ```
 
 ## Storage
@@ -97,6 +116,9 @@ awk -v val=1000 -F ":" '$3==val{print $1}' /etc/passwd
 # clear history
 ~/.bash_history
 * [clear history](https://unix.stackexchange.com/questions/203290/how-do-i-clear-the-terminal-history)
+history -c
+tput reset
+echo -n "">~/.bash_history
 ```
 
 * [users and groups](https://wiki.archlinux.org/index.php/users_and_groups)
