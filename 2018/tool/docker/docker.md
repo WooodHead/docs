@@ -204,6 +204,22 @@ Stopping a container is like stopping a virtual machine. Although it's not curre
 Stopping a container does not destory the container or the data inside of it.
 A best practice to take the two-step approach of stopping the container first and then deletingit.
 
+## Self-healing 
+
+It's a form of self-healing that enables Docker to automatically restart them after certain events or failures have occurred.
+Restart policies are applied per-container, and can be configured imperatively on the command line as part of docker-container run commands.
+the following restart policies exist:
+
+* no (Do not automatically restart the container, default)
+* always
+* unless-stopped
+* on-failed
+* [Start Containers Automatically](https://docs.docker.com/config/containers/start-containers-automatically/)
+
+The always policy is the simplest. It will always restart a stopped container unless it has been explicitly stopped, such as via a docker container stop command.You start a new container with --restart always policy and then stop it with the docker container stop command. At this point the container is in the Stopped(Exited) state. However, if you restart the Docker daemon, the container will be automatically restarted when the daemon comes back up.
+
+
+
 ## Note
 
 * It is best practice to use non-root users when working with Docker,you need to make sure it's a member of the local docker Unix group. If it isn't, you can add it with usermod -aG docker <user> then log out and log back to take effect.

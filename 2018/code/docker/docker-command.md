@@ -107,6 +107,9 @@
    -it flags tell Docker to make the container interactive and to attach our 
    current shell to the container\'s terminal
 
+   docker container run --name <container-name> -it --restart always <imange>:<tag> sh
+   --restart always : restart automatically with always policy
+
    # verfiy stlling running container
    docker container ps
 
