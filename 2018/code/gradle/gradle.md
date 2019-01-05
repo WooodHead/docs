@@ -1,3 +1,4 @@
 # Gradle Overview
 
-* [Gradle Commands](gradle-command.md)
+* [Commands](gradle-command.md)
+* [Issue](gradle-issue.md)
