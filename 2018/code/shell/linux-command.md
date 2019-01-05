@@ -62,8 +62,16 @@ find . your-options -printf "%T+\t%p\n" | sort -rn | head -n 10
 # atime is for Last data access timestamp. let's access the file's data by reading it (less or vim), printing it out (cat) or copy it to another file
 # mtime is for Last data modification timestamp. Now let's change the file status, by changing the permission (chmod) or renaming it (mv)
 # ctime is for Last file status change timestamp. modify the contents of the file by editing the file
+# show atime,mtime,ctime
+stat <filename>
 
 # [modified file atime mtime ctime](https://askubuntu.com/questions/62492/how-can-i-change-the-date-modified-created-of-a-file)
+# change atime and mtime
+touch -t [[CC]YY]MMDDhhmm[.SS]
+# change mtime
+touch -m [[CC]YY]MMDDhhmm[.SS]
+# change atime
+touch -a [[CC]YY]MMDDhhmm[.SS]
 ```
 
 ## Storage
