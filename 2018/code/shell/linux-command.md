@@ -47,9 +47,16 @@ find . \( -name '150157196*' -o -name '15023306*' \)
 find . \( -name '1545880018157.vsd' -o -name '1545617257706.pdf' -o -name '1545880675288.xlsx' \)
 
 # [find get all files modified after <date>](https://stackoverflow.com/questions/848293/shell-script-get-all-files-modified-after-date)
-
 # [Find and sort files by date modified](hhttps://unix.stackexchange.com/questions/29899/how-can-i-use-find-and-sort-the-results-by-mtime)
+# [Why does find -mtime +1 only return files older than 2 days?](https://unix.stackexchange.com/questions/92346/why-does-find-mtime-1-only-return-files-older-than-2-days)
+# [find](http://pubs.opengroup.org/onlinepubs/9699919799/utilities/find.html)
 find . your-options -printf "%T+\t%p\n" | sort -rn | head -n 10
+find . -type f -printf "%T+\t%p\n" | sort -rn | head -n 10
+find . -type f -mmin -$((60*24))
+find /app/tomcat/demandPortal/WEB-INF/uploadFiles -type f -mmin -$((60*2))
+
+find /app/tomcat/demandPortal/WEB-INF/uploadFiles -type f -mmin -$((60*2)) -exec cp '{}' /app/tomcat/migrate/test/2019-01-07/ \;
+find /app/tomcat/demandPortal/WEB-INF/uploadFiles -type f -cmin -$((60*2)) -exec cp '{}' /app/tomcat/migrate/test/2019-01-07/ \;
 
 ```
 
