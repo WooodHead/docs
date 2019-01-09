@@ -237,6 +237,33 @@ The on-failure policy will restart a container if it exits with a non-zero exit 
 * Move to production with Multi-stage Builds
 * A few best practices
 
+### The Detail
+
+* Get the app code
+
+git clone https://github.com/nigelpoulton/psweb.git
+
+* Inspecting the Dockerfile
+
+This is the file describes the application and tells Docker how to build it into an image.
+the Dockerfile has two main purpose:
+
+* To describe the application
+* to tell Docker how to containerize the application(create an image with the app inside)
+
+Do not underestimate the impact of the Dockerfile as a from of documentation! It has the ablility to help bridge the gap between development and operations! It also has the power to speed up on-boarding of new developers etc. This is because the file accrurately describe the application and its dependences in an easy-to-read format. As such, it should be treated as code, and checked into a source control system.
+
+```Dockerfile
+FROM alpine
+LABEL maintainer="nigelpoulton@hotmail.com"
+RUN apk add --update nodejs nodejs-npm
+COPY . /src
+WORKDIR /src
+RUN npm install
+EXPOSE 8080
+ENTRYPOINt ["node","./app.js"]
+```
+At a high level, the example Dockerfile says:Star with alpine image, add "nigelpoulton@hotmail.com" as the maintainer, install Node.js and NMP, copy in the application code, set the working directory, install dependencies, document the app's network port, and set app.js as the default application to run.
 
 ## Note
 
