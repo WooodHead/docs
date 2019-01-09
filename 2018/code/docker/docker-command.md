@@ -99,6 +99,8 @@
    docker container run -it ubuntu:lasted /bin/bash
    docker container run -d --name web2 --publish 8081:8080 test:latest
    -it flag : connect your terminal window to the container\'s shell
+   -d flag: starting a container in the background does not attach it to your terminal. -d flag instead of -it to tell the container to run in the background.
+   -p flag: maps ports on the Docker host to ports inside the container. This time we\'re mapping port 8081 on the Docker host to port 8080 inside the container. This means that traffic hitting the Docker host on port 8081 will be directo to port 8080 inside of the container.
 
    docker container run alpine:latest sleep 10
    The container will start, run for 10 seconds and exit
@@ -117,6 +119,7 @@
    docker container ls
    docker container ls -a
    -a flag : tells Docker to list all containers, even those in the stopped state.
+   the "docker container ls" command will show the container as running ans show the ports that are mapped.
 
     # attaching to running container
    docker container exec -it [container name|container id] bash. This is becasuse this command created a new Bash or PowerShell process and attached to that. This means that typing exit in this shell will not terminate the container, because the original ]Bash or PowerShell process will continue running.
@@ -125,22 +128,31 @@
 
    # inspect running docker container
    docker inspect [container-name|container-id]
+   It will show you detailed configuration and runtime information about a container.
 
    # start docker container
    docker container start [container-name|container-id]
+   It will restart a stopped(Exited) container.
 
    # enter container
    docker container exec -it [container-name|containerid] bash
+   Lets you run a new process inside of a running container. It\'s useful for attaching the shell of your Docker host to a terminal inside of a running container. This command will start a new Bash shell inside of a running container and connect to it
 
    # stop docker container
    docker container stop [container-name|container-id]
    stop command is far more polite. it gives the process inside of the container a heads-up that it\'s about to be stopped, giving it chance to get things in order before the end comes. the magic behind the sences here can be explained with Linux/POSIX signals. docker container stop sends a SIGTERM singal to the PID 1 process inside of the container. As we just said, this gives the process a chance to clean things up and gracefully sht itself down. If it doesn\'t exit with 10 seconds, it will receive a SIGKILL. This is effectively the bullet to the head. But hey, it got 10 seconds to sort itself out first!
+
+   # pause container
+   docker container pause [container-name|container-id]
+   stopping or pausing the container does not destroy the container or any data stored in it.
 
    # rm  docker container 
    docker container rm  [container-name|container-id]
    docker container rm  [comtainer-name|container-id] -f
    -f flag : the container will be killed without warning.
    "docker container rm [container-name|container-id] -f" doesn\'t bother asking nicely with SIGTERM, it goes straight to the SIGKILL.
+   docker container rm $(docker container ls -aq) -f
+   The procedure will forcible destory all cainters without giving them a chance to clean up. This should never be performed on production system or systems running important containers.
 
   # main process
   docker container run --name percy -it alpine:latest /bin/bash

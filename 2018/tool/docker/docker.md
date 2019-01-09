@@ -218,6 +218,24 @@ the following restart policies exist:
 
 The always policy is the simplest. It will always restart a stopped container unless it has been explicitly stopped, such as via a docker container stop command.You start a new container with --restart always policy and then stop it with the docker container stop command. At this point the container is in the Stopped(Exited) state. However, if you restart the Docker daemon, the container will be automatically restarted when the daemon comes back up.
 
+The unless-stopped policy will not be restarted when the daemon restarts if they were in the Stopped(Exited) state.We'll create two new containers. One called "always" with the --restart always policy, and one called "unless-stopped" with the --restart unless-stopped policy. We'll stop them both with the docker container stop command and then restart Docker. The "always" container will restart, but the "unless-stopped" container will not.
+
+The on-failure policy will restart a container if it exits with a non-zero exit code. It will also restart containers when the Docker daemon restarts, even containers that were in the stopped state.
+
+## Containerizing an app
+
+* ![the basic flow of containizing an app](img/docker-basic-flow-containizing-an-app.png)
+
+### The basic flow with high level
+
+* Get the app code
+* Inspect the Dockerfile
+* Containerize the app
+* Run the app
+* Test the app
+* Look a bit closer
+* Move to production with Multi-stage Builds
+* A few best practices
 
 
 ## Note
