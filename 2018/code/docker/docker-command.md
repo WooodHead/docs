@@ -33,6 +33,13 @@
 
    # build docker image
    docker image build -t kubia:latest .
+   docker image build --no-cache=true kubia:latest
+   -t flag: tags the image
+   -f flag: use a Dockerfile with an arbitary name and in an arbitary directory
+   --no-cache flag: build process to ignore the entire caceh by passing
+
+   # view the instruction that were used to build the image 
+   docker image history [container-name|container-id]
 
    # show local images
    docker images

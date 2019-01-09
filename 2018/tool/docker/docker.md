@@ -204,7 +204,7 @@ Stopping a container is like stopping a virtual machine. Although it's not curre
 Stopping a container does not destory the container or the data inside of it.
 A best practice to take the two-step approach of stopping the container first and then deletingit.
 
-## Self-healing 
+## Self-healing
 
 It's a form of self-healing that enables Docker to automatically restart them after certain events or failures have occurred.
 Restart policies are applied per-container, and can be configured imperatively on the command line as part of docker-container run commands.
@@ -231,6 +231,7 @@ The on-failure policy will restart a container if it exits with a non-zero exit 
 * Get the app code
 * Inspect the Dockerfile
 * Containerize the app
+* Pushing images
 * Run the app
 * Test the app
 * Look a bit closer
@@ -239,11 +240,11 @@ The on-failure policy will restart a container if it exits with a non-zero exit 
 
 ### The Detail
 
-* Get the app code
+#### Get the app code
 
 git clone https://github.com/nigelpoulton/psweb.git
 
-* Inspecting the Dockerfile
+#### Inspecting the Dockerfile
 
 This is the file describes the application and tells Docker how to build it into an image.
 the Dockerfile has two main purpose:
@@ -263,7 +264,53 @@ RUN npm install
 EXPOSE 8080
 ENTRYPOINt ["node","./app.js"]
 ```
+
 At a high level, the example Dockerfile says:Star with alpine image, add "nigelpoulton@hotmail.com" as the maintainer, install Node.js and NMP, copy in the application code, set the working directory, install dependencies, document the app's network port, and set app.js as the default application to run.
+
+Every From instruction constitutes a distinct build stage
+
+#### Containerize the app/build the image
+
+```bash
+#!/bin/bash
+docker image bulid -t web:latest .
+```
+
+#### Test the app
+
+* Make sure that the container is up and running with "docker container ls".
+* Using http client or test toolkit to check web server health url
+
+#### Pushing images
+
+```bash
+#!/bin/bash
+docker login
+
+# Registry Repository Tag
+# If It doesn't specified Registry, Docker will assume Regiestory=docker.io and 
+# Tag=latest. all of private images have to sit wihtin the second-level namespace.
+# This means we need to re-tag the image to include my Docker ID
+docker image tag alpine-rsync:latest zzq635/alpine-rsync:latest
+docker image push zzq635/alpine-rsync:latest
+```
+
+#### Run the app
+
+```bash
+#!/bin/bash
+docker container run -d --name c1 -p 80:8080 alpine-rsync:latest
+```
+
+#### Look a bit closer
+
+* Comment lines in a Dockerfile start with the # character
+* Instruction names are not case sensitive
+* but it sis normal practice to write them in UPPERCASE
+* create new layers are FROM,RUN,and COPY
+* create metadata include EXPOSE, WORKDIR, ENV and ENTRYPOINT
+
+#### Multi-stage builds to teh rescue
 
 ## Note
 
@@ -295,8 +342,6 @@ Docker currently support the following filters:
 4. lable: Filters images based on the presence of a label or label and value. The docke iamge ls command does not display labels in its output.
 
 docker image ls --filter=reference="*:latest"
-
- 
 
 ## Reference
 
