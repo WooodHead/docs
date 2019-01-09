@@ -24,6 +24,12 @@
    # view service
    docker service ls
 
+   # docker network
+   docker network ls
+
+   # docker volume
+   docker volume ls
+
 ```
 
 ## Images
