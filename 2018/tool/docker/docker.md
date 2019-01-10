@@ -312,6 +312,41 @@ docker container run -d --name c1 -p 80:8080 alpine-rsync:latest
 
 #### Multi-stage builds to teh rescue
 
+## Docker Networking
+
+### Container Netwrok Model - CNM
+
+* Docker networking is based on an open-source pluggable architecture called the Container Netwrok Model
+* libnetwork is Docker's real-world implementation of CNM, and it provides all of Docker's core networking capabilities.
+* Docker ships with a set of native drivers that deal with the most common networking requirements. These include single-host bridge networks, multi-host overlays, and options for plugging into existing VLANs. Ecosystem partners extend things even further by providing their own drivers.
+
+### Dockering Networking High Level
+
+* [The Container Network Model - CNM](https://success.docker.com/article/networking)
+
+It's design specification. It outlines the fundamental building block of a Docker network.
+![Container Networking Model Architecture](img/docker-container-networking-model.png)
+
+* [libnetwork](https://github.com/docker/libnetwork/blob/master/docs/design.md)
+
+It's written in Go, and implements the coere components outlined in the CNM
+It implements native service discovery, ingress-based container load balancing, and the network control plane and management plane functionality.
+
+* ![Drivers](img/docker-networking-driver.png)
+
+It extend the model by implementing specific network topologies such as VXLAN-based overylay networks.
+It implements the data plane, for example, connectivity and isolation is all handled by drivers. So is the actual creation of network object.
+Docker ships with serveral built-in drivers, known as native drivers or local drivers. On Linux they include; bridge, overlay,and macvlan. On Windows they include; nat, overlay,transparent, and 12bridge.
+3rd-parties can also write Docker network drivers. These are known as remote drivers, and example include calico, contiv,kuryr, and weave.
+
+### Docker Networking Driver
+
+#### Single-host bridge networks
+
+* ![Docker Host with single-host bridge network](img/docker-networking-driver-single-host-bridge.png)
+
+* the default bridge network on Linux does not support name resolution via the Docker DNS service. All other user-defined bridge networks do!
+
 ## Note
 
 * It is best practice to use non-root users when working with Docker,you need to make sure it's a member of the local docker Unix group. If it isn't, you can add it with usermod -aG docker <user> then log out and log back to take effect.

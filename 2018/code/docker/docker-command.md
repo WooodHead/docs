@@ -27,6 +27,9 @@
    # docker network
    docker network ls
 
+   # detail network
+   docker network inspect <network-name>
+
    # docker volume
    docker volume ls
 
@@ -177,4 +180,29 @@
   docker container start percy
   docker container exec -it percy bash
 
+```
+
+## Networking
+
+```bash
+#! /bin/bash
+
+   # docker network
+   docker network ls
+
+   # detail network
+   docker network inspect <network-name>
+   docker network inspect <network-name> --format '{{json.Containers}}'
+
+   # create a new single-host bridge network called 'localnet'
+   docker network create -d bridge <network-name>
+
+   # create a new container and attach it to the specified bridge network
+   docker container run -d --name <container-name> \
+   --network <network-name> \
+   <image-name> sleep 1d
+
+   # verify the port mapping 
+   docker port <container-id>
+   # 80/tcp ->0.0.0.0:5000 This shows that port 80 in the container is mapped to prot 5000 on all inerfaces on the Docker host
 ```
