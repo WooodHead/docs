@@ -42,3 +42,42 @@ It exposes a rich API that allows you to deploy and manage complicated microserv
 * swarm uses an implementation of the [Raft consensus algorithms](https://raft.github.io) to power manager HA
 
 ## Actual State vs Desired State
+
+## Replicated vs Global services
+
+The default replication mode of a service is replicated. This will deploy a desired number of replicas and distributed them as evenly as possible across the cluster.
+The other mode is global, which runs a single replica on every node in the swarm.
+To deploy a global service you need to pass the --mode global flag to the docke service create command
+
+## Scaling a service
+
+Feature of services is the ability to easily scale them up and down.
+Bebind the scenses,swarm runs a scheduling algorithm that defaults to balancing replicas as evenly as possible across the nodes in the swarm.
+But this balance whether takes into account about CPU load depends their implementations
+
+## Rolling updates
+
+* docker service update --update-parallelism --update-delay 
+
+```bash
+#! /bin/bash
+docker service update --image <dockerID>/<image-name>:<update-tag> --update-parallelism 2 \ # the new image was pushed to 2 replicas at a time 
+--update-delay 20s # with a 20 seconds cool-off period in between each
+<service-name>
+```
+
+* Some of the requests will be services by replicas running the old version and some will be serviced by replicas running the new version s. After enough time, all requests will be serviced by replicas running the updated version of the service.
+
+* docker service inspect --pretty <service-name>
+
+## Swarm log
+
+Docker swam support many log driver
+
+* journalId(only works on Linux hosts running systemd)
+* syslog
+* splunk
+* gelf
+
+By default, Docker nodes configure services to use the json-file
+
