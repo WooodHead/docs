@@ -30,6 +30,9 @@
    # docker volume
    docker volume ls
 
+   # find where the volume is exposed on the Docker host
+   docker volume inspect <container-volume> | grep Mount
+
 ```
 
 ## Images
