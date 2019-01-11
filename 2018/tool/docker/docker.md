@@ -357,6 +357,9 @@ Docker ships with serveral built-in drivers, known as native drivers or local dr
 * It allows you to create a flat,secure,layer-2 network, spanning multiple hosts. Cotainers connect to this and can communicate directly.
 * Linux should have at least a 4.4 Linux kernel and Windows should be Windows Serer 2016 with the latest hotfixes installed.
 * allow ports 2377/tcp, 7949/tcp and 7946/udp with Swarm orchestration.
+* Docker overlay networking uses VXLAN tunnels to create virtual Layer 2 overlay networks.
+* Each end of the VXLAN tunnel is terminated by a VXLAN Tunnel Endpoint(VTEP) which performs the encapsulation/de-encapsulation
+* ![VXLAN VTEP](img/docker-overlay-vxlan-vtep.png)
 
 #### Connecting to existing networks
 

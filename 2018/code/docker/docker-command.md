@@ -194,6 +194,10 @@
    docker network inspect <network-name>
    docker network inspect <network-name> --format '{{json.Containers}}'
 
+   # get the container's IP address
+   docker container ls
+   docker contaienr inspect --format= '{{range .NetworkSettings.Networks}}{ {.IPAddress}}{{end}}' <container-id>
+
    # create a new single-host bridge network called 'localnet'
    # by default, it creates them with nat drier on windows, and the bridge drier on Linux.
    docker network create -d bridge <network-name> # -d flag: specify the type of network (network driver)

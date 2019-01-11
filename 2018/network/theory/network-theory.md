@@ -1,5 +1,10 @@
 # Network Theory
 
+## Network Communication
+
+* [Multicast](https://en.wikipedia.org/wiki/Multicast)
+* [Unicast](https://en.wikipedia.org/wiki/Unicast)
+
 ## Concepts
 
 ### Subset Mask
@@ -29,6 +34,7 @@ The default gateway is used as the destination of all traffic that is not on the
 
 The default gateway always resides in the same subnet as the end device IP. The gateway can really be any unique address within the subnet itself, but most network administrators designate the first number of the subnet as the gateway. Therefore, 192.168.99.1 would be the default gateway of our source device given the fact that we have a 255.255.255.0 subnet mask.
 
-##  Reference
+## Reference
 
 * [IPAddress,Subnet Mask,Default Gaetway](https://www.networkcomputing.com/network-security/ip-addresses-subnet-masks-and-default-gateways/1835691346)
+* [OSI Model](https://en.wikipedia.org/wiki/OSI_model)

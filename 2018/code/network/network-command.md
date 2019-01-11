@@ -1,8 +1,12 @@
 # Network Command
 
 ```bash
-
+#! /bin/bash
    # traceroute www.docker.com
-   # ping www.docker.com  add ip addcress to /etc/hosts
-   
+   traceroute <ipaddress | domainname>
+```
+
+```cmd
+# trace ip
+tracert <ipaddress>
 ```
