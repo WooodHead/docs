@@ -346,12 +346,16 @@ Docker ships with serveral built-in drivers, known as native drivers or local dr
 * ![Docker Host with single-host bridge network](img/docker-networking-driver-single-host-bridge.png)
 
 * the default bridge network on Linux does not support name resolution via the Docker DNS service. All other user-defined bridge networks do!
+* Single-host bridge networks are the most basic type of docekr network and are suitbale for local development and very small applications. They do not scale, and they requrie port mapping if you want to publish your services outside of the network.
+* Docker on Linux implements bridge networks using the built-in bridge driver, whereas Docker on Windows implements them using the built-in nat driver.
 
 #### Multi-host overlay networks
 
-They allow a single network to span multiple hosts so that containers on different hosts can communicate at layer 2. They're ideal for container-to container communication, including container-only application, and they scale well.
-
-Docker provides a native dricer for overlay networks. This makes creating them as simple as adding the o--d overlay flag ot the docker network create command.
+* They allow a single network to span multiple hosts so that containers on different hosts can communicate at layer 2. They're ideal for container-to container communication, including container-only application, and they scale well.
+* Docker provides a native driver for overlay networks. This makes creating them as simple as adding the -d overlay flag ot the docker network create command.
+* It allows you to create a flat,secure,layer-2 network, spanning multiple hosts. Cotainers connect to this and can communicate directly.
+* Linux should have at least a 4.4 Linux kernel and Windows should be Windows Serer 2016 with the latest hotfixes installed.
+* allow ports 2377/tcp, 7949/tcp and 7946/udp with Swarm orchestration.
 
 #### Connecting to existing networks
 
@@ -360,6 +364,9 @@ The ability to connect containerized apps to external systems and physical netwo
 * ![Docker Networking MACVLAN](img/docker-network-macvlan.png)
 
 The built-in MACVLAN dirver(transparent on Windows) was created with this in mind. It makes containers first-class citizens on the existing physical networks by giving each one its own MAC and OP address. On the positive side, MACVLAN performance is good as it doesn't require port mappings or additional bridges - you connect the container interface through to the hosts interface (or a sub-interface). On the negative side, it requires the Host NIC to be in promiscuous mode. which isn't allowed on most public cloud platforms. So MACVLAN is great for your corporate data center networks(assuming your network team can accommodate promiscuous mode), but it won't work in the public cloud.
+
+* ![Docker Networking MACVLAN sample](img/docker-network-macvlan-example.png)
+
 
 ## Note
 

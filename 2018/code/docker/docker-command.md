@@ -190,12 +190,23 @@
    # docker network
    docker network ls
 
-   # detail network
+   # detail configuration information about network
    docker network inspect <network-name>
    docker network inspect <network-name> --format '{{json.Containers}}'
 
    # create a new single-host bridge network called 'localnet'
-   docker network create -d bridge <network-name>
+   # by default, it creates them with nat drier on windows, and the bridge drier on Linux.
+   docker network create -d bridge <network-name> # -d flag: specify the type of network (network driver)
+   docker service create --name test \
+   --network <overlay-network-name> \
+   --replica 2 \
+   <image-name>:<tag> sleep infinity
+
+   # delete all unused networks on a docker host
+   docker network prune
+
+   # delete specific network on a docker host
+   docker network rm <network-name>
 
    # create a new container and attach it to the specified bridge network
    docker container run -d --name <container-name> \
@@ -205,4 +216,31 @@
    # verify the port mapping 
    docker port <container-id>
    # 80/tcp ->0.0.0.0:5000 This shows that port 80 in the container is mapped to prot 5000 on all inerfaces on the Docker host
+
+   # create macvlan 
+   # This will create the "macvlan100" network and the eth0.100 sub-interface. MACVLAN uses standard Linux sub-interfaces, and you have to tag them with the ID of the VLAN they will connect to. In this example we're conntecting to VLAN 100, so we targ the sub-inferface with .100 (eth0.100). We also used the --ip-range flag to tell the MACVLAN network which sub-set of IP addresses it can assign to containers. It's vital that this range of address be reserved for Docker and not in use by other nodes for DHCP servers.
+   docker network create -d macvlan \
+   --subnet=10.0.0.0/24 \
+   --ip-range=10.0.0.0/25 \
+   --gateway=10.0.0.1 \
+   -0 parent=eth0.100
+   macvlan100
+
+   # deploy the macvlan network
+   # If you can't get this work, it might be because the host NIC is not in promiscuous mode.
+   # Remember that public cloud platforms do not allow promiscuous mode.
+   docker container run -d --name mactainer1 \
+   --network macvlan100 \
+   alpine sleep 1d
+
+   # view log
+   docker logs <container-name | service-name>
+
+   # cnofig dns
+   docker container run -d --name <container-name> \
+   --dns=8.8.8.8 \ # Google DNS server
+   --dns-serch=dockercrets.com \ #search domain
+   alpine sh
 ```
+
+* ![Docker Networking MACVLAN example](img/docker-network-macvlan-example.png)

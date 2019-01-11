@@ -53,6 +53,8 @@ docker service salce web-app=5  # down
 docker service rm <service-name>
 
 # create an overlay swarm network
+# It availabel to all hosts in the Swarm and has its control plane encrypted with TLS.
+# If you want to encrypt the data plane. you just add the -o encrypted flag to the command
 docker network create -d overlay <network-name>
 
 # list swarm network
@@ -81,4 +83,14 @@ docker service update \
 
 # using json-file driver to log
 docker service logs <service-name> <--follow|--tail|--details>
+
+# publish mode
+# ingress mode is the default.
+# to publish a servcie in host mode you need to use the long format of the --publish flag and add mode=host, it looks like this -p 5000:80
+# published=5000 makes the service available externally via port 5000
+# target=80 makes sure that external requests to the published port get mapped back to port 80 on the service replicas
+# mode=host makes sure that external requests will only reach the service if they come in via nodes running a service replica
+docker service create -d --name <service-name> \
+--publish published=5000, target=80, mode=host \
+nginx
 ```
