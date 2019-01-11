@@ -360,6 +360,7 @@ The ability to connect containerized apps to external systems and physical netwo
 * ![Docker Networking MACVLAN](img/docker-network-macvlan.png)
 
 The built-in MACVLAN dirver(transparent on Windows) was created with this in mind. It makes containers first-class citizens on the existing physical networks by giving each one its own MAC and OP address. On the positive side, MACVLAN performance is good as it doesn't require port mappings or additional bridges - you connect the container interface through to the hosts interface (or a sub-interface). On the negative side, it requires the Host NIC to be in promiscuous mode. which isn't allowed on most public cloud platforms. So MACVLAN is great for your corporate data center networks(assuming your network team can accommodate promiscuous mode), but it won't work in the public cloud.
+
 ## Note
 
 * It is best practice to use non-root users when working with Docker,you need to make sure it's a member of the local docker Unix group. If it isn't, you can add it with usermod -aG docker <user> then log out and log back to take effect.
