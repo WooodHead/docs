@@ -347,6 +347,19 @@ Docker ships with serveral built-in drivers, known as native drivers or local dr
 
 * the default bridge network on Linux does not support name resolution via the Docker DNS service. All other user-defined bridge networks do!
 
+#### Multi-host overlay networks
+
+They allow a single network to span multiple hosts so that containers on different hosts can communicate at layer 2. They're ideal for container-to container communication, including container-only application, and they scale well.
+
+Docker provides a native dricer for overlay networks. This makes creating them as simple as adding the o--d overlay flag ot the docker network create command.
+
+#### Connecting to existing networks
+
+The ability to connect containerized apps to external systems and physical networks is vital. A common example is a partially containerized app - the containerized parts will need a way to commmuinicate with the non-containerized parts still running on existing physical networks and VLANs.
+
+* ![Docker Networking MACVLAN](img/docker-network-macvlan.png)
+
+The built-in MACVLAN dirver(transparent on Windows) was created with this in mind. It makes containers first-class citizens on the existing physical networks by giving each one its own MAC and OP address. On the positive side, MACVLAN performance is good as it doesn't require port mappings or additional bridges - you connect the container interface through to the hosts interface (or a sub-interface). On the negative side, it requires the Host NIC to be in promiscuous mode. which isn't allowed on most public cloud platforms. So MACVLAN is great for your corporate data center networks(assuming your network team can accommodate promiscuous mode), but it won't work in the public cloud.
 ## Note
 
 * It is best practice to use non-root users when working with Docker,you need to make sure it's a member of the local docker Unix group. If it isn't, you can add it with usermod -aG docker <user> then log out and log back to take effect.
