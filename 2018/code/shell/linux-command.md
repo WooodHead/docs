@@ -6,6 +6,9 @@
 #!/bin/bash
 
 curl -s localhost:80 >/dev/null && echo Connected. || echo Fail.
+
+curl -lv -H "Host: tubanxiong.deteconauto.com" http://10.200.88.209/safeway-admin/dist/3661dca315decb43672a94bcb5177823.png
+
 ```
 
 ## File , Folder
