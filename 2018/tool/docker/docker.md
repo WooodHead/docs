@@ -310,7 +310,7 @@ docker container run -d --name c1 -p 80:8080 alpine-rsync:latest
 * create new layers are FROM,RUN,and COPY
 * create metadata include EXPOSE, WORKDIR, ENV and ENTRYPOINT
 
-#### Multi-stage builds to teh rescue
+#### Multi-stage builds
 
 ## Docker Networking
 
@@ -351,6 +351,7 @@ Docker ships with serveral built-in drivers, known as native drivers or local dr
 
 #### Multi-host overlay networks
 
+* ![Docker overlay network](img/docker-network-overlay.png)
 * They allow a single network to span multiple hosts so that containers on different hosts can communicate at layer 2. They're ideal for container-to container communication, including container-only application, and they scale well.
 * Docker provides a native driver for overlay networks. This makes creating them as simple as adding the -d overlay flag ot the docker network create command.
 * It allows you to create a flat,secure,layer-2 network, spanning multiple hosts. Cotainers connect to this and can communicate directly.
