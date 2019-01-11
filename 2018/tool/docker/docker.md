@@ -381,6 +381,44 @@ The built-in MACVLAN dirver(transparent on Windows) was created with this in min
 
 * ![Docker Networking MACVLAN sample](img/docker-network-macvlan-example.png)
 
+## Volumes and Persistent Data
+
+* non-persistent storage
+* persistent storage
+
+### non-persistent data
+
+* It's automatically created, alongside the container, and it's tied to the lifecycle of the contianer. That means deleting the container will delete this storage and any data on it
+* If your containers don't create persistent data, local storage will be fine.
+
+### persistent data
+
+* Things like, customer records, financials, bookings, audit logs and even some types of application log data which you need to keep.
+* the persistent data should be put it on a volume
+* volumes are decoupled from containers, meaning you create and manage them separately, and they're not tied to the lifecycle of any container.
+* you can delete a container with a volume, and volume will not be deleted.
+
+### Storage Driver
+
+#### overlay2 driver (recommended storage driver)
+
+* Red Hat Enterprise Linux with Docker 17.06 or higher
+* Ubuntu using a Linux 4.x kernel or higher
+
+#### devicemapper driver
+
+* Red Hat Enterprise Linux with Docker 17.06 lower
+* Oralce Linux
+
+#### aufs driver
+
+* Ubuntu
+
+#### btrfs driver
+
+* SUSELinux
+
+* 
 
 ## Note
 

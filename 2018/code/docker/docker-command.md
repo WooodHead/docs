@@ -200,11 +200,14 @@
 
    # create a new single-host bridge network called 'localnet'
    # by default, it creates them with nat drier on windows, and the bridge drier on Linux.
-   docker network create -d bridge <network-name> # -d flag: specify the type of network (network driver)
+   docker network create -d bridge -o <network-name> # -d flag: specify the type of network (network driver)
+   # -o flag: encrypt the data
    docker service create --name test \
    --network <overlay-network-name> \
    --replica 2 \
    <image-name>:<tag> sleep infinity
+   # create 3 layer routing with in the same overlay network
+   docker network create --subnet-10.1.1.0/24 --subnet=11.1.1.0/24 -d overlay <network-name>
 
    # delete all unused networks on a docker host
    docker network prune
@@ -245,6 +248,16 @@
    --dns=8.8.8.8 \ # Google DNS server
    --dns-serch=dockercrets.com \ #search domain
    alpine sh
+```
+
+## Volume
+
+```bash
+#! /bin/bash
+
+# ceate a new volume
+docker volume create <volume-name> -d # -d flag: specify a driver
+
 ```
 
 * ![Docker Networking MACVLAN example](img/docker-network-macvlan-example.png)

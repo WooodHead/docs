@@ -23,7 +23,6 @@
 * [security](security/security.md)
 * [serverless](serverless/serverless.md)
 * [service-meshes](service-meshes/service-meshes.md)
-* [storage](storage/storage.md)
 * [test](test/test.md)
 * [template](template/template.md)
 
