@@ -40,7 +40,7 @@
 - Apple sanctioned OTA updates
 
   OTAs like over-the-air updates so you don't have to go through the Apple submission processs so long as you don't change the main funcationality of the app. you open the app for the first thime it would download the javascript from wherever you're storing it and then at some interval or over websockets it could just check is there an update if there is download the new one store that use that as your as the code base
-  
+
   OTA updates
   An Application may not download or install executable code. Interpreted code may only be used in an Application if all scripts. code and interpreters are packaged in the Application and not download. The only exception to the foregoing is scripts and code downloaded and run by Apple's builtin Webkit framework or JavascriptCore, provided that such scripts and code do not change the primary purpose of the Applicaton by providing features or funcationality that are inconsistent with the intended and advertised purpose of the Application as submitted to the App Store.
 
@@ -58,6 +58,40 @@
 - Native UI components
 
   Native UI components it's a big one and what I think is really nice is the powerfully plug-in API so it's so easy to make your javascirpt interact with any of the native side like wrapping different components that aren't builtin or accessing some functionality like for example the Facebook login
+
+  - View
+  - Text
+  - Image
+  - ScrollView
+  - DatePickerIOS
+  - PickerIOS
+  - LIstView
+  - Navigator
+  - SwitchIOS
+  - MapView
+  - AlterIOS
+  - WebView
+  - Touchable
+  - TabBarIOS
+  - SegmentedControlIOS
+  - ActivityIndicatorIOS
+  - CameraRoll
+  - NetInfo
+  - PanResponder
+  - StatusBarIOS
+  - TextInput
+  - SliderIOS
+  - PushNotificationIOS
+  - LinkingIOS
+  - ActionSheetIOS
+  - AsyncStorage
+  - Geolocation
+  - ViberationIOS
+  - Video
+  - Camera
+  - AudioRecorder
+  
+
 
 - Simple and powerful Native plugin API
 
