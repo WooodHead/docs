@@ -90,10 +90,10 @@
   - Video
   - Camera
   - AudioRecorder
-  
-
 
 - Simple and powerful Native plugin API
+
+  through bridge module
 
 ### [Tutanium]
 
