@@ -42,3 +42,37 @@
 - Clean Coding and Refactoring
 - Security Best Practices
 - Useful Libraries
+- backtick ` ` which means template string in es6 ir ES 2015 that is short for ECMAScript 6 or 2015
+
+  ```node
+  const os = require('os');
+  var totalMemory = os.totalmem();
+  console.log('Total Memory:' + totalMemory());
+  console.log(`Total Memory : ${totalMemory}`);
+  ```
+
+- Node have function and Class
+
+  ```node Class
+  const EventEmitter = require('events');
+  const emitter = new EventEmitter();
+  //Register a listener
+  emitter.on('messageLogged',function(arg){
+      console.log('listener called',arg);
+  })
+  //Raise an event
+  emitter.emit('messageLogged',{id:1,url:'http://'});
+  ```
+
+- Arrow Funciton
+
+ ```node
+ const EventEmitter = require('events');
+  const emitter = new EventEmitter();
+  //Register a listener
+  emitter.on('messageLogged',(arg) => { // arrow function
+      console.log('listener called',arg);
+  })
+  //Raise an event
+  emitter.emit('messageLogged',{id:1,url:'http://'});
+ ```
