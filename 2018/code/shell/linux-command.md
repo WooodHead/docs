@@ -112,6 +112,7 @@ sudo usermod -aG <group> <user>
 
 # change owner
 sudo chown <user> <dest>
+sudo chown -R $(womai) /usr/local/include
 
 # show owning user
 stat -c %U <dir>
