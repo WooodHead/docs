@@ -28,3 +28,17 @@
 - it should only be used for building data-intensive and real-time application
 - node is written by C++, node passes js to v8 for execution
 
+### development experience
+
+- Node Package Manager(NPM)
+- Asynchronous JavaScript
+- CRUD Operations
+- Data Validation
+- Authentication and Authorization
+- Handling and logging Errors
+- Unit and Integration Testing
+- Test-driven Development
+- Development in the Cloud
+- Clean Coding and Refactoring
+- Security Best Practices
+- Useful Libraries
