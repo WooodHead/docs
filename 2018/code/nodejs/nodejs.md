@@ -76,3 +76,7 @@
   //Raise an event
   emitter.emit('messageLogged',{id:1,url:'http://'});
  ```
+ 
+ ## Reference
+ 
+ - [Node.js Tutorial for Beginners](https://www.youtube.com/watch?v=TlB_eWDSMt4)
