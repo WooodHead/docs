@@ -55,10 +55,11 @@ the ability of an application to spin up fast and shut down gracefully when requ
 
 ## Reference
 
-* Microservices for the Enterprise_Designing Developing, and Deploying
-* Implementing Domain-Driven Design - Vaughn Version
-* Domain-Driven Design Trackling Complexity in the heart of software- Eric Evans
-* Patterns, Principles, and Practices of Domain-Driven Design - Scott Millett & Nick Tune
-* Adaptive Code - Gary McLean Hall
-* the eight fallacies of distributed computing - Peter Deutsch & James Gosling
-* Release It Michael T. Nygard
+- Microservices for the Enterprise_Designing Developing, and Deploying
+- Implementing Domain-Driven Design - Vaughn Version
+- Domain-Driven Design Trackling Complexity in the heart of software- Eric Evans
+- Patterns, Principles, and Practices of Domain-Driven Design - Scott Millett & Nick Tune
+- Adaptive Code - Gary McLean Hall
+- the eight fallacies of distributed computing - Peter Deutsch & James Gosling
+- Release It Michael T. Nygard
+-  [Brief Introduction to architectural decision records](https://speakerdeck.com/vanto/a-brief-introduction-to-architectural-decision-records)
