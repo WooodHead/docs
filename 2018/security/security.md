@@ -59,7 +59,8 @@
 
 ## Security Training
 
-* [knowbe4](https://www.knowbe4.com )
+* [knowbe4](https://www.knowbe4.com)
+* [Pragmatic Web Security](https://pragmaticwebsecurity.com/#training)
 
 ## Security Reference
 

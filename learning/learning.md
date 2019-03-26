@@ -3,6 +3,7 @@
 ## website
 
 * [Open Group](http://www.opengroup.org/)
+* [goto conference - Berlin](https://gotober.com/2018/speakers)
 
 ## e-book website 
 
