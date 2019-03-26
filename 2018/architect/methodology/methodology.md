@@ -11,47 +11,46 @@ on corresponding bounded contexts do not get propagated to other parties properl
 
 The 12 Factor App is a manifesto9 published by Heroku in 2012. This manifesto is a collection of best practices and guidelines to build and maintain scalable, maintainable, and portable applications. Even though these best practices are initially derived from the applications deployed on the Heroku cloud platform, today it has become a mantra for any successful microservices deployment. These 12 factors discussed next are quite common and natural, so chances are very high that you are adhering to them, knowingly or unknowingly.
 
-* Codebase
+- Codebase
 
 all your source code
 in a version control system
 
-* Dependencies
+- Dependencies
 
 should explicitly declare and isolate your dependencies and should never rely on implicit system-wide dependencies
 
-* Configruration
+- Configruration
 
 decouple environment specific settings from the code to configuration.
 
-* Backing Services
+- Backing Services
 
 backing services should be treated as attachable resources. In other words, they should be pluggable into our microservices implementation
 
-* Build,Release,Run
+- Build,Release,Run
 
 having a clear separation among the build, release, and run phases of an application
 
-* Processes
+- Processes
 
  should be stateless and should avoid using sticky sessions
 
-* Shared Nothing Architecture
+- Shared Nothing Architecture
 
 a system should not share either the disk or the memory with other nodes
 
-* Port Binding
+- Port Binding
 
 self-contained,application itself has to do the port binding and expose it as a service
 
-* Concurrency
+- Concurrency
 
 an application should be able to horizontally scale or scale out.
 
-* Disposability
+- Disposability
 
 the ability of an application to spin up fast and shut down gracefully when required
-
 
 ## Reference
 
@@ -62,4 +61,4 @@ the ability of an application to spin up fast and shut down gracefully when requ
 - Adaptive Code - Gary McLean Hall
 - the eight fallacies of distributed computing - Peter Deutsch & James Gosling
 - Release It Michael T. Nygard
--  [Brief Introduction to architectural decision records](https://speakerdeck.com/vanto/a-brief-introduction-to-architectural-decision-records)
+- [Brief Introduction to architectural decision records](https://speakerdeck.com/vanto/a-brief-introduction-to-architectural-decision-records)
