@@ -16,6 +16,42 @@ access token obtained using client credentials
   access token obtained by exchanging code with client credentials
   refresh token can be used with client credentials
 
+- ![Implicit Grant Flow](img/oauth-implicit-grant-flow.png)
+
+  deletegrated access ot a frontend application
+  access token directly obtained through the redirect
+  not supposed to have access to refresh tokens
+
+## Token Types
+
+### Reference Token
+
+- An identifier pointing to metadata keypt by the authorization server
+- Authorization server retains full control over the metadata
+- Require a backchannle request when received by the resource server
+- Easy to revoke if needed
+
+## Self-contained Token
+
+```json
+  {
+      "sub": "philippe@secappdev.org",
+      "aud": "https://pragmaticwebsecurity.com",
+      "azp": "PragmaticWebSecurity",
+      "iss": "https://twitter.example.com/",
+      "exp": "1419356238",
+      "iat": "1419350238",
+      "scope": "read write",
+      "jti": "405b4d4e-8501=4e1a-a138-ed8455cd1d47"
+
+  }
+  ```
+  
+- The token itself contains the metadata used by the authorization server
+- Stored on the client, so out of reach from the authorization server
+- Can be used independently by the resource server after integrity check
+- Hard or impossible to revoke
+
 ## Reference
 
 - [GOTO 2018 • Introduction to OAuth 2.0 and OpenID Connect • Philippe De Ryck](https://www.youtube.com/watch?v=GyCL8AJUhww)
