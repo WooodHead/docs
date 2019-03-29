@@ -1,6 +1,5 @@
 
-
-# ![Cloud Foundry Deigo Auction Algorithms](diego-auction-process.png)
+# ![Cloud Foundry Deigo Auction Algorithms](../img/diego-auction-process.png)
 
 ```
 Allocate all jobs only to Cells that have the correct software stack to host them, and sufficient resources given their allocation so far during this auction.
@@ -20,5 +19,6 @@ Distributes work using the auction algorithm. Auction communication is sent betw
 Maintains a lock in Locket to ensure only one auctioneer handles auctions at a time
 ```
 
-# Reference
-*  [Cloud Foundry Diego Auction Algorithms](https://docs.cloudfoundry.org/concepts/diego/diego-auction.html)
+## Reference
+
+- [Cloud Foundry Diego Auction Algorithms](https://docs.cloudfoundry.org/concepts/diego/diego-auction.html)

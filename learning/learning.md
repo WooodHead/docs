@@ -22,4 +22,8 @@
 
 - Tim Berners-Lee
 - Aaron Swartz
+- Josh Kaufman - Ted <<The First 20 Hours>>
 
+## Idea
+
+- Creative Commons

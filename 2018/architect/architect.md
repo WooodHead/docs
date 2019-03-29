@@ -10,6 +10,7 @@
 * [continuous-delivery](continuous-delivery.md)
 * [continuous-integration](continuous-integration.md)
 * [diagram](diagram/diagram.md)
+* [distributed-system](distributed-system.md)
 * [distributed-transaction](distributed-transaction/distributed-transaction.md)
 * [elasticsearch-logstash-kibana](elasticsearch-logstash-kibana/elasticsearch-logstash-kibana.md)
 * [extract-transform-load](extract-transform-load/extract-transform-load.md)
