@@ -61,6 +61,10 @@ find /app/tomcat/demandPortal/WEB-INF/uploadFiles -type f -mmin -$((60*2))
 find /app/tomcat/demandPortal/WEB-INF/uploadFiles -type f -mmin -$((60*2)) -exec cp '{}' /app/tomcat/migrate/test/2019-01-07/ \;
 find /app/tomcat/demandPortal/WEB-INF/uploadFiles -type f -cmin -$((60*2)) -exec cp '{}' /app/tomcat/migrate/test/2019-01-07/ \;
 
+# [find file and remove them](https://www.cyberciti.biz/faq/linux-unix-how-to-find-and-remove-files/)
+
+find . -type f -name '*(1)*' -exec rm -f {} \;
+
 ```
 
 ## Data and time
