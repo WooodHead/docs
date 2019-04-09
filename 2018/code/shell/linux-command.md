@@ -65,7 +65,12 @@ find /app/tomcat/demandPortal/WEB-INF/uploadFiles -type f -cmin -$((60*2)) -exec
 
 find . -type f -name '*(1)*' -exec rm -f {} \;
 
+
+# [rename filename with regex](https://askubuntu.com/questions/406313/change-multiple-filenames-by-replacing-a-character)
+#  -vn to test
+rename -vn 's/\:/-/g' filename
 ```
+
 
 ## Data and time
 
